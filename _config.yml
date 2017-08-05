@@ -1,16 +1,18 @@
 #Global Configuration
 timezone: Europe/Lisbon
 
+title: marolive
+
+
 theme: jekyll-theme-cayman
 
-repository: https://github.com/marolive/marolive.github.io
+repository: marolive/marolive.github.io
 
-name: marolive • webpage
+name: marolive - webpage
 description: This is the marolive webpage
 url: http://maro.live
 
 exclude:
- - .gitignore
+  - .gitignore
   - README.md
 # End
-
