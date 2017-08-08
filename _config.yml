@@ -3,12 +3,6 @@ timezone: Europe/Lisbon
 
 title: marolive
 
-
 theme: jekyll-theme-cayman
 
-repository: marolive/marolive.github.io
-
-name: marolive - webpage
 description: This is the marolive webpage
-url: http://maro.live
-
