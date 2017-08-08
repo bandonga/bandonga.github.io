@@ -12,7 +12,3 @@ name: marolive - webpage
 description: This is the marolive webpage
 url: http://maro.live
 
-exclude:
-  - .gitignore
-  - README.md
-# End
