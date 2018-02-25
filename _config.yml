@@ -19,7 +19,7 @@ defaults:
     layout: single
     author_profile: false
     read_time: true
-    comments: 
+    comments:
     share: true
     related: true
 - scope:
@@ -50,7 +50,7 @@ description: A place to share information with you. Improve the skills needed fo
 url: https://maro.live
 baseurl: "/"
 repository: marolive/marolive.github.io
-teaser: 
+teaser:
 breadcrumbs: true
 words_per_minute: 200
 comments:
@@ -58,36 +58,36 @@ comments:
   disqus:
     shortname: marolive
   discourse:
-    server: 
+    server:
   facebook:
-    appid: 
-    num_posts: 
-    colorscheme: 
+    appid:
+    num_posts:
+    colorscheme:
 staticman:
-  allowedFields: 
-  branch: 
-  commitMessage: 
-  filename: 
-  format: 
-  moderation: 
-  path: 
-  requiredFields: 
+  allowedFields:
+  branch:
+  commitMessage:
+  filename:
+  format:
+  moderation:
+  path:
+  requiredFields:
   transforms:
-    email: 
+    email:
   generatedFields:
     date:
-      type: 
+      type:
       options:
-        format: 
+        format:
 reCaptcha:
-  siteKey: 
-  secret: 
+  siteKey:
+  secret:
 atom_feed:
-  path: 
+  path:
 search: true
 search_full_content: true
 logo: true
-google_site_verification: 
+google_site_verification:
 bing_site_verification: BF40F0E362798251D61F54B417D72DFE
 yandex_site_verification: 83c2937de8c0c217
 naver_site_verification: bd27863f9572ce7bf4b7aa602d7c1301aec966c3
@@ -95,54 +95,48 @@ twitter:
   username: marolivetech
 facebook:
   username: marolivetech
-<<<<<<< HEAD
   app_id:
   publisher:
 og_image: "/assets/images/name_og.png"
-=======
-  app_id: 
-  publisher: 
-og_image: "/assets/images/logo.png"
->>>>>>> 16b369c0cb7c1ff9b5c51c7f79fa9f264149f147
 social:
-  type: 
-  name: 
-  links: 
+  type:
+  name:
+  links:
 analytics:
   provider: google-universal
   google:
     tracking_id: UA-106592686-1
 author:
   name: marolive
-  avatar: 
+  avatar:
   bio: this is our io
   location: Somewhere
   email: me@mail.com
   uri: http://maro.live
-  home: 
-  bitbucket: 
-  codepen: 
-  dribbble: 
-  flickr: 
+  home:
+  bitbucket:
+  codepen:
+  dribbble:
+  flickr:
   facebook: marolivetech
-  foursquare: 
+  foursquare:
   github: marolive
-  gitlab: 
+  gitlab:
   google_plus: '112228667785735750000'
-  keybase: 
+  keybase:
   instagram: marolivetech
-  lastfm: 
-  linkedin: 
-  pinterest: 
-  soundcloud: 
-  stackoverflow: 
-  steam: 
-  tumblr: 
+  lastfm:
+  linkedin:
+  pinterest:
+  soundcloud:
+  stackoverflow:
+  steam:
+  tumblr:
   twitter: marolivetech
-  vine: 
-  weibo: 
-  xing: 
-  youtube: 
+  vine:
+  weibo:
+  xing:
+  youtube:
 include:
 - ".htaccess"
 - _pages
@@ -216,6 +210,6 @@ tag_archive:
   type: liquid
   path: "/tags/"
 compress_html:
-  clippings: 
+  clippings:
   ignore:
     envs: development
