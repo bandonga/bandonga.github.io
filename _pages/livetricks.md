@@ -21,3 +21,4 @@ layout: archive
 
 {% if tag == "livetricks" %}
   <h3 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h3>
+{% endif %}
