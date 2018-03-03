@@ -3,7 +3,7 @@ title: This post demonstrates post content styles
 date: 2016-05-20 00:00:00 +01:00
 categories:
 - junk
-tag:
+tags:
 - livetricks
 layout: post
 author: Bart Simpson
