@@ -10,8 +10,8 @@ layout: archive
   {% assign posts = group_items[forloop.index0] %}
   <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
   {% for post in posts %}
-    post.tag
-    tag
+    {{post.tag}}
+    {{tag}}
     tessst
     {% include archive-single.html %}
   {% endfor %}
