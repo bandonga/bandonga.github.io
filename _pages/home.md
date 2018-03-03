@@ -1,14 +1,13 @@
 ---
-title: Be the change
 permalink: "/"
 layout: splash
 header:
   overlay_color: "#5e616c"
   overlay_image: "/assets/images/home.jpg"
-  caption: 
-excerpt: A place to share information with you. Improve the skills needed for making
-  the next step up in your career get and articles with Life tips to improves life
-  for you and those around.
+  caption:
+excerpt: A place to share information with you. Improve the skills needed for
+  making the next step up in your career and get articles with Life tips that
+  improves life for you and those around.
 feature_row:
 - image_path: "/assets/images/know.jpg"
   alt: know
