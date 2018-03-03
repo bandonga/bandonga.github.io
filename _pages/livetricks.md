@@ -2,6 +2,7 @@
 title: Live Tricks
 permalink: "/livetricks/"
 layout: archive
+tag: livetricks
 ---
 
 {% include group-by-array collection=site.posts field="tags" %}
@@ -11,7 +12,10 @@ layout: archive
   <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
   {% for post in posts %}
     {{post.tag}}
-    {{tag}}
+    {% if tag == page.tag %}
+      <h3 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h3>
+      asdasdasd
+    {% endif %}
     tessst
     {% include archive-single.html %}
   {% endfor %}
@@ -19,4 +23,5 @@ layout: archive
 
 {% if tag == "livetricks" %}
   <h3 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h3>
+  asdasdasd
 {% endif %}
