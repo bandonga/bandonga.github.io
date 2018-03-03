@@ -1,6 +1,6 @@
 ---
-title: Live Tricks
-permalink: "/livetricks/"
+title: Academy
+permalink: "/academy/"
 layout: archive
 ---
 
