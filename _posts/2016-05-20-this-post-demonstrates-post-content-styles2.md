@@ -1,6 +1,6 @@
 ---
 title: This post demonstrates post content styles2
-date: 2016-05-20
+date: 2016-05-20 00:00:00 +01:00
 categories:
 - junk
 tags:
