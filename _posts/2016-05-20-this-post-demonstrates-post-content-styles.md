@@ -5,7 +5,6 @@ categories:
 - junk
 tags:
 - lifetricks
-layout: post
 author: Bart Simpson
 meta: Springfield
 ---

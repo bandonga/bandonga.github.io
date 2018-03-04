@@ -5,7 +5,6 @@ categories:
 - junk
 tags:
 - academy
-layout: post
 author: Bart Simpson
 meta: Springfield
 ---
