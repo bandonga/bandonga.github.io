@@ -13,15 +13,12 @@ tag: livetricks
   {% for post in posts %}
     {{post.tag}}
     {% if tag == page.tag %}
-      <h3 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h3>
-      asdasdasd
-    {% endif %}
-    tessst
+      asdasdasd1
     {% include archive-single.html %}
+      asdasdasd2
+    {% endif %}
+    tessst1
+    {% include archive-single.html %}
+    tessst2
   {% endfor %}
 {% endfor %}
-
-{% if tag == "livetricks" %}
-  <h3 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h3>
-  asdasdasd
-{% endif %}
