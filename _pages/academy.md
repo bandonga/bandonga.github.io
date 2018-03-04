@@ -2,9 +2,16 @@
 title: Academy
 permalink: "/academy/"
 layout: archive
+tag: academy
 ---
 
-{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
-  {% for post in year.items %}
-    {% include archive-single.html %}
+{% include group-by-array collection=site.posts field="tags" %}
+
+{% for tag in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  {% for post in posts %}
+    {% if tag == page.tag %}
+      {% include archive-single.html %}
+    {% endif %}
   {% endfor %}
+{% endfor %}

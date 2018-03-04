@@ -1,7 +1,6 @@
 # main links
 main:
   - title: "know"
-    url: /know/
+    url: /academy/
   - title: "blog"
-    url: /blog/
-
+    url: /lvetricks/
