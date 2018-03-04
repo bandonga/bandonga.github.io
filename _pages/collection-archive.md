@@ -2,7 +2,6 @@
 title: Posts by Collection
 permalink: "/collection-archive/"
 layout: archive
-author_profile: true
 ---
 
 {% capture written_label %}'None'{% endcapture %}
