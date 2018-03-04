@@ -11,7 +11,7 @@ tag: lifetricks
   {% assign posts = group_items[forloop.index0] %}
   {% for post in posts %}
     {% if tag == page.tag %}
-      {% include archive-single.html  type="grid" %}
+      {% include archive-single.html  %}
     {% endif %}
   {% endfor %}
 {% endfor %}
