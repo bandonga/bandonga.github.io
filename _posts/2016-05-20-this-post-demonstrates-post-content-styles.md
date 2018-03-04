@@ -1,13 +1,13 @@
 ---
 title: This post demonstrates post content styles
 date: 2016-05-20 00:00:00 +01:00
-header:
-  image: /assets/images/unsplash-gallery-image-1.jpg
-  teaser: assets/images/unsplash-gallery-image-1-th.jpg
 categories:
 - junk
 tags:
 - lifetricks
+header:
+  image: "/assets/images/unsplash-gallery-image-1.jpg"
+  teaser: assets/images/unsplash-gallery-image-1-th.jpg
 author: Bart Simpson
 meta: Springfield
 ---
