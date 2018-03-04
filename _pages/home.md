@@ -4,7 +4,7 @@ layout: splash
 header:
   overlay_color: "#5e616c"
   overlay_image: "/assets/images/home.jpg"
-  caption: 
+  caption:
 excerpt: A place to share information with you. Improve the skills needed for making
   the next step up in your career and get articles with Life tips that improves life
   for you and those around.
@@ -19,10 +19,10 @@ feature_row:
   btn_label: Learn More
 - image_path: "/assets/images/blog.jpg"
   alt: blog
-  title: Live Tricks
+  title: Life Tricks
   excerpt: The latest everyday life tricks and news. You can also find guides about
     different topics, such as Care, Finance, Food and Travel.
-  url: "/livetricks/"
+  url: "/lifetricks/"
   btn_class: btn--primary
   btn_label: Learn More
 - image_path: "/assets/images/projects.jpg"

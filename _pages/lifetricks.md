@@ -1,8 +1,8 @@
 ---
-title: Live Tricks
-permalink: "/livetricks/"
+title: Life Tricks
+permalink: "/lifetricks/"
 layout: archive
-tag: livetricks
+tag: lifetricks
 ---
 
 {% include group-by-array collection=site.posts field="tags" %}
