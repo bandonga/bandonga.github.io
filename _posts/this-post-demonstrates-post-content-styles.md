@@ -1,22 +1,5 @@
 ---
-title: This post demonstrates post content styles
-date: 2016-05-20 00:00:00 +01:00
-<<<<<<< HEAD
-header:
-  teaser: "https://farm5.staticflickr.com/4076/4940499208_b79b77fb0a_z.jpg"
-  og_image: "https://farm5.staticflickr.com/4076/4940499208_b79b77fb0a_z.jpg"
-  image: "https://farm5.staticflickr.com/4076/4940499208_b79b77fb0a_z.jpg"
-=======
->>>>>>> db19dcd138ef47136a3e9796dd85b1071299a18e
-categories:
-- junk
-tags:
-- lifetricks
-header:
-  image: "/assets/images/unsplash-gallery-image-1.jpg"
-  teaser: assets/images/unsplash-gallery-image-1-th.jpg
-author: Bart Simpson
-meta: Springfield
+title: 2016 05 20 This Post Demonstrates Post Content Styles
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
