@@ -2,8 +2,9 @@
 title: This post demonstrates post content styles
 date: 2016-05-20 00:00:00 +01:00
 header:
-  image: /assets/images/unsplash-gallery-image-1.jpg
-  teaser: assets/images/unsplash-gallery-image-1-th.jpg
+  teaser: "https://farm5.staticflickr.com/4076/4940499208_b79b77fb0a_z.jpg"
+  og_image: "https://farm5.staticflickr.com/4076/4940499208_b79b77fb0a_z.jpg"
+  image: "https://farm5.staticflickr.com/4076/4940499208_b79b77fb0a_z.jpg"
 categories:
 - junk
 tags:
