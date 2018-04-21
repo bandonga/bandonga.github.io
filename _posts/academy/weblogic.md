@@ -1,19 +1,5 @@
 ---
-title: Oracle WebLogic Server
-date: 2018-04-20 00:00:00 +01:00
-<<<<<<< HEAD:_posts/academy/2018-03-01-weblogic.md
-header:
-  teaser: "/assets/images/1Z0-133_oracle_certification.png"
-=======
->>>>>>> 0ebbdbd9bb17baa4026231b933fd1ff25da3535f:_posts/academy/2018-04-20-weblogic.md
-categories:
-- academy
-tags:
-- academy
-- sysadmin
-- weblogic
-header:
-  teaser: assets/images/1Z0-133_oracle_certification.png
+title: 2018 04 20 Weblogic
 ---
 
 <<<<<<< HEAD:_posts/academy/2018-03-01-weblogic.md
