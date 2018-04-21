@@ -4,3 +4,30 @@ main:
     url: /academy/
   - title: "Life Tricks"
     url: /lifetricks/
+
+# 1Z0-133 links
+1Z0-133:
+  - title: "Introduction"
+    children:
+      - title: "Getting Started"
+        url: /1Z0-133/start/
+      - title: "Context"
+        url: /1Z0-133/context/
+  - title: "Exam Topics"
+    children:
+      - title: "1 Overview of WebLogic Server"
+        url: /1Z0-133/1-overview/
+      - title: "1.1 Lab"
+        url: /1Z0-133/1.1-lab/
+      - title: "2 Installing and Patching WebLogic Server"
+        url: /1Z0-133/2-install-patch/
+      - title: "2.1 Lab"
+        url: /1Z0-133/2.1-lab/
+      - title: "3 Creating Domains"
+        url: /1Z0-133/3-creating-domains/
+      - title: "3.1 Lab"
+        url: /1Z0-133/3.1-lab/
+      - title: "4 Starting Servers"
+        url: /1Z0-133/4-starting-servers/
+      - title: "4.1 Lab"
+        url: /1Z0-133/4.1-lab/
