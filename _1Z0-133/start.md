@@ -10,6 +10,25 @@ This certification guide will provide a comprehensive overview of Weblogic 12c. 
 
 Each topic will have an experimental laboratory, to practice the knowledge learned.
 
+### Topics
+
+* [1 Overview of WebLogic Server](/1Z0-133/1-overview/)
+* [2 Installing and Patching WebLogic Server](/1Z0-133/2-install-patch)
+* [3 Creating Domains](/1Z0-133/3-creating-domains/)
+* [4 Starting Servers](/1Z0-133/4 Starting Servers)
+* [5 Using the Administration Console](/1Z0-133/5-admin-console)
+* [6 Configuring JDBC](/1Z0-133/6-config-jdbc)
+* [7 Monitoring a Domain](/1Z0-133/7-monitor-domain)
+* [8 Node Manager](/1Z0-133/8-nodemanager)
+* [9 Deploying Applications](/1Z0-133/9-deploy-apps)
+* [10 Network Channels and Virtual Hosts](/1Z0-133/10-network-ch-vhosts)
+* [11 Creating Configuring Clusters](/1Z0-133/11-config-clusters)
+* [12 Cluster Proxies and Sessions](/1Z0-133/12-cluster-proxies-sessions)
+* [13 Cluster Communication Planning Troubleshooting](/1Z0-133/13 Cluster-troubleshooting)
+* [14 Transactions](/1Z0-133/14-transactions)
+* [15 WebLogic Server Security](/1Z0-133/15-security)
+* [16 Backing Up Domain Upgrading WLS](/1Z0-133/16-backup-upgrade)
+
 ### Resources
 
 #### General
@@ -37,22 +56,3 @@ What Accounts do I need to access Oracle training?
 * Oracle Web Account - To use the Oracle University website, you need a web account. You can also request [Partner Access](http://www.oracle.com/partners/en/partner-with-oracle/get-started/register-for-access/index.html).
 *  Pearson VUE Account - To take your Oracle exams for certification, you will need a Pearson VUE account. [Login](http://pearsonvue.com/oracle) to  and follow the instructions to create your account.
 *  CertView Account- To manage, retrieve and track your exam and course scores, [login](https://certview.oracle.com)  and follow the instructions to create your account.
-
-### Topics
-
-* [1 Overview of WebLogic Server]({{ "/1Z0-133/1-overview/" | absolute_url }})
-* [2 Installing and Patching WebLogic Server](1Z0 133 2 Installing and Patching WebLogic Server)
-* [3 Creating Domains](1Z0 133 3 Creating Domains)
-* [4 Starting Servers](1Z0 133 4 Starting Servers)
-* [5 Using the Administration Console](5 Using the Administration Console)
-* [6 Configuring JDBC](6 Configuring JDBC)
-* [7 Monitoring a Domain](7 Monitoring a Domain)
-* [8 Node Manager](8 Node Manager)
-* [9 Deploying Applications](9 Deploying Applications)
-* [10 Network Channels and Virtual Hosts](10 Network Channels and Virtual Hosts)
-* [11 Creating Configuring Clusters](11 Creating Configuring Clusters)
-* [12 Cluster Proxies and Sessions](12 Cluster Proxies and Sessions)
-* [13 Cluster Communication Planning Troubleshooting](13 Cluster Communication Planning Troubleshooting)
-* [14 Transactions](14 Transactions)
-* [15 WebLogic Server Security](15 WebLogic Server Security)
-* [16 Backing Up Domain Upgrading WLS](16 Backing Up Domain Upgrading WLS)

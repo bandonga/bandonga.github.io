@@ -4,7 +4,7 @@ layout: splash
 header:
   overlay_color: "#5e616c"
   overlay_image: "/assets/images/home.jpg"
-  caption: 
+  caption:
 excerpt: A place to share information with you. Improve the skills needed for making
   the next step up in your career and get articles with Life tips that improves life
   for you and those around.
