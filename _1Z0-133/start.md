@@ -1,7 +1,8 @@
 ---
 title: 1Z0-133 Oracle WebLogic Server 12c Administration I
-excerpt: "This certification guide will provide a comprehensive overview of Weblogic 12c."
-last_modified_at: 2018-01-02T16:28:04-05:00
+excerpt: This certification guide will provide a comprehensive overview of Weblogic
+  12c.
+last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true
 ---
 

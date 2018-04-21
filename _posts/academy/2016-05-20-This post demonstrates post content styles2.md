@@ -4,10 +4,10 @@ date: 2016-05-20 00:00:00 +01:00
 categories:
 - academy
 - weblogic
-author: Bart Simpson
 tags:
 - academy
 - weblogic
+author: Bart Simpson
 meta: Springfield
 ---
 

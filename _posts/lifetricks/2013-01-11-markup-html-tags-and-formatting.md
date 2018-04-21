@@ -1,11 +1,12 @@
 ---
-title: "Markup: HTML Tags and Formatting"
-header:
-  teaser: "assets/images/markup-syntax-highlighting-teaser.jpg"
+title: 'Markup: HTML Tags and Formatting'
+date: 2013-01-11 00:00:00 +00:00
 categories:
-  - lifetricks
+- lifetricks
 tags:
-  - lifetricks
+- lifetricks
+header:
+  teaser: assets/images/markup-syntax-highlighting-teaser.jpg
 toc: true
 ---
 
