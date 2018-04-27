@@ -11,23 +11,37 @@ main:
     children:
       - title: "Getting Started"
         url: /1Z0-133/start/
-      - title: "Context"
-        url: /1Z0-133/context/
   - title: "Exam Topics"
     children:
       - title: "1 Overview of WebLogic Server"
         url: /1Z0-133/1-overview/
-      - title: "1.1 Lab"
-        url: /1Z0-133/1.1-lab/
       - title: "2 Installing and Patching WebLogic Server"
         url: /1Z0-133/2-install-patch/
-      - title: "2.1 Lab"
-        url: /1Z0-133/2.1-lab/
       - title: "3 Creating Domains"
         url: /1Z0-133/3-creating-domains/
-      - title: "3.1 Lab"
-        url: /1Z0-133/3.1-lab/
       - title: "4 Starting Servers"
         url: /1Z0-133/4-starting-servers/
-      - title: "4.1 Lab"
-        url: /1Z0-133/4.1-lab/
+      - title: "5 Using the Administration Console"
+        url: /1Z0-133/5-admin-console/
+      - title: "6 Configuring JDBC"
+        url: /1Z0-133/6-config-jdbc/
+      - title: "7 Monitoring a Domain"
+        url: /1Z0-133/7-monitor-domain/
+      - title: "8 Node Manager"
+        url: /1Z0-133/8-nodemanager/
+      - title: "9 Deploying Applications"
+        url: /1Z0-133/9-deploy-apps/
+      - title: "10 Network Channels and Virtual Hosts"
+        url: /1Z0-133/10-network-ch-vhosts/
+      - title: "11 Creating Configuring Clusters"
+        url: /1Z0-133/11-config-clusters/
+      - title: "12 Cluster Proxies and Sessions"
+        url: /1Z0-133/12-cluster-proxies-sessions/
+      - title: "13 Cluster Communication Planning Troubleshooting"
+        url: /1Z0-133/13 Cluster-troubleshooting/
+      - title: "14 Transactions"
+        url: /1Z0-133/14-transactions/
+      - title: "15 WebLogic Server Security"
+        url: /1Z0-133/15-security/
+      - title: "16 Backing Up Domain Upgrading WLS"
+        url: /1Z0-133/16-backup-upgrade/

@@ -38,11 +38,11 @@ Each topic will have an experimental laboratory, to practice the knowledge learn
 
 #### Course
 * [Udemy - Weblogic 12c Essentials](https://www.udemy.com/learn-oracle-weblogic-12c-essentials)
-* [PAID] [PAID Udemy - Weblogic 12c Administrators](https://www.udemy.com/oracle-weblogic-12c-for-administrators/)
-* [Partner] [Specialization Training](https://competencycenter.oracle.com/opncc/full_glp.cc?group_id=22243)
+* [PAID Udemy - Weblogic 12c Administrators](https://www.udemy.com/oracle-weblogic-12c-for-administrators/)
+* [Oracle Partner - Specialization Training](https://competencycenter.oracle.com/opncc/full_glp.cc?group_id=22243)
 * [Learning Library Basic Admin Tasks](https://apexapps.oracle.com/pls/apex/f?p=44785:24:105172019871425:::24:P24_CONTENT_ID,P24_PREV_PAGE:6079,24)
 * [Learning Library Tutorials](https://apexapps.oracle.com/pls/apex/f?p=44785:24:11999717944735::NO:RP,24:P24_CONTENT_ID,P24_PREV_PAGE:12304,2)
-* [Login] [Oracle University](http://ilearning.oracle.com/ilearn/en/learner/jsp/category.jsp?keywords=&btn=&srchfor=&start=0&sortby=-1&sortasc=null&categoryid=28758)
+* [Oracle University](http://ilearning.oracle.com/ilearn/en/learner/jsp/category.jsp?keywords=&btn=&srchfor=&start=0&sortby=-1&sortasc=null&categoryid=28758)
 
 #### Books
 * [Oracle WebLogic Server 12c Administration Handbook, Sam R. Alapati](https://www.amazon.com/Oracle-WebLogic-Server-Administration-Handbook/dp/0071825355)
