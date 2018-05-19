@@ -3,7 +3,7 @@ title: marolive
 timezone: Europe/Lisbon
 collections:
   1Z0-133:
-    title: 1 Z0 133
+    title: 1Z0-133
     output: true
     permalink: "/:collection/:path/"
   posts:
@@ -38,6 +38,8 @@ defaults:
     author_profile: false
     share: true
     comments: true
+    header:
+      teaser: "/assets/images/1Z0-133/1Z0-133_oracle_certification.png"
     sidebar:
       nav: 1Z0-133
 remote_theme: marolive/minimal-mistakes
