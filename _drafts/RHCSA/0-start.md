@@ -1,12 +1,12 @@
 ---
-title: 1Z0-133 Oracle WebLogic Server 12c Administration I
-excerpt: This certification guide will provide a comprehensive overview of Weblogic
-  12c.
+title: RHCSA - Red Hat Certified System Administrator Guide
+excerpt: This certification guide will provide a comprehensive overview of Linux RHEL 7,
+covering the EX200 exam topics.
 last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true
 ---
 
-This certification guide will provide a comprehensive overview of Linux . It will the cover the RHCSA [exam topics](https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-133) with simple explanations, for an Administration beginner level. The content of this course is based on the official [documentation](https://docs.oracle.com/middleware/1212/wls/index.html). The exam is validated against version RHEL 7.
+This certification guide will provide a comprehensive overview of Linux. It will the cover the [RHCSA](https://www.redhat.com/en/services/certification/rhcsa) certification with the EX200 [exam topics](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam) in simple explanations, for an Administration beginner level. The content of this course is based on the official [documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/). The exam is validated against version RHEL 7.
 
 Each topic will have an experimental laboratory, to practice the knowledge learned.
 
@@ -21,12 +21,8 @@ Each topic will have an experimental laboratory, to practice the knowledge learn
 * [Blog](https://blogs.oracle.com/weblogicserver/)
 
 #### Course
-* [Udemy - Weblogic 12c Essentials](https://www.udemy.com/learn-oracle-weblogic-12c-essentials)
-* [PAID Udemy - Weblogic 12c Administrators](https://www.udemy.com/oracle-weblogic-12c-for-administrators/)
-* [Oracle Partner - Specialization Training](https://competencycenter.oracle.com/opncc/full_glp.cc?group_id=22243)
-* [Learning Library Basic Admin Tasks](https://apexapps.oracle.com/pls/apex/f?p=44785:24:105172019871425:::24:P24_CONTENT_ID,P24_PREV_PAGE:6079,24)
-* [Learning Library Tutorials](https://apexapps.oracle.com/pls/apex/f?p=44785:24:11999717944735::NO:RP,24:P24_CONTENT_ID,P24_PREV_PAGE:12304,2)
-* [Oracle University](http://ilearning.oracle.com/ilearn/en/learner/jsp/category.jsp?keywords=&btn=&srchfor=&start=0&sortby=-1&sortasc=null&categoryid=28758)
+* [Udemy - ]()
+* [PAID Udemy - ]()
 
 #### Books
 * [Oracle WebLogic Server 12c Administration Handbook, Sam R. Alapati](https://www.amazon.com/Oracle-WebLogic-Server-Administration-Handbook/dp/0071825355)
@@ -35,8 +31,3 @@ Each topic will have an experimental laboratory, to practice the knowledge learn
 
 
 ### How to register for Exam
-
-What Accounts do I need to access Oracle training?
-* Oracle Web Account - To use the Oracle University website, you need a web account. You can also request [Partner Access](http://www.oracle.com/partners/en/partner-with-oracle/get-started/register-for-access/index.html).
-*  Pearson VUE Account - To take your Oracle exams for certification, you will need a Pearson VUE account. [Login](http://pearsonvue.com/oracle) to  and follow the instructions to create your account.
-*  CertView Account- To manage, retrieve and track your exam and course scores, [login](https://certview.oracle.com)  and follow the instructions to create your account.
