@@ -20,7 +20,7 @@ defaults:
     layout: single
     author_profile: false
     read_time: true
-    comments:
+    comments: true
     share: true
     related: true
 - scope:
@@ -34,10 +34,11 @@ defaults:
     type: 1Z0-133
   values:
     layout: single
-    read_time: true
     author_profile: false
-    share: true
+    read_time: true
     comments: true
+    share: true
+    related: true
     header:
       teaser: "/assets/images/1Z0-133/1Z0-133_oracle_certification.png"
     sidebar:
