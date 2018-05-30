@@ -10,7 +10,7 @@ main:
   - title: "Introduction"
     children:
       - title: "Getting Started"
-        url: /1Z0-133/start/
+        url: /1Z0-133/0-start/
   - title: "Exam Topics"
     children:
       - title: "1 Overview of WebLogic Server"
@@ -38,7 +38,7 @@ main:
       - title: "12 Cluster Proxies and Sessions"
         url: /1Z0-133/12-cluster-proxies-sessions/
       - title: "13 Cluster Communication Planning Troubleshooting"
-        url: /1Z0-133/13 Cluster-troubleshooting/
+        url: /1Z0-133/13-cluster-troubleshooting/
       - title: "14 Transactions"
         url: /1Z0-133/14-transactions/
       - title: "15 WebLogic Server Security"
