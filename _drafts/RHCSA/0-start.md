@@ -16,18 +16,17 @@ Each topic will have an experimental laboratory, to practice the knowledge learn
 ### Resources
 
 #### General
-* [Documentation](https://docs.oracle.com/middleware/1212/wls/index.html)
-* [YouTube channel](http://www.youtube.com/user/OracleWebLogic)
-* [Blog](https://blogs.oracle.com/weblogicserver/)
+* [Red Hat Documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux)
+* [marolive Linux Resources]({{ site.baseurl }}{% post_url /academy/2018-05-26-linux %})
 
 #### Course
-* [Udemy - ]()
-* [PAID Udemy - ]()
+* PAID [Udemy - Linux Academy: RHCSA Prep](https://www.udemy.com/linux-academy-red-hat-certified-systems-administrator-prep/)
+* PAID [Udemy - Ermin Kreponic: Red Hat Linux - RHCSA](https://www.udemy.com/red-hat-linux-centos-rhcsa/)
+
+
 
 #### Books
-* [Oracle WebLogic Server 12c Administration Handbook, Sam R. Alapati](https://www.amazon.com/Oracle-WebLogic-Server-Administration-Handbook/dp/0071825355)
-* [Oracle WebLogic Server 12c Administration I Exam 1Z0-133: A Comprehensive Certification Guide,  Gustavo Garnica](https://www.amazon.com/Oracle-WebLogic-Server-Administration-IZ0-133/dp/1484225619)
-* [Oracle WebLogic Server 12c Advanced Administration Cookbook, by Dalton Iwazaki](https://www.amazon.com/Oracle-WebLogic-Advanced-Administration-Cookbook/dp/184968684X)
+*
 
 
 ### How to register for Exam
