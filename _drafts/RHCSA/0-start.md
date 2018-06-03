@@ -26,7 +26,8 @@ Each topic will have an experimental laboratory, to practice the knowledge learn
 
 
 #### Books
-*
-
+* ["RHCSA & RHCE Red Hat Enterprise Linux 7"](https://www.amazon.com/dp/1495148203), by Asghar Ghori
+* ["Red Hat RHCSA/RHCE 7 Cert Guide"](https://www.amazon.com/dp/0789754053), by Sander van Vugt
+* ["RHCSA/RHCE Red Hat Linux Certification Study Guide"](https://www.amazon.com/dp/0071841962), by Michael Jang, et al
 
 ### How to register for Exam
