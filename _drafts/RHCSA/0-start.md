@@ -17,6 +17,8 @@ Each topic will have an experimental laboratory, to practice the knowledge learn
 
 #### General
 * [Red Hat Documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux)
+* https://developers.redhat.com/topics/linux/
+* https://rhelblog.redhat.com/
 * [marolive Linux Resources]({{ site.baseurl }}{% post_url /academy/2018-05-26-linux %})
 
 #### Course
