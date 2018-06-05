@@ -14,23 +14,23 @@ main:
   - title: "Exam Topics"
     children:
       - title: "1 Overview of WebLogic Server"
-        url: /1Z0-133/1-overview/
+        url: /1Z0-133/01-overview/
       - title: "2 Installing and Patching WebLogic Server"
-        url: /1Z0-133/2-install-patch/
+        url: /1Z0-133/02-install-patch/
       - title: "3 Creating Domains"
-        url: /1Z0-133/3-creating-domains/
+        url: /1Z0-133/03-creating-domains/
       - title: "4 Starting Servers"
-        url: /1Z0-133/4-starting-servers/
+        url: /1Z0-133/04-starting-servers/
       - title: "5 Using the Administration Console"
-        url: /1Z0-133/5-admin-console/
+        url: /1Z0-133/05-admin-console/
       - title: "6 Configuring JDBC"
-        url: /1Z0-133/6-config-jdbc/
+        url: /1Z0-133/06-config-jdbc/
       - title: "7 Monitoring a Domain"
-        url: /1Z0-133/7-monitor-domain/
+        url: /1Z0-133/07-monitor-domain/
       - title: "8 Node Manager"
-        url: /1Z0-133/8-nodemanager/
+        url: /1Z0-133/08-nodemanager/
       - title: "9 Deploying Applications"
-        url: /1Z0-133/9-deploy-apps/
+        url: /1Z0-133/09-deploy-apps/
       - title: "10 Network Channels and Virtual Hosts"
         url: /1Z0-133/10-network-ch-vhosts/
       - title: "11 Creating Configuring Clusters"
