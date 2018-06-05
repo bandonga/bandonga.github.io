@@ -35,4 +35,10 @@ Each topic will have an experimental laboratory, to practice the knowledge learn
 * https://www.tecmint.com/rhcsa-exam-reviewing-essential-commands-system-documentation/
 * https://oracle-base.com/articles/linux/rhcsa-and-rhce-6
 
+
+* https://www.redhat.com/rhtapps/assessment/
+* https://developers.redhat.com/blog/2017/05/23/technical-cheat-sheets-for-developers/
+* free license: https://developers.redhat.com/products/rhel/hello-world/#fndtn-bare-metal_download-red-hat-enterprise-linux-rhel
+
+
 ### How to register for Exam

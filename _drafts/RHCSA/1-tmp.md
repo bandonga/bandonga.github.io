@@ -102,17 +102,3 @@ toc: true
 > Have either taken the Red Hat System Administration I (RH124) and II (RH134) courses or else the RHCSA Rapid Track Course (RH199) or have comparable work experience as a system administrator on Red Hat Enterprise Linux
 
 --------------------------------------------------------------------------------
-
-
-
-
-
-* https://www.lisenet.com/rhce/
-* https://www.redhat.com/rhtapps/assessment/
-
-
-* https://developers.redhat.com/blog/2017/05/23/technical-cheat-sheets-for-developers/
-* free license: https://developers.redhat.com/products/rhel/hello-world/#fndtn-bare-metal_download-red-hat-enterprise-linux-rhel
-
-* http://www.omnisecu.com/gnu-linux/redhat-certified-engineer-rhce/index.php
-https://blog.diaboliko.net/certifications/rhel7-rhcsa-exam-objectives/
