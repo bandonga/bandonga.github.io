@@ -5,12 +5,6 @@ covering the EX200 exam topics.
 last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true
 ---
-[[Knowledge]] > [[Sysadmin]] > [[redhat]]
-
----
-
-* [rh199](rh199)
-
 
 ### Understand and use essential tools
 * Access a shell prompt and issue commands with correct syntax
@@ -107,17 +101,12 @@ toc: true
 
 > Have either taken the Red Hat System Administration I (RH124) and II (RH134) courses or else the RHCSA Rapid Track Course (RH199) or have comparable work experience as a system administrator on Red Hat Enterprise Linux
 
+--------------------------------------------------------------------------------
 
 
-* https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam
 
-* https://www.tecmint.com/rhcsa-exam-reviewing-essential-commands-system-documentation/
-*
-* https://www.certdepot.net/rhel7-rhcsa-exam-objectives/
-* https://oracle-base.com/articles/linux/rhcsa-and-rhce-6
 
-* https://www.certdepot.net/rhel7-book-review/
-* https://www.rootusers.com/red-hat-certified-system-administrator-rhcsa-ex200-passed/
+
 * https://www.lisenet.com/rhce/
 * https://www.redhat.com/rhtapps/assessment/
 

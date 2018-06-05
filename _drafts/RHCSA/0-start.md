@@ -25,11 +25,14 @@ Each topic will have an experimental laboratory, to practice the knowledge learn
 * PAID [Udemy - Linux Academy: RHCSA Prep](https://www.udemy.com/linux-academy-red-hat-certified-systems-administrator-prep/)
 * PAID [Udemy - Ermin Kreponic: Red Hat Linux - RHCSA](https://www.udemy.com/red-hat-linux-centos-rhcsa/)
 
-
-
 #### Books
 * ["RHCSA & RHCE Red Hat Enterprise Linux 7"](https://www.amazon.com/dp/1495148203), by Asghar Ghori
 * ["Red Hat RHCSA/RHCE 7 Cert Guide"](https://www.amazon.com/dp/0789754053), by Sander van Vugt
 * ["RHCSA/RHCE Red Hat Linux Certification Study Guide"](https://www.amazon.com/dp/0071841962), by Michael Jang, et al
+
+#### Tutorials
+* https://www.certdepot.net/rhel7-rhcsa-exam-objectives/
+* https://www.tecmint.com/rhcsa-exam-reviewing-essential-commands-system-documentation/
+* https://oracle-base.com/articles/linux/rhcsa-and-rhce-6
 
 ### How to register for Exam
