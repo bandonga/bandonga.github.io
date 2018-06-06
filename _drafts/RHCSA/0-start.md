@@ -11,7 +11,13 @@ This certification guide will provide a comprehensive overview of Linux. It will
 Each topic will have an experimental laboratory, to practice the knowledge learned.
 
 ### Topics
-
+* Understand and use essential tools
+* Operate running systems
+* Configure local storage
+* Create and configure file systems
+* Deploy, configure, and maintain systems
+* Manage users and groups
+* Manage security
 
 ### Resources
 
@@ -35,10 +41,8 @@ Each topic will have an experimental laboratory, to practice the knowledge learn
 * https://www.tecmint.com/rhcsa-exam-reviewing-essential-commands-system-documentation/
 * https://oracle-base.com/articles/linux/rhcsa-and-rhce-6
 
-
-* https://www.redhat.com/rhtapps/assessment/
-* https://developers.redhat.com/blog/2017/05/23/technical-cheat-sheets-for-developers/
-* free license: https://developers.redhat.com/products/rhel/hello-world/#fndtn-bare-metal_download-red-hat-enterprise-linux-rhel
-
+##### Others
+* Red Hat Skills [Assessment](https://www.redhat.com/rhtapps/assessment/)
 
 ### How to register for Exam
+You can take your hands-on certification exam in a classroom setting or you can schedule an individual exam at a time and place convenient to you.
