@@ -35,9 +35,7 @@ A **distributed system** is a model in which components located on networked com
 
 **Infrastructure as a Service (IaaS):** The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host fire
 
-containers vs docker
 
-virtualization vs cloud
 
 http://stackoverflow.com/questions/18198960/practical-example-for-each-type-of-database-real-cases
 
