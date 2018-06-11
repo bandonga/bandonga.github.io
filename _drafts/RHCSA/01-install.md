@@ -18,4 +18,8 @@ In our lab, we will be using the CentOS, as our host OS and KVM to virtualise RH
 The services needed for the certification (and not part of the Exam topics) will be done in this server,
 using the RHEL VM exclusivily to pratice the certification.
 
-### How to Get
+### How to Get RHEL7
+
+It's possible to get a free version of RHEL 7, if it's not used for production, in the Red Hat [developer](https://developers.redhat.com/products/rhel/download/) page.[^1]
+
+[^1]: < https://developers.redhat.com/blog/2016/03/31/no-cost-rhel-developer-subscription-now-available >
