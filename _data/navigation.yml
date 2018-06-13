@@ -45,3 +45,10 @@ main:
         url: /1Z0-133/15-security/
       - title: "16 Backing Up Domain Upgrading WLS"
         url: /1Z0-133/16-backup-upgrade/
+
+# RHCSA links
+RHCSA:
+  - title: "Introduction"
+    children:
+      - title: "Getting Started"
+        url: /RHCSA/0-start/

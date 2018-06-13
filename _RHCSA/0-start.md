@@ -12,10 +12,6 @@ Each topic will have an hands-on laboratory and a practice (whitout the commands
 To study fot this exam, it's recomended to have a physical computer
 
 
-### Topics
-* 1. Installing RHEL7
-* 2. Using Essential Tools
-
 ### Resources
 
 #### General

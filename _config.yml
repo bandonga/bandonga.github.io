@@ -6,6 +6,10 @@ collections:
     title: 1Z0-133
     output: true
     permalink: "/:collection/:path/"
+  RHCSA:
+    title: RHCSA
+    output: true
+    permalink: "/:collection/:path/"
   posts:
     title: Posts
     output: true
@@ -43,6 +47,20 @@ defaults:
       teaser: "/assets/images/1Z0-133/1Z0-133_oracle_certification.png"
     sidebar:
       nav: 1Z0-133
+- scope:
+    path: ''
+    type: RHCSA
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/RHCSA/rhcsa.png"
+    sidebar:
+      nav: RHCSA
 remote_theme: marolive/minimal-mistakes
 minimal_mistakes_skin: miniolive
 locale: en-GB
