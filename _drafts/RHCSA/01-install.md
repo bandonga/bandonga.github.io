@@ -16,18 +16,3 @@ To do that, you can use the Host Server or a secundary VM.
 
 In our lab, we will be using the *CentOS* (the community version of RHEL), as our host OS and *KVM* to virtualise RHEL 7.
 The services needed for the certification (and not part of the Exam topics) will be done in this server, using the RHEL VM exclusivily to pratice the certification. An alternative setup would be, a windows PC virtualising a RHEL box and a secundary CentOS box to setup the needed services.
-
-### Physical Host Setup
-
-This step is optional, if you want to start with a fresh installation.
-
-Download your favorite OS, such as [CentOS](http://isoredirect.centos.org/centos/7/isos/x86_64/).
-To boot from a USB Device, you can use the [unetbootin](http://unetbootin.github.io/) or dd command
-
-```console
-marcelo@mo:~$ dd if=/data/CentOS-7-x86_64-Minimal-1804.iso of=/dev/sdb1 bs=512M; sync
-```
-
-To procred with the installation and environment configuration, you can follow the guides bellow or the [tecmint guide](https://www.tecmint.com/centos-7-installation/). [^1]
-
-[^1]: < https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/sect-making-usb-media >
