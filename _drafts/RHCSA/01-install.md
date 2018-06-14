@@ -1,7 +1,7 @@
 ---
-title: 1 - Installation
-excerpt: This certification guide will provide a comprehensive overview of Red Hat Enterprise Linux, RHEL 7,
-covering the EX200 exam topics, in order to be a RHCSA - Red Hat Certified System Administrator Guide.
+title: "1 - Installation"
+excerpt: "This certification guide will provide a comprehensive overview of Red Hat Enterprise Linux, RHEL 7,
+covering the EX200 exam topics, in order to be a RHCSA - Red Hat Certified System Administrator Guide."
 last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true
 ---
