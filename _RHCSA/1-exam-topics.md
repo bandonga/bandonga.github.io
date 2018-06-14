@@ -1,6 +1,6 @@
 ---
-title: 2 Installing and Patching WebLogic Server
-excerpt: 1Z0-133 Oracle WebLogic Server 12c Administration I.
+title: 1 Installing
+excerpt: Red Hat Certified System Administrator Guide
 last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true
 ---
