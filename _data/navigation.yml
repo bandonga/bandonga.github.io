@@ -52,3 +52,7 @@ RHCSA:
     children:
       - title: "Getting Started"
         url: /RHCSA/0-start/
+  - title: "Exam Topics"
+    children:
+      - title: "1 Overview of WebLogic Server"
+        url: /1Z0-133/01-overview/
