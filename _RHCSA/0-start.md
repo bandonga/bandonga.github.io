@@ -1,6 +1,6 @@
 ---
-title: RHCSA: Red Hat Certified System Administrator Guide
-excerpt: This certification guide will provide a comprehensive overview of Red Hat Enterprise Linux, RHEL 7, covering the EX200 exam topics.
+title: "RHCSA: Red Hat Certified System Administrator Guide"
+excerpt: "This certification guide will provide a comprehensive overview of Red Hat Enterprise Linux, RHEL 7, covering the EX200 exam topics."
 header:
   image: "/assets/images/RHCSA/rhcsa.png"
 last_modified_at: 2018-01-02 21:28:04 +00:00
