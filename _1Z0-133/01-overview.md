@@ -102,4 +102,6 @@ Composed of three main components:
 [^2]: <https://docs.oracle.com/middleware/1212/wls/INTRO/sysadmin.htm>
 
 
-### [1.1 lab](/1Z0-133/01.1-lab/)
+### Laboratory
+
+* [1.1 lab - Initial Setup](/1Z0-133/01.1-lab/)
