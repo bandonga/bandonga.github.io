@@ -31,7 +31,17 @@ toc: true
 * Access a shell prompt and issue commands with correct syntax
 
 #### The Command line
-A commmand line
+A commmand line is a text based interface wich can be used to input instructions to a computer, provided by the program interpreter **shell**. The default shell for RHEL is *bash* (Bourne-Again Shell), an inproved version of the *sh* (Bourne Shell).
+
+when using a shell interactivelly, it displays a string, warning for a command, the *shell prompt*. When using a regular user, the prompt is the `$` character.
+```console
+marcelo@mo:~$
+```
+The `$` is replaced by `#`, if the you are the *superuser*, root, to avoid accidents
+```console
+root@mo:~#
+```
+
 
 
 
