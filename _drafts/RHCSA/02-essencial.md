@@ -43,6 +43,15 @@ root@mo:~#
 ```
 
 
+The shell makes a difference between three kinds of commands:
+* An *alias* is a command that a user can define as needed and are executed before anything else. 
+It's usually used as way to subsitute long commands, such as `alias ll='ls -l --color=auto'`. You can use the `alias` command to check the alias currently defined.
+* An *internal command* is a command that is a part of the shell itself. It is available when the shell is loaded and can be executed from memory without any lookup from disk.
+* An *external command* is a command that exists as an executable file on disk of the computer. The shell first looks to determine whether it is an internal command. If not, looks for an executable file with a matching filename in the list of directories defined by the `$PATH` variable.
+
+To find out the type of command you are using, you can use the `type` command and to find out which exact command the shell will be using, you can use the`which` command.
+
+
 
 
 * Access remote systems using ssh
