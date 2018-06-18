@@ -52,7 +52,10 @@ the physical console supports multiple virtual consoles, which act as separate t
 
 The Linux console is a system console internal to the Linux kernel (a system console is the device which receives all kernel messages and warnings and which allows logins in single user mode).
 
-The Linux console provides a way for the kernel and other processes to send text output to the user, and to receive text input from the user. The user typically enters text with a computer keyboard and reads the output text on a computer monitor. The Linux kernel supports virtual consoles - consoles that are logically separate, but which access the same physical keyboard and display.[3] The Linux console (and Linux virtual consoles) are implemented by the VT subsystem of the Linux kernel, and do not rely on any user space software.[4] This is in contrast to a terminal emulator, which is a user space process that emulates a terminal, and is typically used in a graphical display environment.
+The Linux console provides a way for the kernel and other processes to send text output to the user, and to receive text input from the user. The user typically enters text with a computer keyboard and reads the output text on a computer monitor. The Linux kernel supports virtual consoles - consoles that are logically separate, but which access the same physical keyboard and display.[3]
+
+
+The Linux console (and Linux virtual consoles) are implemented by the VT subsystem of the Linux kernel, and do not rely on any user space software.[4] This is in contrast to a terminal emulator, which is a user space process that emulates a terminal, and is typically used in a graphical display environment.
 
 
 ### commands
