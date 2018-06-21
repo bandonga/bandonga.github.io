@@ -45,7 +45,14 @@ root@mo:~#
 The bash shell also provides a scripting language that can support automation of tasks.
 
 
+<<<<<<< HEAD
 ### The console
+=======
+#### Virtual console
+
+A *terminal* provides input through a keyboard and output is a display, that can be the machine's physical console.
+the physical console supports multiple virtual consoles, which act as separate terminals.
+>>>>>>> da46ba4b0d7ca1f2d1f3430a9b5b9aaa638d87ba
 
 The console/terminal is a *system console* internal to the Linux kernel, which receives all kernel messages and warnings and which allows logins in single user mode.
 The console provides a way to send text output to the user, in a display, and to receive text input from the user, through a keyboard.
@@ -59,7 +66,7 @@ The command is the name of the program to run, followed by possible options or a
 
 
 
-### commands
+#### commands
 The shell makes a difference between three kinds of commands:
 * An *alias* is a command that a user can define as needed and are executed before anything else.
 It's usually used as way to subsitute long commands, such as `alias ll='ls -l --color=auto'`. You can use the `alias` command to check the alias currently defined.
@@ -73,6 +80,36 @@ To find out the type of command you are using, you can use the `type` command an
 
 * Access remote systems using ssh
 
+### I/O Redirection
+
+
+
+-----
+
+> Historically, a terminal was a single keyboard and monitor plugged into a dedicated serial console port on a computer used for direct communication at a low level with the operating system. Early user terminals connected to computers were electromechanical teleprinters/teletypewriters (TeleTYpewriter, TTY). As unix/linux systems added better multiprocessing and windowing systems, this terminal concept was abstracted into software.
+
+A virtual console is a shell prompt in a non-graphical environment, accessed from the physical machine, not remotely. Multiple virtual consoles can be accessed simultaneously.
+
+Generally, there is no reason to leave the default console (virtual console #6) for graphical installations unless you are attempting to diagnose installation problems.
+
+---
+
+Logging In to a Local Console
+Roughly, there are two ways to make yourself known to a Linux server. Sometimes
+you just sit behind the Linux console and interactively log in from the login prompt
+that is presented. In other cases, a remote connection is established. The second part
+of this chapter is about logging in from a remote session; in this part, you learn how
+to work from a local console.
+If a Linux server boots with a graphical environment (the so-called graphical target),
+you see a login prompt on which a user name and password can be entered. Many
+Linux servers do not use a graphical environment at all, though, and are just pre-
+senting a text-based console, as shown in Figure 5.1 .
+
+
+xterm
+
+
+--------------------------------------------------------------------------------
 
 ##
 
