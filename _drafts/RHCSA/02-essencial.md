@@ -44,26 +44,34 @@ root@mo:~#
 ```
 The bash shell also provides a scripting language that can support automation of tasks.
 
-
-<<<<<<< HEAD
 ### The console
-=======
-#### Virtual console
 
-A *terminal* provides input through a keyboard and output is a display, that can be the machine's physical console.
-the physical console supports multiple virtual consoles, which act as separate terminals.
->>>>>>> da46ba4b0d7ca1f2d1f3430a9b5b9aaa638d87ba
+The console/terminal is a *system console* internal to the Linux kernel, which receives all kernel messages and warnings and which allows logins in single user mode. It provides a way to send text output to the user, in a display, and to receive text input from the user, through a keyboard.
 
-The console/terminal is a *system console* internal to the Linux kernel, which receives all kernel messages and warnings and which allows logins in single user mode.
-The console provides a way to send text output to the user, in a display, and to receive text input from the user, through a keyboard.
+Historically, a *terminal* was a single keyboard and monitor plugged into a dedicated serial console port on a computer used for direct communication at a low level with the operating system, such as the [VT100](https://en.wikipedia.org/wiki/Computer_terminal). Early user terminals connected to computers were electromechanical teleprinters/teletypewriters (TeleTYpewriter, TTY). As unix/linux systems added better multiprocessing and windowing systems, this terminal concept was abstracted into software.
 
-The Linux kernel supports *virtual consoles*, which act as separate terminals, but which access the same physical keyboard and display.
+The Linux kernel supports multiple *virtual consoles*, which act as separate terminals, but which access the same physical keyboard and display and can be accessed simultaneously.
 The console (and virtual consoles) are implemented by the VT subsystem of the Linux kernel, and do not rely on any user space software. This is in contrast to a *terminal emulator*, which is a user space process that emulates a terminal, and is typically used in a graphical display environment.
+
+Generally, there is no reason to leave the default virtual console for graphical installations unless you are attempting to diagnose installation problems. Uusually the first six virtual consoles provide a text terminal with a login prompt to a Unix shell. The graphical X Window System starts in the seventh virtual console.
+
+Of these virtual consoles, the first one is used as the default console. It is commonly known as the virtual console tty1 and it has a corresponding device file in the `/dev/tty1`.
+In the graphical environment, you need touse `Ctrl+Alt+Function` key to switch the Virtual Console. To open `/dev/tty2` use `Ctrl+Alt+F2` . To get back to the graphical console, you can use the `Alt+F6`.
+
+For terminal windows that are started from a graphical environment, pseudo terminals are started, referred to using numbers in the /dev/pts directory. The first terminal window that is started from a graphical environment shows as /dev/pts/1, the second terminal windows is /dev/pts/2, as show using the `tty` command
 
 ### Shell Basics
 
-The command is the name of the program to run, followed by possible options or arguments:
+The command entered in the shell have the next parts:
+* *command* - the name of the program to run, followed by possible options or arguments
+* *options* - behaviour or what the program will do, starting with `-` or `--`.
+* *arguments* - the target of the command
 
+Most command have a `--help` or `-h` argument, to display a usage statment:
+* `< >` variable data
+* ` | ` only one of the itens can be specified
+* `...` variable lenght of items
+* `[ ]` optional items
 
 
 #### commands
@@ -75,38 +83,56 @@ It's usually used as way to subsitute long commands, such as `alias ll='ls -l --
 
 To find out the type of command you are using, you can use the `type` command and to find out which exact command the shell will be using, you can use the`which` command.
 
+### How to access
+
+To log in from a text console, you need to know which user account you should use.
+A user root is always available, but using this account to do your work is often not a good idea; the user root has no limitations to access the system and can therefore do a lot of damage.
+
+> Altough the recomended to use root commads through `sudo command`, it's more efficient and quicker to switch to root user in the Exam.
+You can use the `su -` command to change to root.
 
 
+
+### Access remote systems using ssh
 
 * Access remote systems using ssh
 
 ### I/O Redirection
 
 
+#### Rebooting
+
+When a server is rebooted, all processes that are running need to shut down prop-
+erly. If the server is just stopped by pulling the power plug, much data will typically
+be lost. That is because processes that have written data do not typically write that
+data directly to disk, but instead store it in memory buffers from where it is commit-
+ted to disk when it is convenient for the operating system.
+To issue a proper reboot, the systemd process has to be alerted. The systemd pro-
+cess is the first process that was started when the server was started, and it is respon-
+sible for managing all other processes, directly or indirectly. As a result, on system
+reboots or halts, the systemd process needs to make sure that all these processes
+are stopped. To tell the systemd process this has to happen, a few commands can
+be used:
+■ systemctl reboot or reboot
+■ systemctl halt or halt
+■ systemctl poweroff or poweroff
+When stopping a machine, you can use the systemctl halt or the systemctl
+poweroff commands. The difference between these two commands is that the
+systemctl poweroff command talks to power management on the machine to shut
+off power on the machine. This often does not happen when using systemctl halt .
+
+> Rebooting a Linux server is an important task on the RHCSA as well as on
+the RHCE exam. Everything you have configured should still be working after the
+server has rebooted. So, make sure that you reboot at least once during the exam,
+but also after making critical modifications to the server configuration.
 
 -----
 
-> Historically, a terminal was a single keyboard and monitor plugged into a dedicated serial console port on a computer used for direct communication at a low level with the operating system. Early user terminals connected to computers were electromechanical teleprinters/teletypewriters (TeleTYpewriter, TTY). As unix/linux systems added better multiprocessing and windowing systems, this terminal concept was abstracted into software.
-
-A virtual console is a shell prompt in a non-graphical environment, accessed from the physical machine, not remotely. Multiple virtual consoles can be accessed simultaneously.
-
-Generally, there is no reason to leave the default console (virtual console #6) for graphical installations unless you are attempting to diagnose installation problems.
-
----
-
-Logging In to a Local Console
-Roughly, there are two ways to make yourself known to a Linux server. Sometimes
-you just sit behind the Linux console and interactively log in from the login prompt
-that is presented. In other cases, a remote connection is established. The second part
-of this chapter is about logging in from a remote session; in this part, you learn how
-to work from a local console.
-If a Linux server boots with a graphical environment (the so-called graphical target),
-you see a login prompt on which a user name and password can be entered. Many
-Linux servers do not use a graphical environment at all, though, and are just pre-
-senting a text-based console, as shown in Figure 5.1 .
 
 
 xterm
+
+
 
 
 --------------------------------------------------------------------------------
@@ -120,3 +146,6 @@ xterm
 ### Pratice
 
 * [1.1 lab - Initial Setup](/RHCSA/02.01-essencial-ex/)
+
+### References
+[^1]: man intro page
