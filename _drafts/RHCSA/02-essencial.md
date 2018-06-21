@@ -30,8 +30,9 @@ toc: true
 
 * Access a shell prompt and issue commands with correct syntax
 
-#### The Command line
-A commmand line is a text based interface wich can be used to input instructions to a computer, provided by the program interpreter **shell**. The default shell for RHEL is *bash* (Bourne-Again Shell), an inproved version of the *sh* (Bourne Shell).
+#### The Shell
+
+A **Shell** is *command-line* interpreter that provides a user interface. Users input instructions to a computerr by entering commands as text for a command line interpreter to execute. The default shell for RHEL is *bash* (Bourne-Again Shell), an inproved version of the *sh* (Bourne Shell).
 
 When using a shell interactivelly, it displays a string, warning for a command, the *shell prompt*. When using a regular user, the prompt is the `$` character.
 ```console
@@ -44,18 +45,18 @@ root@mo:~#
 The bash shell also provides a scripting language that can support automation of tasks.
 
 
-### Virtual console
+### The console
 
-A *terminal* provides input through a keyboard and output is a display, that can be the machine's physical console.
-the physical console supports multiple virtual consoles, which act as separate terminals.
+The console/terminal is a *system console* internal to the Linux kernel, which receives all kernel messages and warnings and which allows logins in single user mode.
+The console provides a way to send text output to the user, in a display, and to receive text input from the user, through a keyboard.
 
+The Linux kernel supports *virtual consoles*, which act as separate terminals, but which access the same physical keyboard and display.
+The console (and virtual consoles) are implemented by the VT subsystem of the Linux kernel, and do not rely on any user space software. This is in contrast to a *terminal emulator*, which is a user space process that emulates a terminal, and is typically used in a graphical display environment.
 
-The Linux console is a system console internal to the Linux kernel (a system console is the device which receives all kernel messages and warnings and which allows logins in single user mode).
+### Shell Basics
 
-The Linux console provides a way for the kernel and other processes to send text output to the user, and to receive text input from the user. The user typically enters text with a computer keyboard and reads the output text on a computer monitor. The Linux kernel supports virtual consoles - consoles that are logically separate, but which access the same physical keyboard and display.[3]
+The command is the name of the program to run, followed by possible options or arguments:
 
-
-The Linux console (and Linux virtual consoles) are implemented by the VT subsystem of the Linux kernel, and do not rely on any user space software.[4] This is in contrast to a terminal emulator, which is a user space process that emulates a terminal, and is typically used in a graphical display environment.
 
 
 ### commands
