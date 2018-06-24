@@ -98,7 +98,57 @@ You can use the `su -` command to change to root.
 * Access remote systems using ssh
 
 ### I/O Redirection
+When a command is executed it shows its results on the monitor, the standard output, which is also referred to as the `STDOUT`. The shell also has default destinations to send error messages to and to accept input:
 
+Name   | Default interface | File Descriptor
+-------|-------------------|----------------
+STDIN  | keyboard          | 0
+STDOUT | monitor           | 1
+STDERR | monitor           | 2
+
+The programs started from the command line have don't know they are reading from or writing to. They just read from channel, file descriptor 0, if they want to read from standard input, and they write to file descriptor 1 to display output and to file descriptor 2 if they have error messages to be output.
+
+If you use redirection symbols, the shell connects the file descriptors to files or other commands.
+Most common redirectors in the bash shell:
+
+Redirector    | Explanation
+--------------|------------
+`< (or 0<)`   | Redirects STDIN.
+`>  (or 1>)`  | Redirects STDOUT. If redirection is to a file, the current contents of that file are overwritten.
+`>> (or 1>>)` | Redirects STDOUT. If output is written to a file, the output is appended to that file.
+`2>`          | Redirects STDERR.
+`2>&1`        | Redirects STDERR to the same destination as STDOUT.
+
+In I/O redirection, files can be used to replace the default. You can also redirect to device files, that is used to access specific hardware. Most common device files:
+
+device files   | Explanation
+---------------|------------
+`/dev/sda`     | hard disk
+`/dev/console` | the console of your server
+`/dev/null`    | discard a commands output
+
+A pipe `|` can be used to catch the output of one command and use that as input for a second command. If a user runs the command ls , for instance, the output
+
+### Utilities
+History
+A convenient feature of the bash shell is the bash history. Bash is configured to keep
+the last 1,000 commands you have used (and if shell session is never closed, the exact
+number can grow even much beyond that). When a shell session is closed, the his-
+tory of that session is updated to the history file. The name of this file is .bash_
+history, and it is created in the home directory of the user who started a specific
+shell session. Notice that the history file is closed only when the shell session is
+closed; until that moment, all commands in the history are kept in memory.
+The history feature makes it easy to repeat complex commands. There are several
+ways of working with history:
+■ Type history to show a list of all commands in the bash history.
+■ Use Ctrl+R to open the prompt from which you can do backward searches in
+commands that you have previously used. Just type a part of the command you
+are looking for, and it will be displayed automatically. Use Ctrl+R to search
+further backward based on the same search criteria.
+■ Type !number to execute a command with a specific number from history.
+■ Type !sometext to execute the last command that starts with sometext. Notice
+that this is a potentially dangerous command because the command that was
+found is executed immediately!
 
 #### Rebooting
 
