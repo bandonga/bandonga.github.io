@@ -83,6 +83,38 @@ It's usually used as way to subsitute long commands, such as `alias ll='ls -l --
 
 To find out the type of command you are using, you can use the `type` command and to find out which exact command the shell will be using, you can use the`which` command.
 
+**Shell Environment** - When you are working from a shell, an environment is created, which  consists of variables that define the user environment, such as the `$PATH`. **Variables** are fixed names that can be assigned dynamic values. To get an overview of the current variables defined in your shell environment, type the `env` command.
+
+To define a variable, the name of the variable is mentioned followed by an equals sign `=` and the value that is assigned to the specific variable. To read the value of a variable, a user can use the `echo` command, followed by the name of the variable.
+
+**Environment Configuration Files**
+When a user logs in, an environment is created for that user automatically. This happens based on
+
+
+four different files where some script code can be specified and where variables can be defined for use by one specific user:
+* `/etc/profile`: This is the generic file that is processed by all users upon login.
+* `/etc/bashrc`: This file is processed when subshells are started.
+* `~/.bash_profile`: In this file, user-specific login shell variables can be defined.
+* `~/.bashrc`: In this user-specific file, subshell variables can be defined.
+
+As you have seen, in these files a difference is made between a login shell and a subshell.
+
+A **login shell** is the first shell that is opened for a user after the user has logged in. From the login shell, a user may run scripts, which will start a subshell of that login shell. Bash allows for the creation of a different environment in the login shell and in the subshell but to synchronize settings; by default the subshell settings are included when entering a login shell.
+
+A **subshell** is a separate instance of the command processor -- the shell that gives you the prompt at the console or in an xterm window. Just as your commands are interpreted at the command-line prompt, similarly does a script batch-process a list of commands. Each shell script running is, in effect, a subprocess (child process) of the parent shell.
+
+In computing, **xterm** is the standard terminal emulator for the X Window System. A user can have many different invocations of xterm running at once on the same display, each of which provides independent input/output for the process running in it (normally the process is a Unix shell).
+
+
+
+https://askubuntu.com/questions/463462/sequence-of-scripts-sourced-upon-login
+
+Another way to send information to users is by using /etc/issue. The contents of this
+file display before the user logs in. This provides an excellent means of specifying
+specific login instructions to users who are not logged in yet.
+
+
+
 ### How to access
 
 To log in from a text console, you need to know which user account you should use.
@@ -92,12 +124,11 @@ A user root is always available, but using this account to do your work is often
 You can use the `su -` command to change to root.
 
 
-
 ### Access remote systems using ssh
 
 * Access remote systems using ssh
 
-### I/O Redirection
+#### I/O Redirection
 When a command is executed it shows its results on the monitor, the standard output, which is also referred to as the `STDOUT`. The shell also has default destinations to send error messages to and to accept input:
 
 Name   | Default interface | File Descriptor
@@ -129,7 +160,7 @@ device files   | Explanation
 
 A **pipe** `|` can be used to catch the output of one command and use that as input for a second command. If a user runs the command ls , for instance, the output
 
-### Utilities
+#### Utilities
 
 **History** - A convenient feature of the bash shell is the bash `history`. When a shell session is closed, the history of that session is updated to the history file, `.bash_history`,in the home directory of the user. The history file is closed only when the shell session is closed, until that moment, all commands in the history are kept in memory.
 * Type `!number` to execute a command with a specific number from history.
@@ -137,8 +168,12 @@ A **pipe** `|` can be used to catch the output of one command and use that as in
 
 **Bash Completion** - This feature helps you in finding the command you need, and it also works on variables and filenames. Type the beginning of a command and press the *Tab key* on your computer's keyboard. If there are several options, you need to press the Tab key once more to get an overview of all the available options.
 
-45
 
+
+45
+#### Login messages
+
+Bash offers an option to include messages in the /etc/motd and the /etc/issue files. Messages in /etc/motd display after a user has successfully logged in to a shell. (Notice that users in a graphical environment do not see its contents after a graphical login.) Using /etc/motd can be a convenient way for system administrators to inform users.
 
 
 **Rebooting** - When a server is rebooted, all processes that are running need to shut down properly, using the `reboot` command.
@@ -148,6 +183,8 @@ A **pipe** `|` can be used to catch the output of one command and use that as in
 
 111
 -----
+
+### Finding Help
 
 
 
