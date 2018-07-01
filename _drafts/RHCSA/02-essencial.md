@@ -127,55 +127,26 @@ device files   | Explanation
 `/dev/console` | the console of your server
 `/dev/null`    | discard a commands output
 
-A pipe `|` can be used to catch the output of one command and use that as input for a second command. If a user runs the command ls , for instance, the output
+A **pipe** `|` can be used to catch the output of one command and use that as input for a second command. If a user runs the command ls , for instance, the output
 
 ### Utilities
-History
-A convenient feature of the bash shell is the bash history. Bash is configured to keep
-the last 1,000 commands you have used (and if shell session is never closed, the exact
-number can grow even much beyond that). When a shell session is closed, the his-
-tory of that session is updated to the history file. The name of this file is .bash_
-history, and it is created in the home directory of the user who started a specific
-shell session. Notice that the history file is closed only when the shell session is
-closed; until that moment, all commands in the history are kept in memory.
-The history feature makes it easy to repeat complex commands. There are several
-ways of working with history:
-■ Type history to show a list of all commands in the bash history.
-■ Use Ctrl+R to open the prompt from which you can do backward searches in
-commands that you have previously used. Just type a part of the command you
-are looking for, and it will be displayed automatically. Use Ctrl+R to search
-further backward based on the same search criteria.
-■ Type !number to execute a command with a specific number from history.
-■ Type !sometext to execute the last command that starts with sometext. Notice
-that this is a potentially dangerous command because the command that was
-found is executed immediately!
 
-#### Rebooting
+**History** - A convenient feature of the bash shell is the bash `history`. When a shell session is closed, the history of that session is updated to the history file, `.bash_history`,in the home directory of the user. The history file is closed only when the shell session is closed, until that moment, all commands in the history are kept in memory.
+* Type `!number` to execute a command with a specific number from history.
+* Use `Ctrl+R` to  do backward searches in commands that you have previously used. Just type a part of the command you are looking for and use `Ctrl+R` to search further backward.
 
-When a server is rebooted, all processes that are running need to shut down prop-
-erly. If the server is just stopped by pulling the power plug, much data will typically
-be lost. That is because processes that have written data do not typically write that
-data directly to disk, but instead store it in memory buffers from where it is commit-
-ted to disk when it is convenient for the operating system.
-To issue a proper reboot, the systemd process has to be alerted. The systemd pro-
-cess is the first process that was started when the server was started, and it is respon-
-sible for managing all other processes, directly or indirectly. As a result, on system
-reboots or halts, the systemd process needs to make sure that all these processes
-are stopped. To tell the systemd process this has to happen, a few commands can
-be used:
-■ systemctl reboot or reboot
-■ systemctl halt or halt
-■ systemctl poweroff or poweroff
-When stopping a machine, you can use the systemctl halt or the systemctl
-poweroff commands. The difference between these two commands is that the
-systemctl poweroff command talks to power management on the machine to shut
-off power on the machine. This often does not happen when using systemctl halt .
+**Bash Completion** - This feature helps you in finding the command you need, and it also works on variables and filenames. Type the beginning of a command and press the *Tab key* on your computer's keyboard. If there are several options, you need to press the Tab key once more to get an overview of all the available options.
 
-> Rebooting a Linux server is an important task on the RHCSA as well as on
-the RHCE exam. Everything you have configured should still be working after the
-server has rebooted. So, make sure that you reboot at least once during the exam,
-but also after making critical modifications to the server configuration.
+45
 
+
+
+**Rebooting** - When a server is rebooted, all processes that are running need to shut down properly, using the `reboot` command.
+
+> Rebooting a Linux server is an important task on the RHCSA as well as on the RHCE exam. Everything you have configured should still be working after the server has rebooted. So, make sure that you reboot at least once during the exam, but also after making critical modifications to the server configuration.
+
+
+111
 -----
 
 

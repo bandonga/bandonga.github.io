@@ -7,6 +7,8 @@ last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true
 ---
 
+[marolive Weblogic Resources]({{ site.baseurl }}{% post_url /academy/2018-03-01-weblogic %})
+
 This certification guide will provide a comprehensive overview of Weblogic 12c. It will the cover the 1Z0-133 [exam topics](https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-133) with simple explanations, for an Administration beginner level. The content of this course is based on the official [documentation](https://docs.oracle.com/middleware/1212/wls/index.html). The exam is validated against version 12.1.2.
 
 Each topic will have an experimental laboratory, to practice the knowledge learned.
