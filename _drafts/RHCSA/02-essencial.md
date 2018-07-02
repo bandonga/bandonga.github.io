@@ -50,15 +50,16 @@ The console/terminal is a *system console* internal to the Linux kernel, which r
 
 Historically, a *terminal* was a single keyboard and monitor plugged into a dedicated serial console port on a computer used for direct communication at a low level with the operating system, such as the [VT100](https://en.wikipedia.org/wiki/Computer_terminal). Early user terminals connected to computers were electromechanical teleprinters/teletypewriters (TeleTYpewriter, TTY). As unix/linux systems added better multiprocessing and windowing systems, this terminal concept was abstracted into software.
 
-The Linux kernel supports multiple *virtual consoles*, which act as separate terminals, but which access the same physical keyboard and display and can be accessed simultaneously.
-The console (and virtual consoles) are implemented by the VT subsystem of the Linux kernel, and do not rely on any user space software. This is in contrast to a *terminal emulator*, which is a user space process that emulates a terminal, and is typically used in a graphical display environment.
+The Linux kernel supports multiple **virtual consoles**, which act as separate terminals, but which access the same physical keyboard and display and can be accessed simultaneously.
+The console (and virtual consoles) are implemented by the VT subsystem of the Linux kernel, and do not rely on any user space software. This is in contrast to a **terminal emulator**, which is a user space process that emulates a terminal, and is typically used in a graphical display environment.
+*xterm* is the standard terminal emulator for the *X Window System*. A user can have many different invocations of xterm running at once on the same display, each of which provides independent I/O for the shell.
 
 Generally, there is no reason to leave the default virtual console for graphical installations unless you are attempting to diagnose installation problems. Uusually the first six virtual consoles provide a text terminal with a login prompt to a Unix shell. The graphical X Window System starts in the seventh virtual console.
 
 Of these virtual consoles, the first one is used as the default console. It is commonly known as the virtual console tty1 and it has a corresponding device file in the `/dev/tty1`.
 In the graphical environment, you need touse `Ctrl+Alt+Function` key to switch the Virtual Console. To open `/dev/tty2` use `Ctrl+Alt+F2` . To get back to the graphical console, you can use the `Alt+F6`.
 
-For terminal windows that are started from a graphical environment, pseudo terminals are started, referred to using numbers in the /dev/pts directory. The first terminal window that is started from a graphical environment shows as /dev/pts/1, the second terminal windows is /dev/pts/2, as show using the `tty` command
+For terminal windows that are started from a graphical environment, pseudo terminals are started, referred to using numbers in the /dev/pts directory. The first terminal window that is started from a graphical environment shows as `/dev/pts/1`, the second terminal windows is `/dev/pts/2`, as show using the `tty` command
 
 ### Shell Basics
 
@@ -87,32 +88,18 @@ To find out the type of command you are using, you can use the `type` command an
 
 To define a variable, the name of the variable is mentioned followed by an equals sign `=` and the value that is assigned to the specific variable. To read the value of a variable, a user can use the `echo` command, followed by the name of the variable.
 
-**Environment Configuration Files**
-When a user logs in, an environment is created for that user automatically. This happens based on
+#### Environment Configuration Files
+When a user logs in, an environment is created for that user automatically, depending if it's a *login shell* or a *subshell*.
+* A **login shell** is the first shell that is opened for a user after the user has logged in. From the login shell, a user may run scripts, which will start a subshell of that login shell. By default the subshell settings are included when entering a login shell.
+* A **subshell** is a non-login separate instance of the shell, that gives you the prompt at the console or in an *xterm* window. Just as your commands are interpreted at the command-line prompt, similarly does a script batch-process a list of commands. Each shell script running is, in effect, a subprocess (child process) of the parent shell.
 
+According to the `man bash` page:
+> it first reads and executes commands from the file `/etc/profile`, if that file exists. After reading that file, it looks for `~/.bash_profile`, `~/.bash_login`, and `~/.profile`, in that order, and reads and executes commands from the first one that exists and is readable.
 
-four different files where some script code can be specified and where variables can be defined for use by one specific user:
-* `/etc/profile`: This is the generic file that is processed by all users upon login.
-* `/etc/bashrc`: This file is processed when subshells are started.
-* `~/.bash_profile`: In this file, user-specific login shell variables can be defined.
-* `~/.bashrc`: In this user-specific file, subshell variables can be defined.
-
-As you have seen, in these files a difference is made between a login shell and a subshell.
-
-A **login shell** is the first shell that is opened for a user after the user has logged in. From the login shell, a user may run scripts, which will start a subshell of that login shell. Bash allows for the creation of a different environment in the login shell and in the subshell but to synchronize settings; by default the subshell settings are included when entering a login shell.
-
-A **subshell** is a separate instance of the command processor -- the shell that gives you the prompt at the console or in an xterm window. Just as your commands are interpreted at the command-line prompt, similarly does a script batch-process a list of commands. Each shell script running is, in effect, a subprocess (child process) of the parent shell.
-
-In computing, **xterm** is the standard terminal emulator for the X Window System. A user can have many different invocations of xterm running at once on the same display, each of which provides independent input/output for the process running in it (normally the process is a Unix shell).
-
-
-
-https://askubuntu.com/questions/463462/sequence-of-scripts-sourced-upon-login
-
-Another way to send information to users is by using /etc/issue. The contents of this
-file display before the user logs in. This provides an excellent means of specifying
-specific login instructions to users who are not logged in yet.
-
+* `/etc/profile`: The generic file that is processed by all users upon login.
+* `~/.bash_profile`:User-specific, upon login
+* `~/.bashrc`: User-specific file for the subshell, referenced `~/.bash_profile` in RHEL.
+* `/etc/bashrc`: This file is processed when subshells are started, referenced by `~/.bashrc` in RHEL.
 
 
 ### How to access
@@ -173,7 +160,9 @@ A **pipe** `|` can be used to catch the output of one command and use that as in
 45
 #### Login messages
 
-Bash offers an option to include messages in the /etc/motd and the /etc/issue files. Messages in /etc/motd display after a user has successfully logged in to a shell. (Notice that users in a graphical environment do not see its contents after a graphical login.) Using /etc/motd can be a convenient way for system administrators to inform users.
+Bash offers an option to include messages in the `/etc/motd` and the `/etc/issue` files.
+* Messages in `/etc/motd` display after a user has successfully logged in to a shell. (Notice that users in a graphical environment do not see its contents after a graphical login.) Using /etc/motd can be a convenient way for system administrators to inform users.
+* Another way to send information to users is by using `/etc/issue`. The contents of this file display before the user logs in. This provides an excellent means of specifying specific login instructions to users who are not logged in yet.
 
 
 **Rebooting** - When a server is rebooted, all processes that are running need to shut down properly, using the `reboot` command.
