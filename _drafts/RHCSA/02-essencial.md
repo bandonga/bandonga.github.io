@@ -20,7 +20,7 @@ toc: true
 
 * Create hard and soft links
 * List, set, and change standard ugo/rwx permissions
-*
+
 * Locate, read, and use system documentation including man, info, and files in `/usr/share/doc`
 
 
@@ -156,8 +156,6 @@ A **pipe** `|` can be used to catch the output of one command and use that as in
 **Bash Completion** - This feature helps you in finding the command you need, and it also works on variables and filenames. Type the beginning of a command and press the *Tab key* on your computer's keyboard. If there are several options, you need to press the Tab key once more to get an overview of all the available options.
 
 
-
-45
 #### Login messages
 
 Bash offers an option to include messages in the `/etc/motd` and the `/etc/issue` files.
