@@ -6,33 +6,9 @@ last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true
 ---
 
-## RHCSA Objectives
-* Access a shell prompt and issue commands with correct syntax
-* Use input-output redirection `(>, >>, |, 2>, etc.)`
-* Use grep and regular expressions to analyse texta
-* Access remote systems using ssh
-* Log in and switch users in multiuser targets
+### The Shell
 
-* Archive, compress, unpack, and uncompress files using tar, star, * gzip, and bzip2
-
-* Create and edit text files
-* Create, delete, copy, and move files and directories
-
-* Create hard and soft links
-* List, set, and change standard ugo/rwx permissions
-
-* Locate, read, and use system documentation including man, info, and files in `/usr/share/doc`
-
-
-## Seccions
-
-### Accessing the command Line using the local console
-
-* Access a shell prompt and issue commands with correct syntax
-
-#### The Shell
-
-A **Shell** is *command-line* interpreter that provides a user interface. Users input instructions to a computerr by entering commands as text for a command line interpreter to execute. The default shell for RHEL is *bash* (Bourne-Again Shell), an inproved version of the *sh* (Bourne Shell).
+A **Shell** is *command-line* interpreter that provides a user interface. Users input instructions to a computer by entering commands as text for a command line interpreter to execute. The default shell for RHEL is *bash* (Bourne-Again Shell), an inproved version of the *sh* (Bourne Shell).
 
 When using a shell interactivelly, it displays a string, warning for a command, the *shell prompt*. When using a regular user, the prompt is the `$` character.
 ```console
@@ -44,7 +20,7 @@ root@mo:~#
 ```
 The bash shell also provides a scripting language that can support automation of tasks.
 
-### The console
+#### The console
 
 The console/terminal is a *system console* internal to the Linux kernel, which receives all kernel messages and warnings and which allows logins in single user mode. It provides a way to send text output to the user, in a display, and to receive text input from the user, through a keyboard.
 
@@ -61,8 +37,7 @@ In the graphical environment, you need touse `Ctrl+Alt+Function` key to switch t
 
 For terminal windows that are started from a graphical environment, pseudo terminals are started, referred to using numbers in the /dev/pts directory. The first terminal window that is started from a graphical environment shows as `/dev/pts/1`, the second terminal windows is `/dev/pts/2`, as show using the `tty` command
 
-### Shell Basics
-
+#### commands
 The command entered in the shell have the next parts:
 * *command* - the name of the program to run, followed by possible options or arguments
 * *options* - behaviour or what the program will do, starting with `-` or `--`.
@@ -74,8 +49,6 @@ Most command have a `--help` or `-h` argument, to display a usage statment:
 * `...` variable lenght of items
 * `[ ]` optional items
 
-
-#### commands
 The shell makes a difference between three kinds of commands:
 * An *alias* is a command that a user can define as needed and are executed before anything else.
 It's usually used as way to subsitute long commands, such as `alias ll='ls -l --color=auto'`. You can use the `alias` command to check the alias currently defined.
@@ -101,52 +74,6 @@ According to the `man bash` page:
 * `~/.bashrc`: User-specific file for the subshell, referenced `~/.bash_profile` in RHEL.
 * `/etc/bashrc`: This file is processed when subshells are started, referenced by `~/.bashrc` in RHEL.
 
-
-### How to access
-
-To log in from a text console, you need to know which user account you should use.
-A user root is always available, but using this account to do your work is often not a good idea; the user root has no limitations to access the system and can therefore do a lot of damage.
-
-> Altough the recomended to use root commads through `sudo command`, it's more efficient and quicker to switch to root user in the Exam.
-You can use the `su -` command to change to root.
-
-
-### Access remote systems using ssh
-
-* Access remote systems using ssh
-
-#### I/O Redirection
-When a command is executed it shows its results on the monitor, the standard output, which is also referred to as the `STDOUT`. The shell also has default destinations to send error messages to and to accept input:
-
-Name   | Default interface | File Descriptor
--------|-------------------|----------------
-STDIN  | keyboard          | 0
-STDOUT | monitor           | 1
-STDERR | monitor           | 2
-
-The programs started from the command line have don't know they are reading from or writing to. They just read from channel, file descriptor 0, if they want to read from standard input, and they write to file descriptor 1 to display output and to file descriptor 2 if they have error messages to be output.
-
-If you use redirection symbols, the shell connects the file descriptors to files or other commands.
-Most common redirectors in the bash shell:
-
-Redirector    | Explanation
---------------|------------
-`< (or 0<)`   | Redirects STDIN.
-`>  (or 1>)`  | Redirects STDOUT. If redirection is to a file, the current contents of that file are overwritten.
-`>> (or 1>>)` | Redirects STDOUT. If output is written to a file, the output is appended to that file.
-`2>`          | Redirects STDERR.
-`2>&1`        | Redirects STDERR to the same destination as STDOUT.
-
-In I/O redirection, files can be used to replace the default. You can also redirect to device files, that is used to access specific hardware. Most common device files:
-
-device files   | Explanation
----------------|------------
-`/dev/sda`     | hard disk
-`/dev/console` | the console of your server
-`/dev/null`    | discard a commands output
-
-A **pipe** `|` can be used to catch the output of one command and use that as input for a second command. If a user runs the command ls , for instance, the output
-
 #### Utilities
 
 **History** - A convenient feature of the bash shell is the bash `history`. When a shell session is closed, the history of that session is updated to the history file, `.bash_history`,in the home directory of the user. The history file is closed only when the shell session is closed, until that moment, all commands in the history are kept in memory.
@@ -155,6 +82,40 @@ A **pipe** `|` can be used to catch the output of one command and use that as in
 
 **Bash Completion** - This feature helps you in finding the command you need, and it also works on variables and filenames. Type the beginning of a command and press the *Tab key* on your computer's keyboard. If there are several options, you need to press the Tab key once more to get an overview of all the available options.
 
+**Rebooting** - When a server is rebooted, all processes that are running need to shut down properly, using the `reboot` command.
+
+> Rebooting a Linux server is an important task on the RHCSA as well as on the RHCE exam. Everything you have configured should still be working after the server has rebooted. So, make sure that you reboot at least once during the exam, but also after making critical modifications to the server configuration.
+
+### How to access
+
+To log in from a text console, you need to know which user account you should use.
+A user root is always available, but using this account to do your work is often not a good idea; the user root has no limitations to access the system and can therefore do a lot of damage.
+After accessing the terminal you can use the commands `su - user` or `sudo -iu user` to switch to another user.
+
+
+> Altough the recomended to use root commads through `sudo command`, it's more efficient and quicker to switch to root user in the Exam.
+You can use the `su -` command to change to root.
+
+#### Access remote systems using ssh
+
+Secure Shell (SSH) is the common method to gain access to other machines over the network, with the traffic encrypted while transmitted.
+On the remote server that you want to access, the sshd service must be running,  and it should not be blocked by the firewall.
+
+The ssh command is available on all Linux distributions and *Apple Macintosh*.
+In Windows you can login with ssh using *PuTTY* and use *mRemoteNG* (or *Ásbrú Connection Manager* in Linux) to manage multiple machine connections.
+
+The SSH client tries to login with the same user account you are currently logged and at port 22 by default.
+To allow the remote host to draw graphical screens on your computer is by adding the `-X` option to the ssh command. The
+remaining configuration of ssh is in the file `/etc/ssh/ssh_config`. Commom usage:
+
+
+```console
+ssh user@server
+```
+
+When connecting to the remote server a security message was displayed, because has never been contacted before and therefore there is no way . After
+connecting to the remote server, a public key fingerprint is stored in the file `~/.ssh/known_hosts`, to verify the identity of the remote server.
+The next time you connect to the same server, this fingerprint is checked with the encryption key that was sent over by the remote server to initialize contact. If the fingerprint matches, you will not see this message anymore.
 
 #### Login messages
 
@@ -162,27 +123,47 @@ Bash offers an option to include messages in the `/etc/motd` and the `/etc/issue
 * Messages in `/etc/motd` display after a user has successfully logged in to a shell. (Notice that users in a graphical environment do not see its contents after a graphical login.) Using /etc/motd can be a convenient way for system administrators to inform users.
 * Another way to send information to users is by using `/etc/issue`. The contents of this file display before the user logs in. This provides an excellent means of specifying specific login instructions to users who are not logged in yet.
 
+#### Key-Based Authentication
 
-**Rebooting** - When a server is rebooted, all processes that are running need to shut down properly, using the `reboot` command.
+The key authentication is an usefull option, that allows automatic login without passoword (usefull is scripts) and can add security, since the user trying to login needs to have the key to login. If SSH is used on the Internet the ssh should not allow password logins.
 
-> Rebooting a Linux server is an important task on the RHCSA as well as on the RHCE exam. Everything you have configured should still be working after the server has rebooted. So, make sure that you reboot at least once during the exam, but also after making critical modifications to the server configuration.
+When authenticating using key pairs, the user generates a hash derived from the private key. This hash is sent to the server, and if on the server it proves to match the public key that is stored on the server, the user is authenticated.
+The *private key* is used the authentication credential and must be kept secret. The *public key* must be copied to the target server before the login and is used as verification.
 
+When creating a public/private key pair, you are prompted for a passphrase, if you want maximal security.
+To create a key pair, use the `ssh-keygen` command, creating the private key in `~/.ssh/ìd_rsa` and the public in `~/.ssh/ìd_rsa.pub`
+The `ssh-copy-id` command is next used to copy the public key over to the target server.
 
-111
------
+After copying over the public key to the remote host, it will be written to the `~/.ssh/authorized_keys` file on that host.
+
 
 ### Finding Help
 
+The is four main ways to get information in linux, without internet:
+* the command help option
+* man pages
+* info system
+* documentation files
 
+The quickest way to get an overview of how to use a command is by running the command with the *help option* `--help` or `-h`, to  display a usage summary.
 
-xterm
+The *man* command lets you know how a command is used, using `man` followed by command you need info, as the argument.
+To find information in man pages, you can search the *mandb* database by using `man -k` or `apropos`, followed by the keyword you want to search for.
+You can run the `mandb` command to update the database.
 
+The man pages are categorized in different sections
+* 1: Executable programs or shell commands
+* 5: File formats and conventions
+* 8: System administration commands
 
+Some commands are documented only in the *info system*. If that is the case, the “see also” section of the man page of that command will tell you that "The full documentation is maintained as a Texinfo manual." If that happens, you
+can read the Info page using the command `pinfo`.
 
+The is also the *documentation files*, copied to the `/usr/share/doc directory`,  for services and larger systems that are a bit more complex.
 
---------------------------------------------------------------------------------
+#### Help from Red Hat
 
-##
+If you have a subscripion, you can use the
 
 ### Laboratory
 
