@@ -38,6 +38,7 @@ A **distributed system** is a model in which components located on networked com
 
 
 http://stackoverflow.com/questions/18198960/practical-example-for-each-type-of-database-real-cases
+https://www.forbes.com/consent/?toURL=https://www.forbes.com/sites/bernardmarr/2016/12/06/what-is-the-difference-between-artificial-intelligence-and-machine-learning/#6599b26c2742
 
 An **API** (Application Programming Interface) is a set of subroutine definitions, protocols, and tools for building application software. In general terms, it is a set of clearly defined methods of communication between various software components.
 

@@ -52,3 +52,7 @@ RHCSA:
     children:
       - title: "Getting Started"
         url: /RHCSA/0-start/
+      - title: "Getting Started"
+        url: /RHCSA/0-start/
+      - title: "Getting Started"
+        url: /RHCSA/0-start/
