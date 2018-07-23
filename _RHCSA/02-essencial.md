@@ -6,6 +6,8 @@ last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true
 ---
 
+> :warning: **NOTE:**  Under Construction :construction:
+
 ### The Shell
 
 A **Shell** is *command-line* interpreter that provides a user interface. Users input instructions to a computer by entering commands as text for a command line interpreter to execute. The default shell for RHEL is *bash* (Bourne-Again Shell), an inproved version of the *sh* (Bourne Shell).

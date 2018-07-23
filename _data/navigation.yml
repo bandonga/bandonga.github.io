@@ -53,6 +53,10 @@ RHCSA:
       - title: "Getting Started"
         url: /RHCSA/0-start/
       - title: "Getting Started"
-        url: /RHCSA/0-start/
-      - title: "Getting Started"
-        url: /RHCSA/0-start/
+        url: /RHCSA/0.01-exam-topics/
+  - title: "Exam Topics"
+    children:
+      - title: "1 - Installation"
+        url: /RHCSA/01-install/
+      - title: "2 - Using Essential Tools"
+        url: /RHCSA/02-essencial/

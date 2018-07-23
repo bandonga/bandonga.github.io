@@ -13,6 +13,8 @@ This certification guide will provide a comprehensive overview of Weblogic 12c. 
 
 Each topic will have an experimental laboratory, to practice the knowledge learned.
 
+> :warning: **NOTE:**  Under Construction :construction:
+
 ### Topics
 
 * [1 Overview of WebLogic Server](/1Z0-133/01-overview/)

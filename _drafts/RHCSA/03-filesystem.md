@@ -6,6 +6,8 @@ last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true
 ---
 
+> :warning: **NOTE:**  Under Construction :construction:
+
 ### I/O Redirection
 When a command is executed it shows its results on the monitor, the standard output, which is also referred to as the `STDOUT`. The shell also has default destinations to send error messages to and to accept input:
 

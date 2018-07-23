@@ -11,6 +11,7 @@ This certification guide will provide a comprehensive overview of Linux. It will
 
 Each chapter will have an hands-on laboratory and a practice (whitout the commands) to simulate the exam.
 
+> :warning: **NOTE:**  Under Construction :construction:
 
 ### Resources
 
