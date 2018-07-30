@@ -54,14 +54,22 @@ Most command have a `--help` or `-h` argument, to display a usage statment:
 The shell makes a difference between three kinds of commands:
 * An *alias* is a command that a user can define as needed and are executed before anything else.
 It's usually used as way to subsitute long commands, such as `alias ll='ls -l --color=auto'`. You can use the `alias` command to check the alias currently defined.
-* An *internal command* is a command that is a part of the shell itself. It is available when the shell is loaded and can be executed from memory without any lookup from disk.
+* An *internal command* is a command that is a part of the shell builtin. It is available when the shell is loaded and can be executed from memory without any lookup from disk.
 * An *external command* is a command that exists as an executable file on disk of the computer. The shell first looks to determine whether it is an internal command. If not, looks for an executable file with a matching filename in the list of directories defined by the `$PATH` variable.
 
-To find out the type of command you are using, you can use the `type` command and to find out which exact command the shell will be using, you can use the`which` command.
+To find out the type of command you are using, you can use the `type` command. To find out which exact command the shell will be using, you can use the `which` command.
 
-**Shell Environment** - When you are working from a shell, an environment is created, which  consists of variables that define the user environment, such as the `$PATH`. **Variables** are fixed names that can be assigned dynamic values. To get an overview of the current variables defined in your shell environment, type the `env` command.
+#### Variables
+**Variables** are fixed names that can be assigned dynamic values. Acts as a temporary storage of data in memory, that contains information used for customizing the shell *environment* or application processes.  There are two types of variables: local and environment.
 
-To define a variable, the name of the variable is mentioned followed by an equals sign `=` and the value that is assigned to the specific variable. To read the value of a variable, a user can use the `echo` command, followed by the name of the variable.
+A **local variable** is private to the shell in which it is created and its value cannot be used by processes that are not started in that shell.
+
+To define a variable, the name of the variable is mentioned followed by an equals sign `=`, such as `VAR=hello` and the value that is assigned to the specific variable. To read the value of a variable, a user can use the `echo` command, such as `echo $VAR`, followed by the name of the variable.
+To undefine a variable, use the `unset` command.
+
+**Shell Environment** - When you are working from a shell, an environment is created, which  consists of variables that define the user environment, such as the `$PATH`. The value of an environment variable is passed from the current shell to the subshell during the execution of a script. To get an overview of the current variables defined in your shell environment, type the `env` command.
+
+To make a variable an environment variable, use the `export` command.
 
 #### Environment Configuration Files
 When a user logs in, an environment is created for that user automatically, depending if it's a *login shell* or a *subshell*.
@@ -113,11 +121,14 @@ remaining configuration of ssh is in the file `/etc/ssh/ssh_config`. Commom usag
 
 ```console
 ssh user@server
+  # main options
+  -X # to run graphical tools have the output redirected to the local system
 ```
 
 When connecting to the remote server a security message was displayed, because has never been contacted before and therefore there is no way . After
 connecting to the remote server, a public key fingerprint is stored in the file `~/.ssh/known_hosts`, to verify the identity of the remote server.
 The next time you connect to the same server, this fingerprint is checked with the encryption key that was sent over by the remote server to initialize contact. If the fingerprint matches, you will not see this message anymore.
+
 
 #### Login messages
 
@@ -161,7 +172,9 @@ The man pages are categorized in different sections
 Some commands are documented only in the *info system*. If that is the case, the “see also” section of the man page of that command will tell you that "The full documentation is maintained as a Texinfo manual." If that happens, you
 can read the Info page using the command `pinfo`.
 
-The is also the *documentation files*, copied to the `/usr/share/doc directory`,  for services and larger systems that are a bit more complex.
+The is also the *documentation files*, copied to the `/usr/share/doc directory`, for services and larger systems that are a bit more complex.
+
+> To get help on shell *built-in* (internal) commands use `help` command, such as `help export`.
 
 #### Help from Red Hat
 
