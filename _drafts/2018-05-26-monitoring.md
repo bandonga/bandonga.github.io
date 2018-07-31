@@ -9,3 +9,16 @@ tags:
 - academy
 - sysadmin
 ---
+
+
+* http://www.armchairsysadmin.com/checkmkpart3/
+* https://mathias-kettner.com/download/Marco_Reale_Check_MK_Beginner_guide.pdf
+* http://check-mk-documentation.readthedocs.io/en/latest/cmkarchitecture.html
+
+
+
+Concepts:
+plugin
+agent
+
+* [Check_MK - The official handbook](http://mathias-kettner.com/cms_index.html)
