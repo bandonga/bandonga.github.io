@@ -28,6 +28,17 @@ A **distributed system** is a model in which components located on networked com
 
 * **EAI** (Enterprise Application Integration) is an integration framework composed of a collection of technologies and services which form a middleware to enable integration of systems and applications across an enterprise.
 
+**MOM** broadly means any technology that can deliver "messages" from one user-space application to another. A message is usually understood to be a discrete piece of information, as compared to a stream.
+
+MOM products used to be quite large and complex: CORBA, JMS, TIBCO, WebsphereMQ, etc. and tried to do a lot more than simply deliver messages.
+MOM (message-oriented-middleware) - is an approach, an architecture for distributed system i.e. a middle layer for the whole distributed system, where there's lot of internal communication (a component is querying data, and then needs to send it to the other component, which will be doing some processing on the data) so components have to share info/data among them.
+
+A **Message Broker** is a particular set of routing and queuing patterns, and we usually use the term "broker" specifically in MOM (as compared to HTTP, email, XMPP, etc.) Routing means, one message goes to one peer, to one of many peers, to all of many peers, etc. Queuing means messages are held in memory or disk until they can be delivered (and in some cases, acknowledged).
+
+Message broker - is any system (in MOM) which handles messages (sending as well as receiving), or to be more precise which routes messages to the specific consumer/recipient. A Message Broker is typically built upon a MOM. The MOM provides the base communication among the applications, and things like message persistence and guaranteed delivery. "Message brokers are a building block of Message oriented middleware."
+
+**AMQP** used to specific those broker patters, so an application could rely on consistent behavior from any AMQP-compatible broker (thus RabbitMQ and OpenAMQ looked much the same to a client app, like two HTTP or two XMPP servers would look the same). AMQP/1.0 specifies just the connection between nodes, so you don't have guarantees of behavior. This makes AMQP/1.0 much easier for firms to implement, but doesn't deliver interoperability.
+AMQP is an open internet protocol for reliably sending and receiving messages.
 
 **Software as a Service (SaaS):** The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user-specific application configuration settings.
 
