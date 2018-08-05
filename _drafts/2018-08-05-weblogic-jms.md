@@ -17,6 +17,3 @@ Sub Deployment
 Connt Fact
 Presiste Store
 Un Dist Queue
-
-
-https://docs.oracle.com/cd/E19316-01/820-6424/aeraq/index.html
