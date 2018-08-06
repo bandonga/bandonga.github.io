@@ -8,6 +8,7 @@ categories:
 tags:
 - academy
 - sysadmin
+excerpt: "Basic concepts for a Sysadmin."
 ---
 
 > Related with: [Sysadmin]({{ site.baseurl }}{% post_url /academy/2018-05-18-sysadmin %})
