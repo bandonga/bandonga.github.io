@@ -28,7 +28,7 @@ The **administration server** is the central point through which you configure a
 
 All domains contain a special server called the administration server. You use the administration server to configure and manage all of the domain resources. Any other WebLogic Servers in the domain are called managed servers, because they are managed by the administration server.
 
-A **managed server** is an instance of WLS managed by the administration server, where your Java EE applications run (Web applications, [EJBs]({{ site.baseurl }}{% post_url /academy/2018-05-21-javaee %}#EJB), web services, enterprise applications).
+A **managed server** is an instance of WLS managed by the administration server, where your Java EE applications run (Web applications, EJBs, web services, enterprise applications).
 Can be clustered with other cooperating managed servers for availability, scalability, and automatic failover.
 In production domains, the applications are deployed to the managed servers. The administration server is only used for domain configuration and management.[^1]
 
