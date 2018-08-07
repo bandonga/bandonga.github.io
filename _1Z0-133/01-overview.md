@@ -28,7 +28,7 @@ The **administration server** is the central point through which you configure a
 
 All domains contain a special server called the administration server. You use the administration server to configure and manage all of the domain resources. Any other WebLogic Servers in the domain are called managed servers, because they are managed by the administration server.
 
-A **managed server** is an instance of WLS managed by the administration server, where your Java EE applications run (Web applications, EJBs, web services, enterprise applications).
+A **managed server** is an instance of WLS managed by the administration server, where your Java EE applications run (Web applications, [EJBs]({{ site.baseurl }}{% post_url /academy/2018-05-21-javaee %}#EJB), web services, enterprise applications).
 Can be clustered with other cooperating managed servers for availability, scalability, and automatic failover.
 In production domains, the applications are deployed to the managed servers. The administration server is only used for domain configuration and management.[^1]
 
@@ -42,7 +42,7 @@ WebLogic Server can be administered and monitored by using:
 * The WLDF Monitoring Dashboard
 * Enterprise Manager Cloud Contro
 
-The **JMX** (Java Management Extensions) is a Java technology that supplies tools for managing and monitoring applications, system objects, devices and service-oriented networks. Those resources are represented by objects called MBeans. In the API, classes can be dynamically loaded and instantiated.
+The **JMX** (Java Management Extensions is a Java technology that supplies tools for managing and monitoring applications, system objects, devices and service-oriented networks. Those resources are represented by objects called MBeans. In the API, classes can be dynamically loaded and instantiated.
 
 **Administration Console** is a web browser–based tool for configuring, administering, and monitoring the resources of a domain. The console application runs on the administration server and is part of the normal installation of WebLogic Server. Can be used to:
 * Configure, start, and stop instances of WebLogic Server
