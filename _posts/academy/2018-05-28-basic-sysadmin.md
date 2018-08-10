@@ -15,13 +15,13 @@ toc_hmax: 6
 
 > Related with: [Sysadmin]({{ site.baseurl }}{% post_url /academy/2018-05-18-sysadmin %})
 
-###### AS
+##### AS
 An *AS* is software framework that handles application operations from the end user to the back-end business processes and databases and provide an environment to run them.
 
-## XA/Open XA
+##### XA/Open XA
 *XA/Open XA* (Extended Architecture) describes the interface between the global transaction manager and the local resource manager. The goal of XA is to allow multiple resources (such as databases, application servers, message queues, transactional caches, etc.) to be accessed within the same transaction, thereby preserving the ACID (Atomicity, Consistency, Isolation, Durability) properties across applications. XA uses a two-phase commit to ensure that all resources either commit or roll back any particular transaction consistently.
 
-### Distributed System
+###### Distributed System
 A *distributed system* is a model in which components located on networked computers communicate and coordinate their actions by passing messages. The work is divided across similar modules and demand increases, more can be added making the system more scalable. The failure of a single module has less impact on the system, which makes the system more available. The goal is to better manage the complexity and resulting cost of providing highly available and scalable systems.
 
 #### Scalability
