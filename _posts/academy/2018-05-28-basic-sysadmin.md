@@ -3,6 +3,7 @@ title: Sysadmin - Basic concepts
 date: 2018-04-20 00:00:00 +01:00
 header:
   teaser: "/assets/images/academy/sysadmin.png"
+  image: "/assets/images/academy/sysadmin.png"
 categories:
 - academy
 tags:
