@@ -7,6 +7,7 @@ feature_row:
   alt: sysadmin
   title: Sysadmin
   excerpt: "A guide to help you be a better System Administrator."
+  url: "/academy/sysadmin/"
   btn_class: btn--primary
   btn_label: Read More
 tag: academy
