@@ -50,7 +50,7 @@ Is an architecture for distributed system i.e. a middle layer for the whole dist
 ##### Message Broker
 A *Message Broker* is a particular set of routing and queuing patterns, and we usually use the term "broker" specifically in MOM (as compared to HTTP, email, XMPP, etc.) Routing means, one message goes to one peer, to one of many peers, to all of many peers, etc. Queuing means messages are held in memory or disk until they can be delivered (and in some cases, acknowledged).
 
-Message broker - is any system (in MOM) which handles messages (sending as well as receiving), or to be more precise which routes messages to the specific consumer/recipient. A Message Broker is typically built upon a MOM. The MOM provides the base communication among the applications, and things like message persistence and guaranteed delivery. "Message brokers are a building block of Message oriented middleware."
+Message broker is any system (in MOM) which handles messages (sending as well as receiving), or to be more precise which routes messages to the specific consumer/recipient. A Message Broker is typically built upon a MOM. The MOM provides the base communication among the applications, and things like message persistence and guaranteed delivery. "Message brokers are a building block of Message oriented middleware."
 
 ##### AMQP
 *AMQP* used to specific those broker patters, so an application could rely on consistent behavior from any AMQP-compatible broker (thus RabbitMQ and OpenAMQ looked much the same to a client app, like two HTTP or two XMPP servers would look the same). AMQP/1.0 specifies just the connection between nodes, so you don't have guarantees of behavior. This makes AMQP/1.0 much easier for firms to implement, but doesn't deliver interoperability.
