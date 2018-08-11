@@ -3,16 +3,18 @@ title: Academy
 permalink: "/academy/"
 layout: archive
 feature_row:
-- image_path: "/assets/images/sysadmin.jpg"
+- image_path: "/assets/images/academy/sysadmin.png"
   alt: sysadmin
   title: Sysadmin
   excerpt: A guide to help you be a better System Administrator."
+  btn_label: "Read More"
+  btn_class: "btn--primary"
 tag: academy
 ---
 
 {% include feature_row id="feature_row" type="left" %}
 
-## Latest Posts
+# Latest Posts
 
 {% include group-by-array collection=site.posts field="tags" %}
 
