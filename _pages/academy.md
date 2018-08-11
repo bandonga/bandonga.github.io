@@ -6,7 +6,7 @@ feature_row:
 - image_path: "/assets/images/academy/sysadmin.png"
   alt: sysadmin
   title: Sysadmin
-  excerpt: A guide to help you be a better System Administrator."
+  excerpt: "A guide to help you be a better System Administrator."
   btn_label: "Read More"
   btn_class: "btn--primary"
 tag: academy
