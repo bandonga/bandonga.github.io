@@ -10,7 +10,7 @@ feature_row:
 tag: academy
 ---
 
-{% include feature_row id="feature_row2" type="left" %}
+{% include feature_row id="feature_row" type="left" %}
 
 ## Latest Posts
 
