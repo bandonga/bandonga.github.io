@@ -15,7 +15,7 @@ tag: academy
 {% include feature_row id="feature_row" type="left" %}
 
 # Latest Posts
-
+a
 {% include group-by-array collection=site.posts field="tags" %}
 
 {% for tag in group_names %}
