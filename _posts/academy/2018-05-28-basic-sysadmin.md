@@ -43,9 +43,14 @@ An *ESB* (Enterprise Service Bus) implements a communication system between mutu
 *EAI* (Enterprise Application Integration) is an integration framework composed of a collection of technologies and services which form a middleware to enable integration of systems and applications across an enterprise.
 
 ##### MOM
-*MOM* (Message-Oriented Middleware) broadly means any technology that can deliver "messages" from one user-space application to another. A message is usually understood to be a discrete piece of information, as compared to a stream.
+*MOM* (Message Oriented Middleware) makes use of messaging provider to mediate messaging operations between distributed systems.
 
-Is an architecture for distributed system i.e. a middle layer for the whole distributed system, where there's lot of internal communication (a component is querying data, and then needs to send it to the other component, which will be doing some processing on the data) so components have to share info/data among them.
+The basic elements of a MOM system are clients, messages, and the MOM provider, which includes an API and administrative tools.
+A client makes an API call to send a message to a destination managed by the provider. The provider services route and deliver the message, retaining the message until a receiving client retrieves it.
+
+The messaging provider have administrative tools, to monitor and tune performance. Since it's an asynchronous system, the clients can continue to load work and can use all resources, failing the message handling.
+
+The MOM provider uses different architectures to route and deliver messages: it can use a centralized message server or it can distribute routing and delivery functions to each client machine. Some MOM products combine these two approaches.
 
 ##### Message Broker
 A *Message Broker* is a particular set of routing and queuing patterns, and we usually use the term "broker" specifically in MOM (as compared to HTTP, email, XMPP, etc.) Routing means, one message goes to one peer, to one of many peers, to all of many peers, etc. Queuing means messages are held in memory or disk until they can be delivered (and in some cases, acknowledged).

@@ -2,8 +2,17 @@
 title: Academy
 permalink: "/academy/"
 layout: archive
+feature_row:
+- image_path: "/assets/images/sysadmin.jpg"
+  alt: sysadmin
+  title: Sysadmin
+  excerpt: A guide to help you be a better System Administrator."
 tag: academy
 ---
+
+{% include feature_row id="feature_row2" type="left" %}
+
+## Latest Posts
 
 {% include group-by-array collection=site.posts field="tags" %}
 
