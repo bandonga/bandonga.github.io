@@ -10,7 +10,7 @@ tags:
 - sysadmin
 excerpt: "Basic concepts for a Sysadmin."
 toc: true
-toc_hmax: 6
+toc_hmax: 5
 ---
 
 > Related with: [Sysadmin]({{ site.baseurl }}{% post_url /academy/2018-05-18-sysadmin %})
