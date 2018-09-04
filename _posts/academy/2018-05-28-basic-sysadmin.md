@@ -35,7 +35,7 @@ A *distributed system* is a model in which components located on networked compu
 A *RPC* (Remote Procedure Call) is when a computer program causes a procedure  to execute in a different address space, which is coded as if it were a local procedure call.
 
 ##### SOA
-With *SOA* (service-oriented architecture) services are provided to the other components by application components, through a communication protocol over a network. The basic principles of service-oriented architecture are independent of vendors, products and technologies: it logically represents a business activity with a specified outcome, is self-contained. is a black box for its consumers and may consist of other underlying services.
+With *SOA* (Service Oriented architecture) services are provided to the other components by application components, through a communication protocol over a network. The basic principles of service-oriented architecture are independent of vendors, products and technologies: it logically represents a business activity with a specified outcome, self-contained and a black box for its consumers and may consist of other underlying services.
 
 ##### ESB
 An *ESB* (Enterprise Service Bus) implements a communication system between mutually interacting software applications in a SOA.
