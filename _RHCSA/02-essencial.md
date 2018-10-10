@@ -92,10 +92,6 @@ According to the `man bash` page:
 
 **Bash Completion** - This feature helps you in finding the command you need, and it also works on variables and filenames. Type the beginning of a command and press the *Tab key* on your computer's keyboard. If there are several options, you need to press the Tab key once more to get an overview of all the available options.
 
-**Rebooting** - When a server is rebooted, all processes that are running need to shut down properly, using the `reboot` command.
-
-> Rebooting a Linux server is an important task on the RHCSA as well as on the RHCE exam. Everything you have configured should still be working after the server has rebooted. So, make sure that you reboot at least once during the exam, but also after making critical modifications to the server configuration.
-
 ### How to access
 
 To log in from a text console, you need to know which user account you should use.
@@ -178,7 +174,7 @@ The is also the *documentation files*, copied to the `/usr/share/doc directory`,
 
 #### Help from Red Hat
 
-If you have a subscripion, you can use the
+If you have a subscripion, you can use the (...).
 
 ### Laboratory
 
