@@ -1,9 +1,9 @@
 ---
 title: "Curriculum Vitae"
-user: marcelo
+user: ines
 layout: cv
-author: "Marcelo Felix"
-permalink: "/u/marcelo/cv"
+author: "Ines Oliveira"
+permalink: "/u/ines/cv"
 ---
 
 **NOTE:** :warning: Under Construction.
