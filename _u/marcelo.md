@@ -1,7 +1,7 @@
 ---
-title: "RHCSA: Red Hat Certified System Administrator Guide"
+title: "test1"
 user: marcelo
-permalink: "/u/marcelo/abc"
+permalink: "/u/marcelo"
 ---
 
-this is a test
+this is a test1. [cv](/u/marcelo/cv)
