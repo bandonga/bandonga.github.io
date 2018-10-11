@@ -10,6 +10,9 @@ collections:
     title: RHCSA
     output: true
     permalink: "/:collection/:path/"
+  u:
+    title: users
+    output: true
   posts:
     title: Posts
     output: true
@@ -61,6 +64,16 @@ defaults:
       teaser: "/assets/images/RHCSA/rhcsa.png"
     sidebar:
       nav: RHCSA
+- scope:
+    path: ''
+    type: u
+  values:
+    layout: archive
+    author_profile: false
+    read_time: false
+    comments: false
+    share: false
+    related: false
 remote_theme: marolive/minimal-mistakes
 minimal_mistakes_skin: miniolive
 locale: en-GB
