@@ -8,11 +8,9 @@ Marcelo Felix:
   linkedin    : "marcelofelix"
   born        : "30th september 1988"
   nationality : "Portuguese"
-  bio         : |
-                "Telecom engineer working in Unified Comms App Operations and Support, with a background in IT and Networking.
-                Broad knowledge, from VoIP Protocols to Linux Sysadmin, with Troubleshooting and Site Reliability experience.
-                Enthusiastic about cloud computing, automation and containers and eager to learn more about Linux administration and Networking/VoIP."
-                
+  bio         : Service Operations at [Celfocus](https://www.celfocus.com)
+
+
 sections:
   - experience
   - education

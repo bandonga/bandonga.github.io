@@ -9,6 +9,12 @@ permalink: "/u/marcelo/cv"
 **NOTE:** :warning: Under Construction.
 {: .notice--warning}
 
+	:portugal:
+
+Telecom engineer working in Unified Comms App Operations and Support, with a background in IT and Networking.
+Broad knowledge, from VoIP Protocols to Linux Sysadmin, with Troubleshooting and Site Reliability experience.
+Enthusiastic about cloud computing, automation and containers and eager to learn more about Linux administration and Networking/VoIP.
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis. Dictumst quisque sagittis purus sit amet volutpat. Arcu risus quis varius quam quisque id diam vel quam. Laoreet suspendisse interdum consectetur libero id faucibus. Non nisi est sit amet facilisis magna etiam tempor. Quis lectus nulla at volutpat diam ut. Tincidunt tortor aliquam nulla facilisi. Nunc sed blandit libero volutpat sed. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Nisi est sit amet facilisis magna etiam. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Id diam vel quam elementum pulvinar etiam non. Consequat nisl vel pretium lectus quam id leo. Id semper risus in hendrerit gravida rutrum quisque non tellus. Eget duis at tellus at urna condimentum mattis pellentesque. Sodales neque sodales ut etiam sit amet nisl purus. Molestie a iaculis at erat pellentesque adipiscing commodo.
 
 Aliquam malesuada bibendum arcu vitae. Sed ullamcorper morbi tincidunt ornare massa eget egestas. At erat pellentesque adipiscing commodo. Quis ipsum suspendisse ultrices gravida dictum fusce ut. Viverra adipiscing at in tellus integer feugiat scelerisque varius morbi. Tellus pellentesque eu tincidunt tortor. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in. Eget duis at tellus at urna. Est sit amet facilisis magna etiam tempor orci eu lobortis. Dolor morbi non arcu risus quis varius quam. Venenatis lectus magna fringilla urna porttitor rhoncus. Tempus quam pellentesque nec nam aliquam sem et. Vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam tempor orci eu lobortis elementum. Purus gravida quis blandit turpis. Quis varius quam quisque id diam vel quam elementum.
