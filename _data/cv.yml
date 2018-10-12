@@ -1,14 +1,17 @@
 Marcelo Felix:
   name        : "Marcelo Félix"
   avatar      : "/assets/images/u/marcelo.jpeg"
+  bio         : "Service Operations at Celfocus"
   uri         : "https://maro.live/u/marcelo"
   email       : "marcelo@maro.live"
+  telegram    : "marcelofpfelix"
   location    : "Lisboa, Portugal"
   github      : "marcelofpfelix"
   linkedin    : "marcelofelix"
-  born        : "30th september 1988"
+  born        : "30th September 1988"
   nationality : "Portuguese"
-  bio         : "Service Operations at Celfocus"
+  driving     : "Driving licence B"
+
 
 sections:
   - experience
