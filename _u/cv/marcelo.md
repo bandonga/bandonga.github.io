@@ -6,8 +6,7 @@ author: "Marcelo Felix"
 permalink: "/u/marcelo/cv"
 ---
 
-**NOTE:** :warning: Under Construction.
-{: .notice--warning}
+> **NOTE:** :warning: Under Construction.
 
 
 Telecom engineer working in Unified Comms App Operations and Support, with a background in IT and Networking.
