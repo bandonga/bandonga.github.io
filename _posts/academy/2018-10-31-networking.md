@@ -1,6 +1,6 @@
 ---
-title: Sysadmin
-date: 2018-07-20 00:00:00 +01:00
+title: Networking
+date: 2018-10-31 00:00:00 +01:00
 header:
   teaser: "/assets/images/academy/networking.png"
   image: "/assets/images/academy/networking.png"
