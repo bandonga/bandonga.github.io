@@ -25,7 +25,7 @@ A guide to help you know more about networking.
 #### Course
 * [opencourser](https://opencourser.com/)
 * [coursera Cisco Networking Basics](https://www.coursera.org/specializations/networking-basics)
-* [mit](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/)
+* [mit EECS](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/)
 * [stanford Introduction to Computer Networking](https://lagunita.stanford.edu/courses/Engineering/Networking-SP/SelfPaced/about)
 * edx [microsoft](https://www.edx.org/course/it-support-networking-essentials-2), [Linux Foundation](https://www.edx.org/course/introduction-to-software-defined-networking-technologies), [IMT](https://www.edx.org/course/digital-networks-essentials-imtx-net01x)
 * [cybrary](https://www.cybrary.it/catalog/)
