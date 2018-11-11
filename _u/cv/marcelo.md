@@ -8,4 +8,4 @@ permalink: "/u/marcelo/cv"
 
 > **NOTE:** :warning: Under Construction.
 
-note1
+note2
