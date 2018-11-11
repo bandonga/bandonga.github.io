@@ -6,5 +6,4 @@ author: "Ines Oliveira"
 permalink: "/u/ines/cv"
 ---
 
-**NOTE:** :warning: Under Construction.
-{: .notice--warning}
+> **NOTE:** :warning: Under Construction.

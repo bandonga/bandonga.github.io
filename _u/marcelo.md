@@ -7,8 +7,7 @@ permalink: "/u/marcelo"
 
 ---
 
-**NOTE:** :warning: Under Construction.
-{: .notice--warning}
+> **NOTE:** :warning: Under Construction.
 
 
 [cv](/u/marcelo/cv)
