@@ -11,22 +11,19 @@ Marcelo Felix:
   born        : "30th September 1988"
   nationality : "Portuguese"
   driving     : "Driving licence B"
-
-
-sections:
-  - experience
-  - education
-  - skills
-  - free_time
-
-data:
-  experience:
-    title: Experience
-    items:
-      - Service Operations:
-      - ententy    : Celfocus
-      - dates      : Apr 2016 - Present
-      - location   : Lisboa, Portugal
-      - description: "Telecom engineer working in Unified Comms App Operations and Support, with a background in IT and Networking.
-        Broad knowledge, from VoIP Protocols to Linux Sysadmin, with Troubleshooting and Site Reliability experience.
-        Enthusiastic about cloud computing, automation and containers and eager to learn more about Linux administration and Networking/VoIP."
+  sections:
+    - experience
+    - education
+    - skills
+    - free_time
+  data:
+    experience:
+      title: Experience
+      items:
+        - Service Operations:
+        - ententy    : Celfocus
+        - dates      : Apr 2016 - Present
+        - location   : Lisboa, Portugal
+        - description: "Telecom engineer working in Unified Comms App Operations and Support, with a background in IT and Networking.
+          Broad knowledge, from VoIP Protocols to Linux Sysadmin, with Troubleshooting and Site Reliability experience.
+          Enthusiastic about cloud computing, automation and containers and eager to learn more about Linux administration and Networking/VoIP."
