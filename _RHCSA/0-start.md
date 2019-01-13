@@ -11,7 +11,7 @@ toc: true
 
 This certification guide will provide a comprehensive overview of Linux. It will the cover the [RHCSA](https://www.redhat.com/en/services/certification/rhcsa) certification with the EX200 [exam topics](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam) in simple explanations, for an Administration beginner level. The content of this course is based on the official [documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/). The exam is validated against version RHEL 7.
 
-Each chapter will have an hands-on laboratory and a practice (whitout the commands) to simulate the exam.
+Each chapter will have an hands-on laboratory and a practice to simulate the exam.
 
 > :warning: **NOTE:**  Under Construction :construction:
 
