@@ -40,7 +40,7 @@ Each topic will have an experimental laboratory, to practice the knowledge learn
 * [Documentation](https://docs.oracle.com/middleware/1212/wls/index.html)
 * [YouTube channel](http://www.youtube.com/user/OracleWebLogic)
 * [Blog](https://blogs.oracle.com/weblogicserver/)
-* [marolive Weblogic Resources]({{ site.baseurl }}{% post_url /academy/2018-03-01-weblogic %})
+* [bandonga Weblogic Resources]({{ site.baseurl }}{% post_url /academy/2018-03-01-weblogic %})
 
 #### Course
 * [Udemy - Weblogic 12c Essentials](https://www.udemy.com/learn-oracle-weblogic-12c-essentials)

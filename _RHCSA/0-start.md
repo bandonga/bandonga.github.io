@@ -21,7 +21,7 @@ Each chapter will have an hands-on laboratory and a practice to simulate the exa
 * [Red Hat Documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux)
 * [Red Hat Developer Resources](https://developers.redhat.com/topics/linux/)
 * [Red Hat Blog](https://rhelblog.redhat.com/)
-* [marolive Linux Resources]({{ site.baseurl }}{% post_url /academy/2018-05-26-linux %})
+* [bandonga - Linux Resources]({{ site.baseurl }}{% post_url /academy/2018-05-26-linux %})
 
 #### Course
 * PAID [Udemy - Linux Academy: RHCSA Prep](https://www.udemy.com/linux-academy-red-hat-certified-systems-administrator-prep/)

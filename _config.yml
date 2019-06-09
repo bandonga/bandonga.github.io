@@ -1,5 +1,5 @@
 ---
-title: marolive
+title: bandonga
 timezone: Europe/Lisbon
 collections:
   1Z0-133:
@@ -73,24 +73,24 @@ defaults:
     comments: false
     share: false
     related: false
-remote_theme: marolive/minimal-mistakes
-minimal_mistakes_skin: miniolive
+remote_theme: bandonga/minimal-mistakes
+minimal_mistakes_skin: bandonga
 locale: en-GB
 title_separator: "-"
-name: marolive
+name: bandonga
 description: A place to share information with you. Improve the skills needed for
   making the next step up in your career get and articles with Life tips to improves
   life for you and those around.
-url: https://maro.live
+url: https://bandonga.com
 baseurl: "/"
-repository: marolive/marolive.github.io
+repository: bandonga/bandonga.github.io
 teaser:
 breadcrumbs: false
 words_per_minute: 200
 comments:
   provider: disqus
   disqus:
-    shortname: marolive
+    shortname: bandonga
   discourse:
     server:
   facebook:
@@ -126,9 +126,9 @@ bing_site_verification: BF40F0E362798251D61F54B417D72DFE
 yandex_site_verification: 83c2937de8c0c217
 naver_site_verification: bd27863f9572ce7bf4b7aa602d7c1301aec966c3
 twitter:
-  username: marolivetech
+  username: bandonga
 facebook:
-  username: marolivetech
+  username: bandonga
   app_id:
   publisher:
 og_image: "/assets/images/name_og.png"
@@ -141,24 +141,24 @@ analytics:
   google:
     tracking_id: UA-106592686-1
 author:
-  name: marolive
+  name: bandonga
   avatar:
   bio: this is our io
   location: Somewhere
   email: me@mail.com
-  uri: http://maro.live
+  uri: http://bandonga.com
   home:
   bitbucket:
   codepen:
   dribbble:
   flickr:
-  facebook: marolivetech
+  facebook: bandonga
   foursquare:
-  github: marolive
+  github: bandonga
   gitlab:
-  google_plus: '112228667785735750000'
+  google_plus:
   keybase:
-  instagram: marolivetech
+  instagram: bandonga
   lastfm:
   linkedin:
   pinterest:
@@ -166,7 +166,7 @@ author:
   stackoverflow:
   steam:
   tumblr:
-  twitter: marolivetech
+  twitter: bandonga
   vine:
   weibo:
   xing:

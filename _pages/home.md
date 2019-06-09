@@ -4,7 +4,7 @@ layout: splash
 header:
   overlay_color: "#5e616c"
   overlay_image: "/assets/images/home.jpg"
-  caption: 
+  caption:
 excerpt: A place to share information with you. Improve the skills you need for making
   the next step up in your career. Get articles and tips to improve life
   for you and those around.
@@ -34,7 +34,7 @@ feature_row:
   btn_label: Learn More
 intro:
 - excerpt: 'Get notified when we add new stuff &nbsp; [<i class="fab fa-twitter"></i>
-    @marolivetech](https://twitter.com/marolivetech){: .btn .btn--twitter}'
+    @bandonga](https://twitter.com/bandonga){: .btn .btn--twitter}'
 ---
 
 {% include feature_row id="intro" type="center" %}
