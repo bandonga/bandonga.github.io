@@ -123,8 +123,8 @@ search_full_content: true
 logo: true
 google_site_verification:
 bing_site_verification: BF40F0E362798251D61F54B417D72DFE
-yandex_site_verification: 83c2937de8c0c217
-naver_site_verification: bd27863f9572ce7bf4b7aa602d7c1301aec966c3
+yandex_site_verification:
+naver_site_verification:
 twitter:
   username: bandonga
 facebook:
@@ -139,7 +139,7 @@ social:
 analytics:
   provider: google-universal
   google:
-    tracking_id: UA-106592686-1
+    tracking_id: UA-142611227-1
 author:
   name: bandonga
   avatar:
