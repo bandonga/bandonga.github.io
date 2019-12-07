@@ -9,30 +9,8 @@ toc: true
 
 > Related with: [Sysadmin]({{ site.baseurl }}{% post_url /academy/2018-05-18-sysadmin %}) > [Weblogic]({{ site.baseurl }}{% post_url /academy/2018-03-01-weblogic %})
 
-This certification guide will provide a comprehensive overview of Weblogic 12c. It will the cover the 1Z0-133 [exam topics](https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-133) with simple explanations, for an Administration beginner level. The content of this course is based on the official [documentation](https://docs.oracle.com/middleware/1212/wls/index.html). The exam is validated against version 12.1.2.
-
-Each topic will have an experimental laboratory, to practice the knowledge learned.
-
-> :warning: **NOTE:**  Under Construction :construction:
-
-### Topics
-
-* [1 Overview of WebLogic Server](/1Z0-133/01-overview/)
-* [2 Installing and Patching WebLogic Server](/1Z0-133/02-install-patch)
-* [3 Creating Domains](/1Z0-133/03-creating-domains)
-* [4 Starting Servers](/1Z0-133/04-starting-servers)
-* [5 Using the Administration Console](/1Z0-133/05-admin-console)
-* [6 Configuring JDBC](/1Z0-133/06-config-jdbc)
-* [7 Monitoring a Domain](/1Z0-133/07-monitor-domain)
-* [8 Node Manager](/1Z0-133/08-nodemanager)
-* [9 Deploying Applications](/1Z0-133/09-deploy-apps)
-* [10 Network Channels and Virtual Hosts](/1Z0-133/10-network-ch-vhosts)
-* [11 Creating Configuring Clusters](/1Z0-133/11-config-clusters)
-* [12 Cluster Proxies and Sessions](/1Z0-133/12-cluster-proxies-sessions)
-* [13 Cluster Communication Planning Troubleshooting](/1Z0-133/13-cluster-troubleshooting)
-* [14 Transactions](/1Z0-133/14-transactions)
-* [15 WebLogic Server Security](/1Z0-133/15-security)
-* [16 Backing Up Domain Upgrading WLS](/1Z0-133/16-backup-upgrade)
+* 1Z0-133 [exam topics](https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-133).
+* Official [documentation](https://docs.oracle.com/middleware/1212/wls/index.html). The exam is validated against version 12.1.2.
 
 ### Resources
 
