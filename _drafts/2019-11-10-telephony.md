@@ -27,21 +27,30 @@ A guide to help you know more about Telephony.
 * [opencourser](https://opencourser.com/)
 * [Udemy](https://www.udemy.com/course/understanding-and-troubleshooting-sip/)
 
-
 #### Books
 Fundamentals:
-* FREE ["The TCP/IP Guide: A Comprehensive, Illustrated Internet Protocols Reference"](http://www.tcpipguide.com/free/index.htm), by Charles M. Kozierok.
+* **["SIP: Understanding the Session Initiation Protocol"](https://www.amazon.com/SIP-Understanding-Session-Initiation-Protocol/dp/1608078639)**, by Alan B. Johnston
+* ["SIP Handbook"](https://www.amazon.com/SIP-Handbook-Services-Technologies-Initiation-ebook/dp/B00A8SLB3O), by Syed A. Ahson
+* ["Packet Guide to Voice over IP"](https://www.amazon.com/Packet-Guide-Voice-over-administrators/dp/1449339670), by Bruce Hartpence
 
-
-Advanced:
-* FREE ["Pro DNS and BIND"](http://www.zytrax.com/books/dns/), by Ron Aitchison
-
+Specific:
+* ["Session Initiation Protocol (SIP): Controlling Convergent Networks"](https://www.amazon.com/Session-Initiation-Protocol-SIP-Communication-ebook/dp/B001AQ9DU6), by Travis Russell
+* ["SIP Trunking"](https://www.amazon.com/SIP-Trunking-Networking-Technology-Communications-ebook/dp/B003ATPQEI), by Christina HattinghTravis Russell
+* ["Handbook of SDP for Multimedia Session Negotiations"](https://www.amazon.com/Handbook-SDP-Multimedia-Session-Negotiations-ebook/dp/B07NSF569P), by Radhika Ranjan Roy
+* ["VoIP and Unified Communications"](https://www.amazon.com/VoIP-Unified-Communications-Internet-Telephony/dp/1118019210), by William A. Flanagan
+* ["SIP Security"](https://www.amazon.com/SIP-Security-Dorgham-Sisalem/dp/0470516364), by Dorgham Sisalem
 
 ### Certification
 
-If you wish to get certified, the standard is by [Cisco](http://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html). We recomend to start with the [CCNA RS](https://learningnetwork.cisco.com/community/certifications/ccna/) certification and follow our **[guide](/CCNA/0-start/)**. As an alternative, you can check the [comptia](https://certification.comptia.org/certifications/network) and [juniper](https://www.juniper.net/uk/en/training/certification/certification-tracks/ent-routing-switching-track/) certification programs.
+Cisco Collaboration
+https://www.thesipschool.com/courses/view
+CCNT: http://www.ctpcertified.com/certification/ccnt-program
 
-* [CCNA](https://learningnetwork.cisco.com/community/certifications/ccna/) Routing and Switching
+If you wish to get certified, the standard is by [Cisco](http://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html). We recommend to start with the [CCNA RS](https://learningnetwork.cisco.com/community/certifications/ccna/) certification and follow our **[guide](/CCNA/0-start/)**. As an alternative, you can check the [comptia](https://certification.comptia.org/certifications/network) and [juniper](https://www.juniper.net/uk/en/training/certification/certification-tracks/ent-routing-switching-track/) certification programs.
+
+* The SIP School [SSCA](https://www.thesipschool.com/courses/view) SIP
+* The SIP School [WR ](https://www.thesipschool.com/courses/view) WebRCT
+* CTP [CCNT](http://www.ctpcertified.com/certification/ccnt-program)
 
 Another extra possibility is the [wireshark](https://www.wiresharktraining.com/certification.html) certification.
 
