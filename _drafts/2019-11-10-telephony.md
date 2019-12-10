@@ -1,5 +1,5 @@
 ---
-title: Telco
+title: Telephony
 date: 2018-10-31 00:00:00 +01:00
 header:
   teaser: "/assets/images/academy/telephony.png"
