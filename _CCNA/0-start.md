@@ -2,14 +2,12 @@
 title: "CCNA: Cisco Certified Network Associate Guide"
 excerpt: "This certification guide will provide a comprehensive overview for Implementing and Administering Cisco Networking Technologies, covering the 200-301 exam topics."
 header:
-  image: "/assets/images/CCNA/ccna.png"
+  image: "/assets/images/CCNA/ccna.svg"
 last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true
 ---
 
 > Related with: [Networking]({{ site.baseurl }}{% post_url /academy/2018-10-31-networking %})
-
-> :warning: **NOTE:**  Under Construction :construction:
 
 This certification guide will provide a comprehensive overview of Networking. It will the cover the [CCNA](www.cisco.com/go/ccna.) certification with the Exam [200-301](https://learningnetwork.cisco.com/community/certifications/ccna-cert/ccna-exam/exam-topics) exam topics and  in simple explanations, for a beginner level.
 

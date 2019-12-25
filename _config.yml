@@ -10,6 +10,10 @@ collections:
     title: RHCSA
     output: true
     permalink: "/:collection/:path/"
+  CCNA:
+    title: CCNA
+    output: true
+    permalink: "/:collection/:path/"
   u:
     title: users
     output: true
@@ -64,6 +68,20 @@ defaults:
       teaser: "/assets/images/RHCSA/rhcsa.png"
     sidebar:
       nav: RHCSA
+- scope:
+    path: ''
+    type: CCNA
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/CCNA/ccna.svg"
+    sidebar:
+      nav: CCNA
 - scope:
     path: ''
     type: u
