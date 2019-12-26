@@ -14,6 +14,8 @@ excerpt: "A guide to help you know more about networking."
 
 A guide to help you know more about networking.
 
+> Topics:
+* [CCNA: Cisco Certified Network Associate](/CCNA/0-start/)
 
 ### Resources
 
@@ -49,14 +51,13 @@ by Russ White
 
 ### Certification
 
-If you wish to get certified, the standard is by [Cisco](http://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html). We recommend to start with the [CCNA RS](https://learningnetwork.cisco.com/community/certifications/ccna/) certification and follow our **[guide](/CCNA/0-start/)**. As an alternative, you can check the [comptia](https://certification.comptia.org/certifications/network) and [juniper](https://www.juniper.net/uk/en/training/certification/certification-tracks/ent-routing-switching-track/) certification programs.
+If you wish to get certified, the standard is by [Cisco](http://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html). We recommend to start with the [CCNA](www.cisco.com/go/ccna) certification and follow our **[guide](/CCNA/0-start/)**. As an alternative, you can check the [comptia](https://certification.comptia.org/certifications/network) and [juniper](https://www.juniper.net/uk/en/training/certification/certification-tracks/ent-routing-switching-track/) certification programs.
 
-* [CCNA](https://learningnetwork.cisco.com/community/certifications/ccna/) Routing and Switching
-* [CCNP](https://learningnetwork.cisco.com/community/certifications/ccnp/) Routing and Switching
-* [CCIE](https://learningnetwork.cisco.com/community/certifications/ccie_routing_switching) Routing and Switching
+* [CCNA](www.cisco.com/go/ccna)
+* [CCNP](www.cisco.com/go/ccnp)
+* [CCIE](www.cisco.com/go/ccie)
 
 Another extra possibility is the [wireshark](https://www.wiresharktraining.com/certification.html) certification.
-A good way to **renew** your cisco professional  certificates is the [tshoot](https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/tshoot2.html) exam.
 
 #### Others
 * [cisco docwiki](http://docwiki.cisco.com/wiki/Category:IOS_Technology_Handbook)

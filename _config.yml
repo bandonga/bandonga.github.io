@@ -79,7 +79,7 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/CCNA/ccna.svg"
+      teaser: "/assets/images/CCNA/ccna.png"
     sidebar:
       nav: CCNA
 - scope:

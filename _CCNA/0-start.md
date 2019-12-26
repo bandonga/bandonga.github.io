@@ -2,7 +2,7 @@
 title: "CCNA: Cisco Certified Network Associate Guide"
 excerpt: "This certification guide will provide a comprehensive overview for Implementing and Administering Cisco Networking Technologies, covering the 200-301 exam topics."
 header:
-  image: "/assets/images/CCNA/ccna.svg"
+  image: "/assets/images/CCNA/ccna.png"
 last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true
 ---
@@ -27,7 +27,7 @@ Each chapter will have an hands-on laboratory and a practice to simulate the exa
 
 #### Course
 * PAID: **Cisco** - [CCNA - Implementing and Administering Cisco Solutions](https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/ccna-200-301.html);
-* PAID: **CBTNuggets** - [Cisco CCNA | 200-301](https://www.cbtnuggets.com/certification-playlist/Cisco/ccna-200-301), by Jeremy Cioara;
+* PAID: **CBTNuggets** - [Cisco CCNA - 200-301](https://www.cbtnuggets.com/certification-playlist/Cisco/ccna-200-301), by Jeremy Cioara;
 * PAID: **INE** - [Recommended Study Path](https://ine.com/collections/ccna-routing-and-switching-training), by Keith Bogart;
 * PAID: **Pluralsight** - [CCNA path](https://www.pluralsight.com/paths/ccna), by Ross Bagurdes;
 * PAID: **linkedin** - [CCNA](https://www.linkedin.com/learning/paths/prepare-for-the-ccna-routing-and-switching-certification) Learning path;
