@@ -10,6 +10,20 @@ feature_row:
   url: "/academy/sysadmin/"
   btn_class: btn--primary
   btn_label: Read More
+- image_path: "/assets/images/academy/networking.png"
+  alt: networking
+  title: Networking
+  excerpt: "A guide to help you know more about networking."
+  url: "/academy/networking/"
+  btn_class: btn--primary
+  btn_label: Read More
+- image_path: "/assets/images/academy/telephony.png"
+  alt: telephony
+  title: Telephony
+  excerpt: A guide to help you know more about Telephony.
+  url: "/academy/telephony/"
+  btn_class: btn--primary
+  btn_label: Read More
 tag: academy
 ---
 
