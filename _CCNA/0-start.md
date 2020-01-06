@@ -3,7 +3,7 @@ title: "CCNA: Cisco Certified Network Associate Guide"
 excerpt: "This certification guide will provide a comprehensive overview for Implementing and Administering Cisco Networking Technologies, covering the 200-301 exam topics."
 header:
   image: "/assets/images/CCNA/ccna.png"
-last_modified_at: 2018-01-02 21:28:04 +00:00
+last_modified_at: 2020-01-02 21:28:04 +00:00
 toc: true
 ---
 
@@ -37,9 +37,7 @@ Each chapter will have an hands-on laboratory and a practice to simulate the exa
 ](https://www.youtube.com/watch?v=bO74ZTcc648&list=PLmdYg02XJt6QRQfYjyQcMPfS3mrSnFbRC) or [by danscourses](https://www.youtube.com/playlist?list=PL113F286C864FEB90);
 
 #### Tutorials
-* OUTDATED: [9tut](https://www.9tut.com/)
-* OUTDATED: [study-ccna](https://study-ccna.com/)
-* OUTDATED: [PracticalNetworking](https://www.reddit.com/r/ccna/comments/8zmafo/studying_for_the_ccna_youll_want_to_read_these/)
+* OUTDATED: [9tut](https://www.9tut.com/), [study-ccna](https://study-ccna.com/), [PracticalNetworking](https://www.reddit.com/r/ccna/comments/8zmafo/studying_for_the_ccna_youll_want_to_read_these/)
 * REALLY OUTDATED: [ccnablog](http://www.ccnablog.com/), [freeccnastudyguide](http://www.freeccnastudyguide.com/), [trainingmagic](http://www.trainingmagic.com/page1/page7/), [routeralley](http://www.routeralley.com/guides.html), [infosecinstitute](https://community.infosecinstitute.com/discussion/81293/how-to-study-for-the-ccent-ccna-tutorial), [omnisecu](http://www.omnisecu.com/cisco-certified-network-associate-ccna/index.php)
 
 ##### Others
@@ -51,10 +49,3 @@ Each chapter will have an hands-on laboratory and a practice to simulate the exa
 * [reddit r/ccna](https://www.reddit.com/r/ccna/wiki/index)
 * [cisco study group](https://learningnetwork.cisco.com/groups/ccna-study-group)
 * [discord study group](https://discordapp.com/invite/Dq5DYT7)
-
-
-
-
-
-
---------------------------------------------------------------------------------

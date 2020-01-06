@@ -29,8 +29,3 @@ excerpt: "A guide to help you know more about Telephony."
 
 ##### References:
   * [r/networking](https://www.reddit.com/r/networking/wiki/index)
-
-
-  "tel": false,"td+tel": false,"chrome-extension": false
-
-  "chrome-extension":false,

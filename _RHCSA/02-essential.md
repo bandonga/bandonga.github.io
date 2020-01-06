@@ -10,7 +10,7 @@ toc: true
 
 ### The Shell
 
-A **Shell** is *command-line* interpreter that provides a user interface. Users input instructions to a computer by entering commands as text for a command line interpreter to execute. The default shell for RHEL is *bash* (Bourne-Again Shell), an inproved version of the *sh* (Bourne Shell).
+A **Shell** is *command-line* interpreter that provides a user interface. Users input instructions to a computer by entering commands as text for a command line interpreter to execute. The default shell for RHEL is *bash* (Bourne-Again Shell), an improved version of the *sh* (Bourne Shell).
 
 When using a shell interactivelly, it displays a string, warning for a command, the *shell prompt*. When using a regular user, the prompt is the `$` character.
 ```console
@@ -178,11 +178,11 @@ If you have a subscripion, you can use the (...).
 
 ### Laboratory
 
-* [1.1 lab - Initial Setup](/RHCSA/02.01-essencial-lab/)
+* [2.1 lab - Using Essential Tools](/RHCSA/02.01-essential-lab/)
 
 ### Pratice
 
-* [1.1 lab - Initial Setup](/RHCSA/02.01-essencial-ex/)
+* [2.2 lab - Using Essential Tools](/RHCSA/02.01-essential-ex/)
 
 ### References
 [^1]: man intro page
