@@ -180,7 +180,7 @@ If you have a subscripion, you can use the (...).
 
 * [2.1 lab - Using Essential Tools](/RHCSA/02.01-essential-lab/)
 
-### Pratice
+### Practice
 
 * [2.2 lab - Using Essential Tools](/RHCSA/02.01-essential-ex/)
 

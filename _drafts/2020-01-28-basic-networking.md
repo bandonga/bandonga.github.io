@@ -46,7 +46,7 @@ SCTP also supports multihoming, so if one of a pair of load balancing servers fa
 
 As a transport protocol, SCTP requires operating system level support to be used, which will initially delay its use in the Internet. Also, the use of new transports on the Internet is severely limited by their support in middle boxes such as NAT. Also, note that the advantages of SCTP over TCP only occur during packet loss. In a zero-loss network, the performance of the two is identical. SCTP is not commonly supported in Internet hosts today, but it is being used in WebRTC.
 
-**SCTP** (Stream Control Transmission Protocol) is a transport-layer protocol, serving in a similar role to the popular protocols TCP and UDP. It is standardised by IETF in RFC 4960..
+**SCTP** (Stream Control Transmission Protocol) is a transport-layer protocol, serving in a similar role to the popular protocols TCP and UDP. It is standardised by IETF in RFC 4960.
 
 SCTP is a message-oriented, reliable protocol that combines the best features of UDP and TCP.
 * UDP: Message-oriented, Unreliable;
