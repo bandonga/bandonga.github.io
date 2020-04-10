@@ -5,6 +5,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: "/assets/images/home.jpg"
   caption:
+excerpt: A place to share information with you.
 feature_row:
 - image_path: "/assets/images/know.jpg"
   alt: know
