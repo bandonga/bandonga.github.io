@@ -1,6 +1,6 @@
 ---
-title: Life Tricks
-permalink: "/lifetricks/"
+title: Notepad
+permalink: "/notepad/"
 layout: archive
 tag: lifetricks
 ---

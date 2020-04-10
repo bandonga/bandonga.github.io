@@ -2,8 +2,6 @@
 main:
   - title: "Academy"
     url: /academy/
-  - title: "Life Tricks"
-    url: /lifetricks/
 
 # 1Z0-133 links
 1Z0-133:

@@ -19,10 +19,10 @@ feature_row:
   btn_label: Learn More
 - image_path: "/assets/images/blog.jpg"
   alt: blog
-  title: Life Tricks
+  title: Notepad
   excerpt: The latest everyday life tricks and news. You can also find guides about
     different topics, such as Care, Finance, Food and Travel.
-  url: "/lifetricks/"
+  url: "/notepad/"
   btn_class: btn--primary
   btn_label: Learn More
 - image_path: "/assets/images/projects.jpg"
