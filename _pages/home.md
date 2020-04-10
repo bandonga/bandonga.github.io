@@ -5,7 +5,9 @@ header:
   overlay_color: "#5e616c"
   overlay_image: "/assets/images/home.jpg"
   caption:
-excerpt: A place to share information with you.
+excerpt: A place to share information with you. Improve the skills you need for making
+  the next step up in your career. Get articles and tips to improve life
+  for you and those around.
 feature_row:
 - image_path: "/assets/images/know.jpg"
   alt: know
