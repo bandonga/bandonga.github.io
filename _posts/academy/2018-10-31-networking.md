@@ -20,7 +20,7 @@ A guide to help you know more about networking.
 ### Resources
 
 #### General
-* [Ops Schools](http://www.opsschool.org/en/latest/networking_101.html)
+* [Ops Schools](https://www.opsschool.org/networking_101.html)
 * [OmniSecu](http://www.omnisecu.com/knowledge.php)
 * [homenet howto](https://www.homenethowto.com)
 
