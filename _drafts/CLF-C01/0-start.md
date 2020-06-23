@@ -10,6 +10,10 @@ toc: true
 * https://www.cbtnuggets.com/certification-playlist/aws/certified-cloud-practitioner
   * https://www.cbtnuggets.com/learn/it-training/plan-aws-account-management
 
+AWS Certified Cloud Practitioner Study Guide: CLF-C01 Exam
+  * 
+
+
 https://aws.amazon.com/certification/certified-cloud-practitioner/
 https://aws.amazon.com/training/course-descriptions/cloud-practitioner-essentials/
 AWS.training
@@ -22,7 +26,7 @@ https://www.infrastructure.aws/
 https://www.reddit.com/r/AWSCertifications/comments/ff0x3e/passed_three_aws_certifications_clf_saa_dvf_in_a/
 
 
-
+--------------------------------------------------------------------------------
 
 > Related with: [Networking]({{ site.baseurl }}{% post_url /academy/2018-10-31-networking %})
 
@@ -37,10 +41,8 @@ Each chapter will have an hands-on laboratory and a practice to simulate the exa
 * [Networking Resources]({{ site.baseurl }}{% post_url /academy/2018-10-31-networking %})
 
 #### Books
-* PAID: "Understanding Cisco Networking Technologies" [Volume 1](https://www.amazon.com/dp/1119659027/) / [Volume 2](https://www.amazon.com/kindle-dbs/entity/author/B000APOJ5M?_encoding=UTF8&node=283155&offset=0&pageSize=12&searchAlias=stripbooks&sort=date-desc-rank&page=1&langFilter=default#formatSelectorHeader), by Todd Lammle;
-* PAID: "Official Cert Guide" [Volume 1](https://www.amazon.com/dp/0135792738) / [Volume 2](https://www.amazon.com/dp/1587147130/), by Wendell Odom;
-* PAID: ["Portable Command Guide"](https://www.amazon.com//dp/0135937825), by Scott Empson;
-* PAID: ["31 Days Before Your CCNA"](https://www.amazon.com/kindle-dbs/entity/author/B001JP31WO?_encoding=UTF8&node=283155&offset=0&pageSize=12&searchAlias=stripbooks&sort=date-desc-rank&page=1&langFilter=default#formatSelectorHeader), by Allan Johnson;
+* PAID: ["AWS Certified Cloud Practitioner Study Guide: CLF-C01 Exam"](https://www.amazon.com/dp/1119659027/), by Ben Piper  (Author), David Clinton;
+* PAID: ["AWS Certified Cloud Practitioner (CLF-C01)"](https://www.amazon.com/dp/1119659027/), by Anthony J. Sequeira;
 
 #### Course
 * PAID: **Cisco** - [CCNA - Implementing and Administering Cisco Solutions](https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/ccna-200-301.html);
