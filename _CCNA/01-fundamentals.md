@@ -43,7 +43,7 @@ Two network models are commonly used to describe the protocols and methods used 
 ### OSI Model
 The Open Systems Interconnection (OSI) reference model was created by the International Organization for Standardization (ISO) to allow communication with computers from different manufacturers.
 
-It characterises and standardises the communication functions without regard to their underlying internal structure and technology. Its goal is the interoperability of diverse communication systems with standard protocols, organised into seven abstraction layers.
+It characterises and standardises the communication functions without regard to their underlying internal structure and technology. Its goal is the interoperability of diverse communication systems with standard protocols, organised into seven abstraction layers, using the term PDU.
 
 #### Internet protocol suite
 The Internet protocol suite is the conceptual model and set of communications protocols used on the Internet and similar computer networks. It is commonly known as TCP/IP because the original protocols in the suite.
@@ -51,6 +51,8 @@ The Internet protocol suite is the conceptual model and set of communications pr
 This networking model sprouted forth from a U.S. Department of Defense (DoD) contract. Researchers at various universities volunteered to help further develop the protocols surrounding the original DoD work.
 
 The IP suite provides end-to-end data communication specifying how data should be packetized, addressed, transmitted, routed and received. This functionality is organised into four abstraction layers which are used to sort all related protocols according to the scope of networking involved.
+
+The OSI protocol suite that was specified as part of the OSI project was considered by many as too complicated and inefficient, and to a large extent unimplementable. Although the OSI model is often still referenced, the Internet protocol suite has become the standard for networking. TCP/IP's pragmatic approach to computer networking and to independent implementations of simplified protocols made it a practical methodology.
 
 Layer           | Protocol data unit (PDU)       | Internet model            | SS7
 ----------------|--------------------------------|---------------------------|--------------
@@ -116,12 +118,32 @@ So, what does this all matter to networking? Well, the network layer of the TCP/
 
 ##### Internet Protocol Addressing Basics
 
+IP is the major protocol, providing addressing and routing.
+Routers are network devices that connect parts of the network together of the network together for routing to the right destination.
+Each device needs a unique address to be identified in the network to be a IP host. This IP address follows a dotted-decimal notation (DDN).
 
-duvidas:
-* PPP
-Adjacent-layer interaction - The process of HTTP asking TCP to send some data and making sure that it is received correctly, for example.
-* Same-layer interaction - The process of TCP on one computer marking a TCP segment as segment 1, and the receiving computer then acknowledging the receipt of TCP segment 1, for example.
-* headers and trailers
+##### Data Link and Physical Layer
+
+Defines the protocols and hardware, needed to deliver data across the physical network.
+4 steps to allow the link layer to send packets:
+1. Encapsulate: creating the ethernet Frame
+2. Transmit: physical layer transit bits over electric signals
+3. Receive: receives the signals and recreates the bits.
+4. De-encapsulates: gets the IP packet removing the ethernet trailer and header.
+
+functions:
+* physical transmition of the data
+* protocols and rules that controls the use of the physical media.
+
+##### Data Encapsulation Terminology
+
+1. Create and encapsulate the application data with any required application layer headers. For example, the HTTP OK message can be returned in an HTTP header, followed by part of the contents of a web page.
+2. Encapsulate the data supplied by the application layer inside a transport layer header. For end-user applications, a TCP or UDP header is typically used.
+3. Encapsulate the data supplied by the transport layer inside a network layer (IP) header. IP defines the IP addresses that uniquely identify each computer.
+4. Encapsulate the data supplied by the network layer inside a data-link layer header and trailer. This layer uses both a header and a trailer.
+5. Transmit the bits. The physical layer encodes a signal onto the medium to transmit the frame.
+
+
 
 ### Laboratory
 

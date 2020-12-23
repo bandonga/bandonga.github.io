@@ -11,13 +11,17 @@ toc: true
   * https://www.cbtnuggets.com/learn/it-training/plan-aws-account-management
 
 AWS Certified Cloud Practitioner Study Guide: CLF-C01 Exam
-  * 
+  *
 
 
 https://aws.amazon.com/certification/certified-cloud-practitioner/
 https://aws.amazon.com/training/course-descriptions/cloud-practitioner-essentials/
 AWS.training
 https://docs.aws.amazon.com/
+https://aws.amazon.com/getting-started/hands-on/
+https://amazon.qwiklabs.com/
+https://github.com/phonghuule/awssummmitonline
+
 
 https://www.reddit.com/r/AWSCertifications/comments/e3r6kz/aws_csaa_study_resources_tips_links_63_month/
 https://www.reddit.com/r/AWSCertifications/comments/dibeqd/passed_6_certifications_in_two_months/
