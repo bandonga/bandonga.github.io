@@ -91,7 +91,7 @@ defaults:
     comments: false
     share: false
     related: false
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: bandonga/minimal-mistakes
 minimal_mistakes_skin: bandonga
 locale: en-GB
 title_separator: "-"
