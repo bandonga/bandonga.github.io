@@ -13,7 +13,7 @@ CCNA:
         url: /CCNA/0.01-exam-topics/
   - title: "Exam Topics"
     children:
-      - title: "1 Installation"
+      - title: "1 Fundamentals"
         url: /CCNA/01-fundamentals/
 
 

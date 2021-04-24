@@ -37,8 +37,8 @@ Each chapter will have an hands-on laboratory and a practice to simulate the exa
 ](https://www.youtube.com/watch?v=bO74ZTcc648&list=PLmdYg02XJt6QRQfYjyQcMPfS3mrSnFbRC) or [by danscourses](https://www.youtube.com/playlist?list=PL113F286C864FEB90);
 
 #### Tutorials
-* OUTDATED: [9tut](https://www.9tut.com/), [study-ccna](https://study-ccna.com/), [PracticalNetworking](https://www.reddit.com/r/ccna/comments/8zmafo/studying_for_the_ccna_youll_want_to_read_these/)
-* REALLY OUTDATED: [ccnablog](http://www.ccnablog.com/), [freeccnastudyguide](http://www.freeccnastudyguide.com/), [trainingmagic](http://www.trainingmagic.com/page1/page7/), [routeralley](http://www.routeralley.com/guides.html), [infosecinstitute](https://community.infosecinstitute.com/discussion/81293/how-to-study-for-the-ccent-ccna-tutorial), [omnisecu](http://www.omnisecu.com/cisco-certified-network-associate-ccna/index.php)
+* [9tut](https://www.9tut.com/), [study-ccna](https://study-ccna.com/), [PracticalNetworking](https://www.practicalnetworking.net/index/ccna/)
+* OUTDATED: [ccnablog](http://www.ccnablog.com/), [freeccnastudyguide](http://www.freeccnastudyguide.com/), [trainingmagic](http://www.trainingmagic.com/page1/page7/), [routeralley](http://www.routeralley.com/guides.html), [infosecinstitute](https://community.infosecinstitute.com/discussion/81293/how-to-study-for-the-ccent-ccna-tutorial), [omnisecu](http://www.omnisecu.com/cisco-certified-network-associate-ccna/index.php)
 
 ##### Others
 * Switching Doc Reference: ["Catalyst 3750 Software Configuration Guide"](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750/software/release/15-0_2_se/configuration/guide/scg3750.html)

@@ -31,7 +31,7 @@ With packets, the bandwidth of the transmission medium can be better shared amon
 A longer message is packetized before it is transferred over the transport layer and once the packets arrive, they are then reassembled back into their original message.
 
 
-##### Internetworking Models
+#### Internetworking Models
 
 Internetworking is the concept of interconnecting different types of networks to build a large, global network, such that any pair of connected hosts can exchange packets. In a internetwork we have:
 * A standardized scheme to address packets to any host on any participating network;
@@ -40,7 +40,7 @@ Internetworking is the concept of interconnecting different types of networks to
 
 Two network models are commonly used to describe the protocols and methods used in internetworking. The OSI and the Internet protocol suite.
 
-### OSI Model
+#### OSI Model
 The Open Systems Interconnection (OSI) reference model was created by the International Organization for Standardization (ISO) to allow communication with computers from different manufacturers.
 
 It characterises and standardises the communication functions without regard to their underlying internal structure and technology. Its goal is the interoperability of diverse communication systems with standard protocols, organised into seven abstraction layers, using the term PDU.
@@ -54,17 +54,17 @@ The IP suite provides end-to-end data communication specifying how data should b
 
 The OSI protocol suite that was specified as part of the OSI project was considered by many as too complicated and inefficient, and to a large extent unimplementable. Although the OSI model is often still referenced, the Internet protocol suite has become the standard for networking. TCP/IP's pragmatic approach to computer networking and to independent implementations of simplified protocols made it a practical methodology.
 
-Layer           | Protocol data unit (PDU)       | Internet model            | SS7
-----------------|--------------------------------|---------------------------|--------------
-7 Application   | Data                           | Application               | HTTP, SMTP
-6 Presentation  | Data                           | Application               | SSL, SSH
-5 Session       | Data                           | Application               | sockets, APIs
-4 Transport     | Segment (TCP) / Datagram (UDP) | Transport                 | TCP, UDP
-3 Network       | Packet                         | Internet / Network        | IP, PIMC
-2 Data link     | Frame                          | Link / Network Access     | Ethernet Frame, ATM
-1 Physical      | Bit                            | Physical                  | Ethernet Cable, Wi-Fi
+Layer           | PDU                | Internet model            | SS7
+----------------|--------------------|---------------------------|--------------
+7 Application   | Data               | Application               | HTTP, SMTP
+6 Presentation  | Data               | Application               | SSL, SSH
+5 Session       | Data               | Application               | sockets, APIs
+4 Transport     | Segment / Datagram | Transport                 | TCP, UDP
+3 Network       | Packet             | Internet / Network        | IP, PIMC
+2 Data link     | Frame              | Link / Network Access     | Ethernet Frame, ATM
+1 Physical      | Bit                | Physical                  | Ethernet Cable, Wi-Fi
 
-##### Application Layer
+### Application Layer
 The application layer protocols provide services to the application software running on a device. It defines services that applications need, providing an interface between software running on a computer and the network itself. For example, defines how web browsers can pull the contents of a web page from a web server.
 
 **HTTP Protocol Mechanisms**
@@ -80,7 +80,7 @@ The message begins with an HTTP header, with a return code (200), which means so
 
 Step 3 in Figure 1-6 shows another message from web server Larry to web browser Bob, but this time without an HTTP header. HTTP transfers the data by sending multiple messages, each with a part of the file. Rather than wasting space by sending repeated HTTP headers that list the same information, these additional messages simply omit the header.
 
-##### Transport Layer
+### Transport Layer
 Although many TCP/IP application layer protocols exist, the TCP/IP transport layer includes a smaller number of protocols. The two most commonly used transport layer protocols are the Transmission Control Protocol (TCP) and the User Datagram Protocol (UDP).
 
 Transport layer protocols provide services to the application layer protocols that reside one layer higher in the TCP/IP model. How does a transport layer protocol provide a service to a higher-layer protocol.
@@ -96,7 +96,7 @@ TCP/IP needs a mechanism to guarantee delivery of data across a network. Because
 
 Figure 1-7 shows web server Larry sending a web page to web browser Bob, using three separate messages. Note that this figure shows the same HTTP headers as Figure 1-6, but it also shows a TCP header. The TCP header shows a sequence number (SEQ) with each message. In this example, the network has a problem, and the network fails to deliver the TCP message (called a segment) with sequence number 2. When Bob receives messages with sequence numbers 1 and 3, but does not receive a message with sequence number 2, Bob realizes that message 2 was lost. That realization by Bob’s TCP logic causes Bob to send a TCP segment back to Larry, asking Larry to send message 2 again.
 
-##### Layer Interactions
+### Layer Interactions
 
 **Same-layer interaction** - The two computers use a protocol to communicate with the same layer on another computer. The protocol defines a header that communicates what each computer wants to do.
 e.g. Larry set the sequence numbers to 1, 2, and 3 so that Bob could notice when some of the data did not arrive. Larry’s TCP process created that TCP header with the sequence number; Bob’s TCP process received and reacted to the TCP segments.
@@ -104,7 +104,7 @@ e.g. Larry set the sequence numbers to 1, 2, and 3 so that Bob could notice when
 **Adjacent-layer interaction** - On a single computer, one lower layer provides a service to the layer just above. The software or hardware that implements the higher layer requests that the next lower layer perform the needed function.
 e.g. the higher-layer protocol (HTTP) wants error recovery, so it uses the next lower-layer protocol (TCP) to perform the service of error recovery; the lower layer provides a service to the layer above it.
 
-##### Network Layer
+### Network Layer
 The application layer includes many protocols. The transport layer includes fewer protocols, most notably, TCP and UDP. The TCP/IP network layer includes a small number of protocols, but only one major protocol: the Internet Protocol (IP). In fact, the name TCP/IP is simply the names of the two most common protocols (TCP and IP) separated by a /.
 
 IP provides several features, most importantly, addressing and routing. This section begins by comparing IP’s addressing and routing with another commonly known system that uses addressing and routing: the postal service. Following that, this section introduces IP addressing and routing.
