@@ -18,7 +18,7 @@ repository: bandonga/bandonga.github.io
 locale: en-GB
 timezone: Europe/Lisbon
 
-breadcrumbs: true
+breadcrumbs: false
 words_per_minute: 200
 
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -197,7 +197,7 @@ social:
     - "https://www.facebook.com/bandongatech"
 
 analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "UA-142611227-1" # Replace this with your ID, or delete
     anonymize_ip         : true
@@ -326,4 +326,4 @@ tag_archive:
 compress_html:
   clippings: all
   ignore:
-    envs: development
+    envs: production
