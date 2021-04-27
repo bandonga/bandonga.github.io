@@ -1,6 +1,43 @@
 ---
-title: bandonga
+title                    : bandonga
+title_separator          : "-"
+name                     : &name bandonga
+subtitle                 :
+description: &description A place to share information with you. Improve the skills needed for
+  making the next step up in your career get and articles with Life tips to improves
+  life for you and those around.
+
+remote_theme             : "mmistakes/minimal-mistakes@4.22.0"
+minimal_mistakes_skin    : "dark"  # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", bandonga
+
+url: https://bandonga.com
+baseurl: "/"
+repository: bandonga/bandonga.github.io
+
+
+locale: en-GB
 timezone: Europe/Lisbon
+
+breadcrumbs: true
+words_per_minute: 200
+
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+
+# search
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : # lunr (default), algolia
+algolia:
+  application_id         : 6ML8MPU2Q2 # YOUR_APPLICATION_ID
+  index_name             : bandonga # YOUR_INDEX_NAME
+  search_only_api_key    : 8f8cdc549c4cf78463743d9df2a11de7 # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : true # true (default), false
+  files_to_exclude:
+    - _posts/2017-11-28-post-exclude-search.md
+
+# Collections
 collections:
   1Z0-133:
     title: 1Z0-133
@@ -23,7 +60,10 @@ collections:
   uploads:
     title: Uploads
     output: true
+
+
 defaults:
+# _posts
 - scope:
     path: ''
     type: posts
@@ -91,30 +131,23 @@ defaults:
     comments: false
     share: false
     related: false
-remote_theme: bandonga/minimal-mistakes
-minimal_mistakes_skin: bandonga
-locale: en-GB
-title_separator: "-"
-name: bandonga
-description: A place to share information with you. Improve the skills needed for
-  making the next step up in your career get and articles with Life tips to improves
-  life for you and those around.
-url: https://bandonga.com
-baseurl: "/"
-repository: bandonga/bandonga.github.io
-teaser:
-breadcrumbs: false
-words_per_minute: 200
+
 comments:
   provider: disqus
   disqus:
     shortname: bandonga
   discourse:
     server:
-  facebook:
-    appid:
-    num_posts:
-    colorscheme:
+  facebook               :
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+
+
 staticman:
   allowedFields:
   branch:
@@ -131,103 +164,118 @@ staticman:
       type:
       options:
         format:
+
 reCaptcha:
-  siteKey:
-  secret:
+  siteKey                : # "6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
+  secret                 : # "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
+
 atom_feed:
-  path:
-search: true
-search_full_content: true
-logo: true
-google_site_verification: pysi0k7e__TUjnmqE97ai15ohD4K1gtxJf9_cb8jeiA
-bing_site_verification: BF40F0E362798251D61F54B417D72DFE
-yandex_site_verification:
-naver_site_verification:
+  path                   : # blank (default) uses feed.xml
+
+
+
+google_site_verification : pysi0k7e__TUjnmqE97ai15ohD4K1gtxJf9_cb8jeiA
+bing_site_verification.  : BF40F0E362798251D61F54B417D72DFE
+yandex_site_verification :
+naver_site_verification  :
+
+# Social Sharing
 twitter:
-  username: bandongatech
+  username               : &twitter "bandongatech"
 facebook:
-  username: bandongatech
-  app_id:
-  publisher:
-og_image: "/assets/images/name_og.png"
+  username               : &facebook "bandongatech"
+  app_id                 :
+  publisher              :
+og_image                 : "/assets/images/name_og.png" # Open Graph/Twitter default site image
+# For specifying social profiles, used in _includes/seo.html
+# - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type:
-  name:
-  links:
+  type                   : Organization # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+    - "https://twitter.com/bandongatech"
+    - "https://www.facebook.com/bandongatech"
+
 analytics:
-  provider: google-universal
+  provider               : "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id: UA-142611227-1
+    tracking_id          : "UA-142611227-1" # Replace this with your ID, or delete
+    anonymize_ip         : true
+
+# Site Author
 author:
-  name: bandonga
-  avatar:
-  bio: this is our io
-  location: Somewhere
-  email: me@mail.com
-  uri: http://bandonga.com
-  home:
-  bitbucket:
-  codepen:
-  dribbble:
-  flickr:
-  facebook: bandongatech
-  foursquare:
-  github: bandonga
-  gitlab:
-  google_plus:
-  keybase:
-  instagram: bandongatech
-  lastfm:
-  linkedin:
-  pinterest:
-  soundcloud:
-  stackoverflow:
-  steam:
-  tumblr:
-  twitter: bandongatech
-  vine:
-  weibo:
-  xing:
-  youtube:
+  name             : *name # *name is a YAML reference pointing to the &anchor earlier
+  avatar           :
+  bio              : "in the web"
+  location         : "Portugal"
+  links:
+    - label: "webpage"
+      icon: "fas fa-fw fa-link"
+      url: "http://bandonga.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/bandongatech"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/bandonga"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/mmistakes"
+
+  # Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/bandongatech"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/bandonga"
+
+
+# Reading Files
 include:
-- ".htaccess"
-- _pages
+  - .htaccess
+  - _pages
 exclude:
-- "*.sublime-project"
-- "*.sublime-workspace"
-- vendor
-- ".asset-cache"
-- ".bundle"
-- ".jekyll-assets-cache"
-- ".sass-cache"
-- assets/js/plugins
-- assets/js/_main.js
-- assets/js/vendor
-- Capfile
-- CHANGELOG
-- config
-- Gemfile
-- Gruntfile.js
-- gulpfile.js
-- LICENSE
-- log
-- node_modules
-- package.json
-- Rakefile
-- README
-- tmp
-- "/docs"
-- "/test"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
 keep_files:
-- ".git"
-- ".svn"
-encoding: utf-8
-markdown_ext: markdown,mkdown,mkdn,mkd,md
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown.         : kramdown
+highlighter       : rouge
+lsi               : false
+excerpt_separator : "\n\n"
+incremental       : false
+
+
+# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -237,31 +285,45 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+
+# Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Outputting
 permalink: /:categories/:title/
 paginate: 5
 paginate_path: "/page:num/"
+
+ # Plugins (previously gems:)
 plugins:
-- jekyll-paginate
-- jekyll-sitemap
-- jekyll-gist
-- jekyll-feed
-- jemoji
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
 whitelist:
-- jekyll-paginate
-- jekyll-sitemap
-- jekyll-gist
-- jekyll-feed
-- jemoji
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
 category_archive:
   type: liquid
-  path: "/categories/"
+  path: /categories/
 tag_archive:
   type: liquid
-  path: "/tags/"
+  path: /tags/
+
+# HTML Compression
+# - http://jch.penibelst.de/
 compress_html:
-  clippings:
+  clippings: all
   ignore:
     envs: development
