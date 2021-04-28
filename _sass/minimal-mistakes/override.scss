@@ -16,11 +16,6 @@ blockquote {
   @include notice($code-background-color);
 }
 
-.notice {
-  @include notice($code-background-color-dark);
-  background-color: mix(#000, $code-background-color, 60%);
-}
-
 .page__content {
   p,li,dl {
   font-size: $type-size-6;
