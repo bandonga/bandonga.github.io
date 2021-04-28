@@ -29,12 +29,6 @@ $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
   background-color: $form-background-color;
 }
 
-.page__lead {
-  /* font-family: $global-font-family;*/
-  font-size: $type-size-5;
-}
-
-
 /* Disable line number (lineno) / shell session prompt (gp) selection */
 .highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;}
 .lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
@@ -43,11 +37,18 @@ $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 .gp::-moz-selection {background-color: transparent;} /* Mozilla specific */
 .gp::selection {background-color: transparent;} /* Other major browsers */
 
+@import "minimal-mistakes/variables";
+@import "minimal-mistakes/notices";
+
+.page__lead {
+  font-family: $global-font-family;
+  font-size: 1em;
+}
 
 blockquote {
-  @include notice($darker-gray);
+  @include notice($code-background-color-dark);
 }
 
 .notice {
-  @include notice($darker-gray);
+  @include notice($code-background-color-dark);
 }
