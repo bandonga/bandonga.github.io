@@ -8,7 +8,7 @@ description: &description A place to share information with you. Improve the ski
   life for you and those around.
 
 remote_theme             : "mmistakes/minimal-mistakes@4.22.0"
-minimal_mistakes_skin    : "dark"  # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", bandonga
+minimal_mistakes_skin    : "bdark"  # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", bandonga
 
 url: https://bandonga.com
 baseurl: "/"
