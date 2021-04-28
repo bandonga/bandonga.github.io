@@ -15,7 +15,7 @@ excerpt: "A guide to help you know more about Telephony."
 A guide to help you know more about Telephony.
 
 Topics:
-* [WebRTC]({{ site.baseurl }}{% post_url /academy/2019-12-10-webrtc %}) {: .notice}
+* [WebRTC]({{ site.baseurl }}{% post_url /academy/2019-12-10-webrtc %})
 
 
 ### Resources
