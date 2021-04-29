@@ -14,7 +14,7 @@ excerpt: "A guide to help you know more about Telephony."
 
 A guide to help you know more about Telephony.
 
-Topics:
+> Topics:
 * [WebRTC]({{ site.baseurl }}{% post_url /academy/2019-12-10-webrtc %})
 
 
@@ -32,7 +32,7 @@ Fundamentals:
 
 Specific:
 * ["Session Initiation Protocol (SIP): Controlling Convergent Networks"](https://www.amazon.com/Session-Initiation-Protocol-SIP-Communication-ebook/dp/B001AQ9DU6), by Travis Russell
-* ["SIP Trunking"](https://www.amazon.com/SIP-Trunking-Networking-Technology-Communications-ebook/dp/B003ATPQEI), by Christina HattinghTravis Russell
+* ["SIP Trunking"](https://www.amazon.com/SIP-Trunking-Networking-Technology-Communications-ebook/dp/B003ATPQEI), by Christina Hattingh
 * ["Handbook of SDP for Multimedia Session Negotiations"](https://www.amazon.com/Handbook-SDP-Multimedia-Session-Negotiations-ebook/dp/B07NSF569P), by Radhika Ranjan Roy
 * ["VoIP and Unified Communications"](https://www.amazon.com/VoIP-Unified-Communications-Internet-Telephony/dp/1118019210), by William A. Flanagan
 * ["SIP Security"](https://www.amazon.com/SIP-Security-Dorgham-Sisalem/dp/0470516364), by Dorgham Sisalem
@@ -44,6 +44,6 @@ If you wish to get certified, the standard is by [Cisco](http://www.cisco.com/c/
 * The SIP School [SSCA](https://www.thesipschool.com/courses/view) SIP
 * The SIP School [WSQI](https://www.thesipschool.com/courses/view) WebRCT
 * Cisco [CCNP](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/professional/ccnp-collaboration-v2.html) Collaboration
-* CTP [CCNT](http://www.ctpcertified.com/certification/ccnt-program)
+
 
 Another extra possibility is the [wireshark](https://www.wiresharktraining.com/certification.html) certification.
