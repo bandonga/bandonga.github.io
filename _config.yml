@@ -51,9 +51,22 @@ collections:
     title: CCNA
     output: true
     permalink: "/:collection/:path/"
-  u:
-    title: users
+  network:
+    title: Network
     output: true
+    permalink: "/:collection/:path/"
+  sip:
+    title: SIP
+    output: true
+    permalink: "/:collection/:path/"
+  ansible:
+    title: ansible
+    output: true
+    permalink: "/:collection/:path/"
+  kamailio:
+    title: kamailio
+    output: true
+    permalink: "/:collection/:path/"
   posts:
     title: Posts
     output: true
@@ -74,12 +87,14 @@ defaults:
     comments: true
     share: true
     related: true
+# _pages
 - scope:
     path: _pages
     type: pages
   values:
     layout: single
     author_profile: false
+# 1Z0-133
 - scope:
     path: ''
     type: 1Z0-133
@@ -94,6 +109,7 @@ defaults:
       teaser: "/assets/images/1Z0-133/1Z0-133_oracle_certification.png"
     sidebar:
       nav: 1Z0-133
+# RHCSA
 - scope:
     path: ''
     type: RHCSA
@@ -108,6 +124,7 @@ defaults:
       teaser: "/assets/images/RHCSA/rhcsa.png"
     sidebar:
       nav: RHCSA
+# CCNA
 - scope:
     path: ''
     type: CCNA
@@ -122,16 +139,67 @@ defaults:
       teaser: "/assets/images/CCNA/ccna.png"
     sidebar:
       nav: CCNA
+# network
 - scope:
     path: ''
-    type: u
+    type: network
   values:
-    layout: archive
-    read_time: false
-    comments: false
-    share: false
-    related: false
-
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/network/network.png"
+    sidebar:
+      nav: network
+# sip
+- scope:
+    path: ''
+    type: sip
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/sip/sip.png"
+    sidebar:
+      nav: sip
+# kamailio
+- scope:
+    path: 'collections/kamailio'
+    type: kamailio
+  values:
+    layout: single
+    author_profile: true
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/kamailio/kamailio.png"
+    sidebar:
+      nav: kamailio
+# ansible
+- scope:
+    path: ''
+    type: ansible
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/ansible/ansible.png"
+    sidebar:
+      nav: ansible
+collections_dir: collections
 comments:
   provider: disqus
   disqus:
