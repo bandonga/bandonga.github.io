@@ -94,5 +94,3 @@ pt-PT:
   <<: *DEFAULT_PT
 pt-BR:
   <<: *DEFAULT_PT
-
-

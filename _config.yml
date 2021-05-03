@@ -107,8 +107,6 @@ defaults:
     related: true
     header:
       teaser: "/assets/images/1Z0-133/1Z0-133_oracle_certification.png"
-    sidebar:
-      nav: 1Z0-133
 # RHCSA
 - scope:
     path: ''
@@ -171,7 +169,7 @@ defaults:
       nav: sip
 # kamailio
 - scope:
-    path: 'collections/kamailio'
+    path: ''
     type: kamailio
   values:
     layout: single
@@ -200,6 +198,7 @@ defaults:
     sidebar:
       nav: ansible
 collections_dir: collections
+
 comments:
   provider: disqus
   disqus:
@@ -214,7 +213,6 @@ comments:
   utterances:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
-
 
 staticman:
   allowedFields:
@@ -239,8 +237,6 @@ reCaptcha:
 
 atom_feed:
   path                   : # blank (default) uses feed.xml
-
-
 
 google_site_verification : pysi0k7e__TUjnmqE97ai15ohD4K1gtxJf9_cb8jeiA
 bing_site_verification.  : BF40F0E362798251D61F54B417D72DFE
