@@ -197,7 +197,7 @@ defaults:
       teaser: "/assets/images/ansible/ansible.png"
     sidebar:
       nav: ansible
-collections_dir: collections
+#collections_dir: collections
 
 comments:
   provider: disqus
