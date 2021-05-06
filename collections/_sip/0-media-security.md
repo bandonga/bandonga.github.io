@@ -9,10 +9,6 @@ toc: true
 
 > :warning: **NOTE:**  Under Construction :construction:
 
-<div class="notice--warning" markdown="1">
-  <h4 class="no_toc"><i class="fas fa-warning"></i>NOTE</h4>
-  Under Construction :construction:
-</div>
 
 # Media Security
 
@@ -30,28 +26,7 @@ The IV is generated using:
 The inclusion of the SSRC in the IV allows the same key to be used for multiple RTP media sessions, as each will have a different SSRC.
 As such, a single master secret could be used for both directions and for multiple media streams.
 
-```plantuml
-@startuml
-
-!includeurl https://raw.githubusercontent.com/marcelofpfelix/plantuml-diagrams/master/skins/skin_clear.puml
-skinparam backgroundcolor transparent
-skinparam ArrowColor #ABB2B9
-
-storage "Master key" as mk
-storage "Master salt" as ms
-card "Key Derivation" as kd
-storage "Session\n encryt key" as ek
-storage "Session\n salt key" as sk
-storage "Session\n auth key" as ak
-
-mk --> kd
-ms --> kd
-kd --> ek
-kd --> sk
-kd --> ak
-
-@enduml
-```
+![srtp](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/bandonga/bandonga.github.io/master/assets/puml/srtp.puml)
 
 A **master key** and **master salt** are submitted to functions defined within SRTP to generate the session keys:
 * The **session encryption key** is used to drive the AES encryption algorithm.
@@ -91,7 +66,7 @@ At least one key derivation must be performed to obtain initial session keys. Su
 
 The RTP header is not encrypted by SRTP, only the payload.
 
-#### authentication tag
+#### Authentication tag
 
 When message authentication is used, a `HMAC SHA-1` hash is performed over the packet and added to the end, making the SRTP packet slightly larger, increasing the media bandwidth requirements. Since RTP packets are smaller than the MTU size, fragmentation of SRTP should not be an issue.
 SRTP can use a number of master keys at the same time. Either communicating party can indicate which master key is to be used to encrypt a datagram in individual SRTP packets using the optional master key indicator (**MKI**) parameter. However, the MKI is rarely used in real-time communications.
