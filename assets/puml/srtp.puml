@@ -1,0 +1,18 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/marcelofpfelix/plantuml-diagrams/master/skins/skin_dark.puml
+
+storage "Master key" as mk
+storage "Master salt" as ms
+card "Key Derivation" as kd
+storage "Session\n encryt key" as ek
+storage "Session\n salt key" as sk
+storage "Session\n auth key" as ak
+
+mk --> kd
+ms --> kd
+kd --> ek
+kd --> sk
+kd --> ak
+
+@enduml
