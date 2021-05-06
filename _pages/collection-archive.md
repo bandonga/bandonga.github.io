@@ -1,7 +1,8 @@
 ---
-title: Posts by Collection
-permalink: "/collection-archive/"
 layout: archive
+title: "Posts by Collection"
+permalink: /collection-archive/
+author_profile: true
 ---
 
 {% capture written_label %}'None'{% endcapture %}

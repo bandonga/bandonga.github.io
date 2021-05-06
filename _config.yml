@@ -149,7 +149,7 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/network/network.png"
+      teaser: "/assets/images/academy/network.png"
     sidebar:
       nav: network
 # sip
@@ -164,7 +164,7 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/sip/sip.png"
+      teaser: "/assets/images/academy/sip.png"
     sidebar:
       nav: sip
 # kamailio
@@ -179,7 +179,7 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/kamailio/kamailio.png"
+      teaser: "/assets/images/academy/kamailio.png"
     sidebar:
       nav: kamailio
 # ansible
@@ -194,7 +194,7 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/ansible/ansible.png"
+      teaser: "/assets/images/academy/ansible.png"
     sidebar:
       nav: ansible
 collections_dir: collections
