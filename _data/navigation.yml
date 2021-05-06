@@ -31,3 +31,19 @@ RHCSA:
         url: /RHCSA/01-install/
       - title: "2 Using Essential Tools"
         url: /RHCSA/02-essential/
+
+
+# sip links
+sip:
+  - title: "Introduction"
+    children:
+      - title: "Getting Started"
+        url: /sip/0-start/
+      - title: "Exam Topics"
+        url: /sip/0.01-exam-topics/
+  - title: "Exam Topics"
+    children:
+      - title: "Media Security"
+        url: /sip/0-media-security/
+      - title: "2 Using Essential Tools"
+        url: /sip/02-essential/

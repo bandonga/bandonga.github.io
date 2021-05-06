@@ -107,3 +107,22 @@ f1 -> c1
 c1 -> c2
 @enduml
 ```
+
+BackgroundColor #EAECEE
+BorderColor #ABB2B9
+
+BorderThickness 2
+
+BackgroundColor #EAECEE
+BorderColor #ABB2B9
+BorderThickness 2
+ArrowColor #454645
+FontColor #454645
+
+FontName
+FontSize
+FontStyle
+StereotypeFontColor
+StereotypeFontName
+StereotypeFontSize
+StereotypeFontStyle
