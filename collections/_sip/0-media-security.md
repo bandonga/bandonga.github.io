@@ -18,6 +18,8 @@ toc: true
 
 Uses symmetric **keys** and **ciphers** for media stream encryption, but does not provide any key management or generation functionality. It must be performed out of band, assuming a key management protocol was used to exchange/derive a set of master keys for the set of ciphers to be used. Two protocols specifically designed to be used are ZRTP and MIKEY, but there are also other methods that use the SDES key exchange. The SRTP keys are distributed using SIP.
 
+**SRTCP** is also defined as a Secure RTP Control Protocol. Since it is also used for multicast session control the SRTCP message authentication is mandatory in the specification although not particularly useful in VoIP applications.
+
 ##### Data flow encryption
 
 SRTP defines how **session keys** are generated (from master cryptographic keys) utilized, or refreshed, during the lifetime of the media session, using the AES cipher in Segmented Integer Counter Mode (AES-CTR, aka AES-CM) or f8-mode, which allow the AES block cipher to be used as a stream cipher.
@@ -31,7 +33,7 @@ The IV is generated using:
 The inclusion of the SSRC in the IV allows the same key to be used for multiple RTP media sessions, as each will have a different SSRC.
 As such, a single master secret could be used for both directions and for multiple media streams.
 
-#####Key derivation
+##### Key derivation
 A key derivation function is used to derive the different keys used in a crypto context from one single master key in a cryptographically secure way. Thus, the key management protocol needs to exchange only one master key.
 
 ![srtp](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/bandonga/bandonga.github.io/master/assets/puml/srtp.puml)
@@ -85,8 +87,6 @@ The MKI is a variable length field, defined by the key management service, to re
 
 SRTP is usable for extremely long-lived sessions, defining the maximum lifetime of a master key to be 248 SRTP packets. Besides the MKI, SRTP also defines a `<from,to>` mechanism for key lifetime.
 With authentication we have replay protection, by keeping track of sequence numbers and using typically a sliding window approach, SRTP determines  the packet is both authentic not duplicated. If the sequence number of an arriving packet was matching an index in the replay list, it is marked a replayed packet and can be discarded.
-
-**SRTCP** is also defined as a Secure RTP Control Protocol. Since it is also used for multicast session control the SRTCP message authentication is mandatory in the specification although not particularly useful in VoIP applications.
 
 
 ------------------------------------------------------------------------------------------------------------------------
