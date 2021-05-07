@@ -1,6 +1,6 @@
 ---
-title: "SIP: Session Initiation Protocol"
-excerpt: "Guide to better understand VoIP protocols and methods"
+title: "SIP: Media Security"
+excerpt: "Guide to better understand VoIP communications and protocols"
 header:
   image: "/assets/images/academy/sip.png"
 last_modified_at: 2021-01-02 21:28:04 +00:00
@@ -16,7 +16,7 @@ toc: true
 
 **SRTP** (Secure RTP) is a profile extension to RTP, published as [RFC 3711](https://tools.ietf.org/html/rfc3711), that adds confidentiality, authentication, and integrity protection to RTP and RTCP sessions, taking an RTP stream and adding encryption and integrity protection before handing the media stream to UDP for transport.
 
-Uses symmetric **keys** and **ciphers** for media stream encryption, but does not provide any key management or generation functionality. It must be performed out of band, assuming a key management protocol was used to exchange/derive a set of master keys for the set of ciphers to be used. Two protocols specifically designed to be used are ZRTP and MIKEY, but there are also other methods that use the SDES key exchange. The SRTP keys are distributed using SIP.
+Uses symmetric **keys** and **ciphers** for media stream encryption, but does not provide any key management or generation functionality. It must be performed out of band, assuming a key management protocol was used to exchange/derive a set of master keys for the set of ciphers to be used. Two protocols specifically designed to be used are ZRTP and MIKEY, but there are also other methods that use the SDES key exchange.
 
 **SRTCP** is also defined as a Secure RTP Control Protocol. Since it is also used for multicast session control the SRTCP message authentication is mandatory in the specification although not particularly useful in VoIP applications.
 

@@ -1,18 +1,17 @@
 ---
-title: "1 - Fundamentals"
-excerpt: "This certification guide will provide a comprehensive overview for Implementing and Administering Cisco Networking Technologies, covering the 200-301 exam topics."
+title: "Networking: Introduction"
+excerpt: "Guide to better understand IP Networks routing and switching"
+header:
+  image: "/assets/images/academy/networking.png"
 last_modified_at: 2020-01-02 21:28:04 +00:00
 toc: true
 ---
 
+> Related with: [Networking]({{ site.baseurl }}{% post_url /academy/2018-10-31-networking %})
+
 > :warning: **NOTE:**  Under Construction :construction:
 
-#### Exam topics
-* Explain the role and function of network components
-* Describe characteristics of network topology architectures
-* Compare physical interface and cabling types  
-
-##### Introduction
+# Introduction
 
 Α **network** is simply defined as something that connects things together for a specific purpose. It's used in a variety of contexts, including telephone, television, computer, or even people networks.
 A **computer network** is a digital telecommunications network which allows computing devices to share resources, that exchange data with each other using connections (data links) between nodes, established over cable or wireless.

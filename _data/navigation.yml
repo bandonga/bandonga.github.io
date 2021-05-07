@@ -1,27 +1,12 @@
-# main links
 main:
   - title: "Academy"
     url: /academy/
 
-# CCNA links
-CCNA:
-  - title: "Introduction"
-    children:
-      - title: "Getting Started"
-        url: /CCNA/0-start/
-      - title: "Exam Topics"
-        url: /CCNA/0.01-exam-topics/
-  - title: "Exam Topics"
-    children:
-      - title: "1 Fundamentals"
-        url: /CCNA/01-fundamentals/
 
-
-# RHCSA links
 RHCSA:
-  - title: "Introduction"
+  - title: "Getting Started"
     children:
-      - title: "Getting Started"
+      - title: "Introduction"
         url: /RHCSA/0-start/
       - title: "Exam Topics"
         url: /RHCSA/0.01-exam-topics/
@@ -32,18 +17,26 @@ RHCSA:
       - title: "2 Using Essential Tools"
         url: /RHCSA/02-essential/
 
-
-# sip links
-sip:
-  - title: "Introduction"
+network:
+  - title: "Getting Started"
     children:
-      - title: "Getting Started"
-        url: /sip/0-start/
+      - title: "Introduction"
+        url: /network/0-intro/
       - title: "Exam Topics"
-        url: /sip/0.01-exam-topics/
+        url: /network/0.01-ccna/
+  - title: "Fundamentals"
+    children:
+      - title: "LAN"
+        url: /network/01-fundamentals/
+
+sip:
+  - title: "Getting Started"
+    children:
+      - title: "Introduction"
+        url: /network/0-intro/
   - title: "Exam Topics"
     children:
+      - title: "NAT"
+        url: /sip/0-nat/
       - title: "Media Security"
         url: /sip/0-media-security/
-      - title: "2 Using Essential Tools"
-        url: /sip/02-essential/

@@ -15,7 +15,7 @@ excerpt: "A guide to help you know more about networking."
 A guide to help you know more about networking.
 
 > Topics:
-* [CCNA: Cisco Certified Network Associate](/CCNA/0-start/)
+* [Networking: guide to IP routing and switching](/network/0-intro/)
 
 ### Resources
 
@@ -51,7 +51,7 @@ by Russ White
 
 ### Certification
 
-If you wish to get certified, the standard is by [Cisco](http://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html). We recommend to start with the [CCNA](www.cisco.com/go/ccna) certification and follow our **[guide](/CCNA/0-start/)**. As an alternative, you can check the [comptia](https://certification.comptia.org/certifications/network) and [juniper](https://www.juniper.net/uk/en/training/certification/certification-tracks/ent-routing-switching-track/) certification programs.
+If you wish to get certified, the standard is by [Cisco](http://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html). We recommend to start with the [CCNA](www.cisco.com/go/ccna) certification. As an alternative, you can check the [comptia](https://certification.comptia.org/certifications/network) and [juniper](https://www.juniper.net/uk/en/training/certification/certification-tracks/ent-routing-switching-track/) certification programs.
 
 * [CCNA](www.cisco.com/go/ccna)
 * [CCNP](www.cisco.com/go/ccnp)

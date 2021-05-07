@@ -42,14 +42,13 @@ Responsible to build and forward frames
 
 
 
-
 ### Laboratory
 
-* [2.1 lab - Fundamentals](/CCNA/01.01-fundamentals-lab/)
+* [1.1 lab - Fundamentals](/CCNA/01.01-fundamentals-lab/)
 
 ### Practice
 
-* [2.2 ex - Fundamentals](/CCNA/01.02-fundamentals-ex/)
+* [1.2 lab - Fundamentals](/CCNA/01.02-fundamentals-ex/)
 
 ### References
 [^1]:
