@@ -16,6 +16,10 @@ toc_hmax: 5
 
 > Related with: [Sysadmin]({{ site.baseurl }}{% post_url /academy/2018-05-18-sysadmin %})
 
+# Concepts
+
+### Middleware
+
 ##### AS
 An *AS* is software framework that handles application operations from the end user to the back-end business processes and databases and provide an environment to run them.
 
@@ -55,3 +59,17 @@ The MOM provider uses different architectures to route and deliver messages: it 
 
 ##### Message Broker
 *Message broker* is a system which handles messages (sending and receiving), routing messages to the specific consumer/recipient. It's built upon a *MOM*, that provides the base communication among the applications, message persistence and guaranteed delivery.
+
+# Security
+
+##### cipher
+A **cipher** is an algorithm for performing encryption or decryption—a series of well-defined steps that can be followed as a procedure. The operation of a cipher usually depends on a piece of auxiliary information, called a key.
+Encryption methods can be divided by two criteria: by type of key used, and by type of input data.
+
+By type of key used ciphers are divided into:
+* **symmetric key algorithms** (Private-key cryptography), where one same key is used for encryption and decryption (DES and AES), the sender and receiver must have a shared key set up in advance and kept secret from all other parties; the sender uses this key for encryption, and the receiver uses the same key for decryption. The Feistel cipher uses a combination of substitution and transposition techniques. Most block cipher algorithms are based on this structure.
+* **asymmetric key algorithms** (Public-key cryptography), where two different keys are used for encryption and decryption (RSA), there are two separate keys: a public key is published and enables any sender to perform encryption, while a private key is kept secret by the receiver and enables only that person to perform correct decryption.
+
+Ciphers can be distinguished into two types by the type of input data:
+* **block ciphers** which encrypt block of data of fixed size.
+* **stream ciphers** which encrypt continuous streams of data.
