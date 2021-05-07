@@ -18,10 +18,16 @@ blockquote {
 
 .page__content {
   p,li,dl {
-  font-size: $type-size-6;
+    font-size: $type-size-6;
   }
 }
 
-code {
-  font-size: $type-size-7;
+.page__content {
+  code, pre {
+    font-size: $type-size-8;
+  }
+}
+
+div.highlighter-rouge {
+  font-size: $type-size-8;
 }

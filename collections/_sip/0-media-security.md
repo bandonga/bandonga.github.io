@@ -14,7 +14,7 @@ toc: true
 
 ## Secure RTP
 
-**SRTP** (Secure RTP) is a profile extension to RTP, published as RFC 3711, that adds confidentiality, authentication, and integrity protection to RTP and RTCP sessions, taking an RTP stream and adding encryption and integrity protection before handing the media stream to UDP for transport.
+**SRTP** (Secure RTP) is a profile extension to RTP, published as [RFC 3711](https://tools.ietf.org/html/rfc3711), that adds confidentiality, authentication, and integrity protection to RTP and RTCP sessions, taking an RTP stream and adding encryption and integrity protection before handing the media stream to UDP for transport.
 
 Uses symmetric **keys** and **ciphers** for media stream encryption, but does not provide any key management or generation functionality. It must be performed out of band, assuming a key management protocol was used to exchange/derive a set of master keys for the set of ciphers to be used. Two protocols specifically designed to be used are ZRTP and MIKEY, but there are also other methods that use the SDES key exchange. The SRTP keys are distributed using SIP.
 
