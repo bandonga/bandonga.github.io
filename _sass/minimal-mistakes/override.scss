@@ -17,11 +17,12 @@ blockquote {
 }
 
 .page__content {
-  p,li,dl {
+  p,li,dl,code {
     font-size: $type-size-6;
   }
 }
 
+/*
 .page__content {
   code, pre {
     font-size: $type-size-6;
@@ -31,3 +32,4 @@ blockquote {
 div.highlighter-rouge {
   font-size: $type-size-6;
 }
+*/

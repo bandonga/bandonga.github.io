@@ -33,8 +33,8 @@ sip:
   - title: "Getting Started"
     children:
       - title: "Introduction"
-        url: /network/0-intro/
-  - title: "Exam Topics"
+        url: /sip/0-intro/
+  - title: "Fundamentals"
     children:
       - title: "NAT"
         url: /sip/0-nat/

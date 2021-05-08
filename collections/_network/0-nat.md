@@ -1,6 +1,8 @@
 ---
-title: "X - NAT"
-excerpt: "How NAT works"
+title: "Networking: NAT"
+excerpt: "Guide to better understand IP Networks routing and switching"
+header:
+  image: "/assets/images/academy/networking.png"
 last_modified_at: 2021-01-02 21:28:04 +00:00
 toc: true
 ---
@@ -15,7 +17,7 @@ Mappings are temporary and expire after a TCP connection is closed with a `FIN` 
 The fact NAT operates at layer 4 with TCP, does not mean the session is no longer end-to-end.
 NAT never maintains a transmission control block or maps sequence number. Since it never performs retransmissions or acknowledgments, the TCP connection is with end-to-end full control and reliability.
 
-When NAT creates a new mapping between the source, example 10.0.0.1:41223 and 18.34.6.2:33123, rewrites the packet with the new data, modifying:
+When NAT creates a new mapping between the source, example `10.0.0.1:41223` and `18.34.6.2:33123`, rewrites the packet with the new data, modifying:
 
 ```
 Layer-3 Checksum
@@ -73,7 +75,15 @@ Formula: `X1':x1' = X2':x2' if only if Y2:y2=Y1:y1`. The mapping used is depende
 
 If an internal host can send packets to another internal host using the external address of the other host. The NAT must look up two mappings to determine the destination.
 
-* **IP Address Pooling options**
+##### IP Address Pooling options
+Networks with multiples public IPs can allocate from a pool and use one of the following policies:
+* **Paired IP address pooling:** means only one external IP address will be used for internal IP addresses. All the packets sent by this host will appear to come from the same IP address to the host external to the network.
+* **Arbitrary IP Address:** means multiple external IPs are mapped to an internal IP address.
+
+##### Port Assignments Options
+
+* **Port preservation:** tries to keep the external/internal port the same. It only works with a large pool of addresses and if it runs out there are two options:
+  * Switch to a non 
 
 
 ------------------------------------------------------------------------------------------------------------------------

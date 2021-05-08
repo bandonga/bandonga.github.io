@@ -88,5 +88,10 @@ The MKI is a variable length field, defined by the key management service, to re
 SRTP is usable for extremely long-lived sessions, defining the maximum lifetime of a master key to be 248 SRTP packets. Besides the MKI, SRTP also defines a `<from,to>` mechanism for key lifetime.
 With authentication we have replay protection, by keeping track of sequence numbers and using typically a sliding window approach, SRTP determines  the packet is both authentic not duplicated. If the sequence number of an arriving packet was matching an index in the replay list, it is marked a replayed packet and can be discarded.
 
+##### Media Encryption Keys
+
+Some approaches to securing media streams rely on the use of a PSK (Preshared Key) exchanged in advance of the session, while others use a PKI (Public Key Infrastructure) and utilize public keys for encrypting key material.
+Another approach is to utilize a secured signaling channel to exchange keys or generate one-time session keys for media encryption and authentication.
+
 
 ------------------------------------------------------------------------------------------------------------------------
