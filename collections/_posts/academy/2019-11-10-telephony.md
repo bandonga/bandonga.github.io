@@ -14,11 +14,9 @@ excerpt: "A guide to help you know more about Telephony."
 
 A guide to help you know more about Telephony.
 
-> Topics:
+> :blue_book: **Topics:**
 * [SIP: Guide to better understand VoIP communications and protocols](/sip/0-intro/)
 * [WebRTC]({{ site.baseurl }}{% post_url /academy/2019-12-10-webrtc %})
-> Topics:
-
 
 
 ### Resources

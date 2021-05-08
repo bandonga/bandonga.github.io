@@ -63,6 +63,8 @@ Address and Port Mapping from [rfc4787](https://tools.ietf.org/html/rfc4787#sect
 
 Formula: `X1':x1' = X2':x2' for all Y;y`. The mapping used is dependent only on the source address/port `X:x`, independent of the destination address/port.
 
+Full-Cone, Restricted-Cone, and Port-Restricted Cone NATs as having an Endpoint-Independent Mapping
+
 * **Address-Dependent Mapping** (ADM NAT)
 
 Formula: `X1':x1' = X2':x2' if only if Y2=Y1`. The mapping used is dependent on the source address/port `X:x` as well as the destination the address `Y`.
@@ -70,6 +72,7 @@ Formula: `X1':x1' = X2':x2' if only if Y2=Y1`. The mapping used is dependent on 
 * **Address and Port Dependent Mapping** (APDM NAT)
 
 Formula: `X1':x1' = X2':x2' if only if Y2:y2=Y1:y1`. The mapping used is dependent both on the source and destination address/port.
+
 
 * **Hairpin Support** (Tromboning NAT)
 
@@ -83,7 +86,7 @@ Networks with multiples public IPs can allocate from a pool and use one of the f
 ##### Port Assignments Options
 
 * **Port preservation:** tries to keep the external/internal port the same. It only works with a large pool of addresses and if it runs out there are two options:
-  * Switch to a non 
+  * Switch to a non
 
 
 ------------------------------------------------------------------------------------------------------------------------
