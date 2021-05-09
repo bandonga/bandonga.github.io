@@ -14,7 +14,7 @@ excerpt: "A guide to help you know more about networking."
 
 A guide to help you know more about networking.
 
-> Topics:
+> :blue_book: **Topics:**
 * [Networking: guide to IP routing and switching](/network/0-intro/)
 
 ### Resources

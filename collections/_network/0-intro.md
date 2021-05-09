@@ -8,8 +8,8 @@ toc: true
 ---
 
 > Related with: [Networking]({{ site.baseurl }}{% post_url /academy/2018-10-31-networking %})
-
-> :warning: **NOTE:**  Under Construction :construction:
+> :warning: **NOTE:**  
+* :construction: Under Construction 
 
 # Introduction
 
