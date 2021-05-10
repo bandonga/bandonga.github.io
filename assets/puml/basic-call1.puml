@@ -1,0 +1,32 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/marcelofpfelix/plantuml-diagrams/master/skins/skin_dark.puml
+
+participant "Alice" as UAC
+participant "Proxy-O" as Proxy1
+participant "Proxy-T" as Proxy2
+participant "Bob" as UAS
+
+UAC     [#red]->   Proxy1: INVITE
+Proxy1 -[#red]->   UAC:    100 Trying
+Proxy1  [#blue]->  Proxy2: INVITE
+Proxy2 -[#blue]->  Proxy1: 100 Trying
+Proxy2  [#green]-> UAS:    INVITE
+UAS    -[#green]-> Proxy2: 100 Trying
+UAS    -[#green]-> Proxy2: 180 Ringing
+Proxy2 -[#blue]->  Proxy1: 180 Ringing
+Proxy1 -[#red]->   UAC: 180 Ringing
+UAS    -[#green]-> Proxy2:   200 OK
+Proxy2 -[#blue]->  Proxy1:   200 OK
+Proxy1 -[#red]->   UAC: 200 OK
+UAC     [#red]->   Proxy1:   ACK
+Proxy1  [#blue]->  Proxy2: ACK
+Proxy2  [#green]-> UAS: ACK
+...RTP Call Established...
+UAC     [#red]->   Proxy1:   BYE
+Proxy1  [#blue]->  Proxy2: BYE
+Proxy2  [#green]-> UAS: BYE
+UAS    -[#green]-> Proxy2:   200 OK
+Proxy2 -[#blue]->  Proxy1: 200 OK
+Proxy1 -[#red]->   UAC: 200 OK
+@enduml

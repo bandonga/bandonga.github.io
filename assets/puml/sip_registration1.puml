@@ -1,0 +1,31 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/marcelofpfelix/plantuml-diagrams/master/skins/skin_dark.puml
+
+participant "Phone" as UAC
+participant "Registrar" as Proxy1
+
+
+UAC     ->   Proxy1: ""REGISTER""\n""Expires: 600""
+note left
+  Registration with
+  10min timeout
+end note
+Proxy1 -->   UAC:    ""401 Unauthorized""\n""WWW-Authenticate ...""
+note left
+  Asks for auth
+end note
+UAC     ->   Proxy1: ""REGISTER""\n""Authorization ...""
+note left
+  Provides encrypted
+  credentials
+end note
+Proxy1 -->   UAC:    ""200 OK""
+......
+UAC     ->   Proxy1: ""REGISTER""\n""Expires: 0""
+note left
+  Phone off
+  Unregistration
+end note
+Proxy1 -->   UAC:    ""200 OK""
+@enduml

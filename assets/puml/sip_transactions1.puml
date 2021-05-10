@@ -1,0 +1,14 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/marcelofpfelix/plantuml-diagrams/master/skins/skin_dark.puml
+
+autonumber
+
+UAC     [#red]->   UAS: INVITE
+UAS     [#red]->   UAC: 100 Trying
+UAS     [#red]->   UAC: 200 OK
+UAC     [#green]-> UAS: ACK
+UAS     [#blue]-> UAC: BYE
+UAC     [#blue]-> UAS: 200 OK
+
+@enduml
