@@ -4,11 +4,11 @@
 
 autonumber
 
-UAC     [#red]->   UAS: INVITE
-UAS     [#red]->   UAC: 100 Trying
-UAS     [#red]->   UAC: 200 OK
-UAC     [#green]-> UAS: ACK
-UAS     [#blue]-> UAC: BYE
-UAC     [#blue]-> UAS: 200 OK
+UAC     [$alizarin]->   UAS: INVITE
+UAS     [$alizarin]->   UAC: 100 Trying
+UAS     [$alizarin]->   UAC: 200 OK
+UAC     [$nephritis]-> UAS: ACK
+UAS     [$peterriver]-> UAC: BYE
+UAC     [$peterriver]-> UAS: 200 OK
 
 @enduml

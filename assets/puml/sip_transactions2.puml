@@ -5,10 +5,9 @@
 
 autonumber
 
-UAC     [#red]->   UAS: INVITE
-UAS     [#red]->   UAC: 100 Trying
-UAS     [#red]->   UAC: 486 Busy
-UAC     [#red]->   UAS: ACK
-
+UAC     [$alizarin]->   UAS: INVITE
+UAS     [$alizarin]->   UAC: 100 Trying
+UAS     [$alizarin]->   UAC: 486 Busy
+UAC     [$alizarin]->   UAS: ACK
 
 @enduml

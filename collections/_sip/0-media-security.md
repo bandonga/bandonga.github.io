@@ -12,6 +12,9 @@ toc: true
 
 # Media Security
 
+To secure media the most common design is to use **SRTP** to achieve integrity protection and confidentiality in the media session.
+In some cases, media keying material (**MIKEY**) is exchanged over the signaling channel and  other approaches use the RTP media path itself to perform the key agreement are covered, such as **DTLS-SRTP** and **ZRTP**.
+
 ## Secure RTP
 
 **SRTP** (Secure RTP) is a profile extension to RTP, published as [RFC 3711](https://tools.ietf.org/html/rfc3711), that adds confidentiality, authentication, and integrity protection to RTP and RTCP sessions, taking an RTP stream and adding encryption and integrity protection before handing the media stream to UDP for transport.
@@ -20,7 +23,7 @@ Uses symmetric **keys** and **ciphers** for media stream encryption, but does no
 
 **SRTCP** is also defined as a Secure RTP Control Protocol. Since it is also used for multicast session control the SRTCP message authentication is mandatory in the specification although not particularly useful in VoIP applications.
 
-##### Data flow encryption
+#### Data flow encryption
 
 SRTP defines how **session keys** are generated (from master cryptographic keys) utilized, or refreshed, during the lifetime of the media session, using the AES cipher in Segmented Integer Counter Mode (AES-CTR, aka AES-CM) or f8-mode, which allow the AES block cipher to be used as a stream cipher.
 
@@ -33,7 +36,7 @@ The IV is generated using:
 The inclusion of the SSRC in the IV allows the same key to be used for multiple RTP media sessions, as each will have a different SSRC.
 As such, a single master secret could be used for both directions and for multiple media streams.
 
-##### Key derivation
+#### Key derivation
 A key derivation function is used to derive the different keys used in a crypto context from one single master key in a cryptographically secure way. Thus, the key management protocol needs to exchange only one master key.
 
 ![srtp](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/bandonga/bandonga.github.io/master/assets/puml/srtp.puml)
@@ -88,10 +91,33 @@ The MKI is a variable length field, defined by the key management service, to re
 SRTP is usable for extremely long-lived sessions, defining the maximum lifetime of a master key to be 248 SRTP packets. Besides the MKI, SRTP also defines a `<from,to>` mechanism for key lifetime.
 With authentication we have replay protection, by keeping track of sequence numbers and using typically a sliding window approach, SRTP determines  the packet is both authentic not duplicated. If the sequence number of an arriving packet was matching an index in the replay list, it is marked a replayed packet and can be discarded.
 
-##### Media Encryption Keys
+#### Media Encryption Keys
 
 Some approaches to securing media streams rely on the use of a PSK (Preshared Key) exchanged in advance of the session, while others use a PKI (Public Key Infrastructure) and utilize public keys for encrypting key material.
 Another approach is to utilize a secured signaling channel to exchange keys or generate one-time session keys for media encryption and authentication.
+
+* **Preshared Keys**
+
+With **Preshared Keys** UAs have previously exchanged secret keys for a symmetric cryptographic algorithm using an out-of-band method (e.g. through security policy administration software or in a conference invitation).
+
+Since the keying material is not carried in the signaling, does not need to be secured specifically to keep media encryption keys private. Also, since authentication is effectively provided by knowledge of the shared key, the signaling does not need to be authenticated to assure that media encryption keys are not altered.
+
+With the same characteristics as static passwords, and encrypting successive and multiple sessions using the same pre-shared key is poor design.
+
+An alternative approach is to use preshared keys as part of the keying material, to generate new keys for each session, and to rekey long sessions based on key entropy.
+
+* **Public Key Infrastructure**
+
+With a **Public Key Infrastructure** (PKI) the UA will use the other UA correspondent public keys to encrypt the RTP media packets. The public key can be encode in the signaling path or published in a directory as an element of a digital certificate.
+
+If public key encryption is used to encrypt successive and multiple media sessions, the UA must protect the private key from disclosure. This is an improvement over preshared keys, but still not optimal. The public key encryption/decryption are more computationally intensive than symmetric key for the same length keys.
+The best approach is for authenticated parties to securely negotiate a session key at the time of session setup and utilize the derived keys to encrypt the media for the duration of that session only.
+
+For long-lasting, high-bandwidth sessions, session keys should be changed at regular intervals, so that an attacker breaking the cipher text will only expose the session encryption key and not the UA's private key.
+
+* **Authenticated Key Management and Exchange**
+
+In authenticated key management, the UAs authenticate themselves, and establish a secure signaling session, a set of session keys are exchanged or derived, that are used to generate media encryption keys to encrypt and sign media packets.
 
 
 ------------------------------------------------------------------------------------------------------------------------
