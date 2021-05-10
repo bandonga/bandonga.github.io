@@ -7,8 +7,7 @@ last_modified_at: 2021-05-07 21:28:04 +00:00
 toc: true
 ---
 
-> :warning: **NOTE:**  
-* Under Construction
+> :warning: **NOTE:** Under Construction
 
 # Network Address Translation
 

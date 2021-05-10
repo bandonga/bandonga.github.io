@@ -17,18 +17,20 @@ blockquote {
 }
 
 .page__content {
-  p,li,dl,code {
+  p,li,dl {
     font-size: $type-size-6;
+  }
+}
+
+
+.page__content {
+  code {
+    font-size: $type-size-6;
+    line-height: 1;
   }
 }
 
 /*
-.page__content {
-  code, pre {
-    font-size: $type-size-6;
-  }
-}
-
 div.highlighter-rouge {
   font-size: $type-size-6;
 }

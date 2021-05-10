@@ -7,16 +7,14 @@ last_modified_at: 2021-01-02 21:28:04 +00:00
 toc: true
 ---
 
+> :warning: **NOTE:** Under Construction
+
+# Introduction
 
 > :book: **Related with:**
 * [Networking]({{ site.baseurl }}{% post_url /academy/2018-10-31-networking %})
 
-> :warning: **NOTE:**  
-* Under Construction
-
-# Introduction
-
-**Session Initiation Protocol** (SIP) is an application-layer signaling, presence and intant messaging protocol developed for creating, modifying and terminating multimedia sessions, standardized in the RFC 3261.
+**Session Initiation Protocol** (SIP) is an application-layer signaling, presence and instant messaging protocol developed for creating, modifying and terminating multimedia sessions, standardized in the RFC 3261.
 
 The most common applications of SIP are in Internet telephony, but has also been extended to video, request and deliver presence information as well as IM sessions, over IP networks, as well as mobile phone calling over LTE (VoLTE).
 
@@ -60,7 +58,7 @@ SIP methods are sometimes referred to as SIP requests or even messages.
 * **INFO** - Send mid-session information that does not modify the session state. Can also be sued to transmit DTMF. RFC 6086
 * **MESSAGE** - Transport text messages. RFC 3428
 * **UPDATE** - Modifies the state of a session parameters. Allows a UAC to update the parameters of a session, such as the SDP and session timers. The Method has no impact on the state of a dialogue. In that sense, is like a re-INVITE, except that it can be sent before the initial INVITE has been completed. This makes it very useful for updating session parameters within early dialogues (renegotiate early media). RFC 3311
-* **REFER**- Asks recipient to issue SIP request, used in transfers. RFC 3515: the message contains the “Refer-To” header field containing SIP address of the transfer agent and “Referred-By” header field which contains the SIP adddres of the initiator (the callee).
+* **REFER**- Asks recipient to issue SIP request, used in transfers. RFC 3515: the message contains the “Refer-To” header field containing SIP address of the transfer agent and “Referred-By” header field which contains the SIP adddress of the initiator (the callee).
 
 
 #### Responses
@@ -83,7 +81,7 @@ SIP methods are sometimes referred to as SIP requests or even messages.
 * 408 Request Timeout - Ex. The server could not produce a response within a suitable amount of time, for example, if it could not determine the location of the user in time.
 * 480 Temporarily Unavailable - Ex. Callee currently unavailable.
 * 486 Busy Here - Ex. Callee is busy.
-* 487 Request Terminated - Request has terminated by bye or cancel.https://www.cs.columbia.edu/sip/sipit/classification.html
+* 487 Request Terminated - Request has terminated by bye or cancel. https://www.cs.columbia.edu/sip/sipit/classification.html
 * 491 Request Pending - Server has some pending request from the same dialog.
 
 **5xx – Server Failure**
@@ -139,12 +137,12 @@ Since SIP is a ASCII text-based protocol, for easy implementation and debugging.
   * Ex. `RSeq: 988789`
 * **Route** - The Route header field is used to force routing for a request through the listed set of proxies.
   * Ex. `Route: sip:sip3.bandonga.com;lr`
-* **Supported** - If the UAC supports extensions (option tags) to SIP that can be applied by the server to the response, the UAC SHOULD include a Supported header field in the request listing the option tags. Full list of options ca be found here: http://www.networksorcery.com/enp/protocol/sip.htm
+* **Supported** - If the UAC supports extensions (option tags) to SIP that can be applied by the server to the response, the UAC SHOULD include a Supported header field in the request listing the option tags. Full list of options can be found at: [http://www.networksorcery.com](http://www.networksorcery.com/enp/protocol/sip.htm)
   * Ex. `Supported: timer, 100rel, replaces, from-change`
 * **User-Agent** - The User-Agent header field contains information about the UAC originating the request.
   * Ex. `User-Agent: Softphone Beta1.5`
 
-> Full list of requests can be found here: [http://www.networksorcery.com](http://www.networksorcery.com/enp/protocol/sip.htm)
+> Full list of requests can be found at: [http://www.networksorcery.com](http://www.networksorcery.com/enp/protocol/sip.htm)
 
 ##### Compact Headers
 
