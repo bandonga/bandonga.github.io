@@ -115,9 +115,41 @@ The best approach is for authenticated parties to securely negotiate a session k
 
 For long-lasting, high-bandwidth sessions, session keys should be changed at regular intervals, so that an attacker breaking the cipher text will only expose the session encryption key and not the UA's private key.
 
-* **Authenticated Key Management and Exchange**
+### Authenticated Key Management and Exchange
 
 In authenticated key management, the UAs authenticate themselves, and establish a secure signaling session, a set of session keys are exchanged or derived, that are used to generate media encryption keys to encrypt and sign media packets.
+
+Another option is to transport the keys over a secure SIP connection (sips) by TLS, e.g. sending the keys in an SDP body. The original SDP specification defined a `k=` attribute for the transport of a symmetric key.
+However, has now been deprecated due to the limited extensibility of SDP.
+
+Approaches to key management that are usable with SRTP media.
+* **SDES**: extensions to SDP carry keys, cryptographic algorithms, and other parameters needed to configure the secure media session.
+* **MIKEY**: SDP is used to carry a multimedia keying payload that securely carries the keying material.
+* **DTLS-SRTP Key** and **ZRTP Media Path Key Agreement**: a media path key agreement is performed to generate session keys.
+
+##### SDES
+
+**SDES** (Session Description Protocol Security Descriptions) is a way to use the `a=crypto` attribute in SDP to carry the keying and configuration information (encryption and integrity protection algorithm, master key lifetime, MKI number, number of bits used to encode the MKI).
+
+The first item in the attribute is a cipher suite. This example below shows AES counter mode as the encryption cipher, a 128 bit key length and SHA-1 80 bit as the HMAC authentication algorithm. In the next item, we concatenate the master key and master salt and encode the value using base64 following the in-line: separator. The third item, separated from the keys by a `|` indicates that the master key is valid for 220 SRTP packets, and the MKI (identified as 1 and the MKI length of 32 bits. Since the MKI field is optional in SRTP, its presence, and length in bits must be signaled prior to the SRTP session.
+
+```
+m=video 51372 RTP/SAVP 31
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:d0RmdmcmVCspeEc3QGZiNWpVLFJhQX1cfHAwJSoj|2^20|1:32
+m=audio 49170 RTP/SAVP 0
+a=crypto:1 AES_CM_128_HMAC_SHA1_32 inline:NzB4d1BINUAvLEw6UzF3WSJ+PSdFcGdUJShpX1Zj|2^20|1:32
+```
+
+The example shows two different master keys, one for audio and the other for video. Note that the secure RTP session is signaled by the `RTP/SAVP` token in each of the media `m=` lines. This approach for key exchange requires some other method to protect the keys, for example, S/MIME or TLS. However, if the destination is unable to decrypt the S/MIME, the INVITE will fail.
+
+Note if keying material is carried in SDP over TLS, whether end-to-end integrity protection over the SDP or keying material is needed, or if the keying material could be altered or deleted by intermediaries.
+
+SDP Security Descriptions is one of the most common key management approaches, however it does not address the "end-to-end" media encryption, unlike ZRTP.
+
+
+##### MIKEY
+
+Multimedia internet keying (MIKEY)
 
 
 ------------------------------------------------------------------------------------------------------------------------

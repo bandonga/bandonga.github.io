@@ -4,6 +4,7 @@
 !includeurl https://raw.githubusercontent.com/marcelofpfelix/plantuml-diagrams/master/skins/skin_dark.puml
 
 autonumber
+hide footbox
 
 UAC     [$alizarin]->   UAS: INVITE
 UAS     [$alizarin]->   UAC: 100 Trying
