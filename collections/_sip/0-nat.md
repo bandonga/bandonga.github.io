@@ -2,7 +2,7 @@
 title: "SIP: NAT"
 excerpt: "Guide to better understand VoIP communications and protocols"
 header:
-  image: "/assets/images/academy/sip.png"
+  image: "/assets/images/academy/sip.svg"
 last_modified_at: 2021-05-07 21:28:04 +00:00
 toc: true
 ---
@@ -54,22 +54,13 @@ Modern terminology, by BEHAVE working group, characterize the type of address ma
 ```
 Address and Port Mapping from [rfc4787](https://tools.ietf.org/html/rfc4787#section-4.1) for `ADDRESS:port`
 
-* **Endpoint-Independent Mapping** (EIM NAT)
+* **Endpoint Independent Mapping** (EIM NAT): Formula: `X1':x1' = X2':x2' for all Y;y`. The mapping used is dependent only on the source address/port `X:x`, independent of the destination address/port (Best for SIP and RTP Traversal).
+* **Address Dependent Mapping** (ADM NAT): Formula: `X1':x1' = X2':x2' if only if Y2=Y1`. The mapping used is dependent on the source address/port `X:x` as well as the destination the address `Y` (Bad for SIP and RTP Traversal).
+* **Address and Port Dependent Mapping** (APDM NAT): Formula: `X1':x1' = X2':x2' if only if Y2:y2=Y1:y1`. The mapping used is dependent both on the source and destination address/port (Worst for SIP and RTP Traversal).
 
-Formula: `X1':x1' = X2':x2' for all Y;y`. The mapping used is dependent only on the source address/port `X:x`, independent of the destination address/port.
+##### Hairpin Support
 
-* **Address-Dependent Mapping** (ADM NAT)
-
-Formula: `X1':x1' = X2':x2' if only if Y2=Y1`. The mapping used is dependent on the source address/port `X:x` as well as the destination the address `Y`.
-
-* **Address and Port Dependent Mapping** (APDM NAT)
-
-Formula: `X1':x1' = X2':x2' if only if Y2:y2=Y1:y1`. The mapping used is dependent both on the source and destination address/port.
-
-
-* **Hairpin Support** (Tromboning NAT)
-
-If an internal host can send packets to another internal host using the external address of the other host. The NAT must look up two mappings to determine the destination.
+Hairpin Support (Tromboning) exists if an internal host can send packets to another internal host using the external address of the other host. The NAT must look up two mappings to determine the destination (Beneficial for SIP and RTP Traversal).
 
 ##### IP Address Pooling options
 Networks with multiples public IPs can allocate from a pool and use one of the following policies:
@@ -79,7 +70,25 @@ Networks with multiples public IPs can allocate from a pool and use one of the f
 ##### Port Assignments Options
 
 * **Port preservation:** tries to keep the external/internal port the same. It only works with a large pool of addresses and if it runs out there are two options:
-  * Switch to a non
+  * Switch to a non port preservation mode
+  * **Port overloading:**: the same port can be used more than once (not good for SIP and RTP Traversal).
+* **Port parity**: preserve the port parity or evenness (positive for SIP and RTP Traversal since RTP must be even and RTCP odd).
+* **Port contiguity**: NAT attempts to keep sequential inside ports mapped to sequential outside ports (positive for SIP and RTP Traversal since RTCP must be higher than RTP)
+
+> For SIP and RTP Traversal the most important is that the port assignment mode doesn't change.
+
+##### Mapping refresh
+
+NAT mapping uses memory and addressing resources. The TCP mapped can be created `SYN` and removed `FIN` based on the TCP signaling, however UDP communications needs to use a timer, since the last packet received.
+
+It's recommended the value of 5 min, but some devices use 30 seconds. It's a good policy to only allow packets from the internal network to refresh the timer.
+
+##### Filtering Mode
+
+Controls who is permitted to use the mapping.
+* **Endpoint Independent Filtering**:  Any external endpoint is permitted to send packets to the internal host (Best for SIP and RTP Traversal).
+* **Address Dependent Filtering**: Only hosts that have received a packet from the internal host can send a packet using the binding (Bad for SIP and RTP Traversal).
+* **Address and Port Dependent Filtering**: Only hosts that have received a packet from the internal host and port can send a packet using the binding  (Worst for SIP and RTP Traversal)..
 
 ##### Legacy Classification
 
@@ -91,12 +100,14 @@ Older NAT terminology classified as:
 
 ## SIP with NAT
 
-Since SIP imbeds IP address and ports in the SIP headers and SDP body, the NAT address/port rewriting in the packet can be problematic.
+Usually NAT doesn't cause issues http connections, however can cause issues with IPSec VPNs (failed signature checks) and specific protocols:
+* Peer-to-Peer protocols, such as SIP .
+* Protocols that can carry imbeds IP address and ports, such as SIP in the headers and SDP body.
 
-Types of NAT mappings:
-* **Endpoint-Independent Mapping:** Best for SIP and RTP Traversal
-* **Address-Dependent Mapping:** Bad for SIP and RTP Traversal
-* **Address and Port Dependent Mapping:** Worst for SIP and RTP Traversal
-
-Propreties:
-* **Hairpin Support:** Beneficial for SIP and RTP Traversal
+[rfc3235](https://datatracker.ietf.org/doc/html/rfc3235) developed NAT-Friendly Application Design Guidelines, mostly violated by SIP:
+* Limit P2P apps and approaches in favor of client/server model
+* Do not rely on E2E IPSec security
+* Use DNS names instead of IP addresses
+* Multicast can be problematic
+* Avoid session bundles (e.g. one session controlling)
+* Use TCP instead of UDP

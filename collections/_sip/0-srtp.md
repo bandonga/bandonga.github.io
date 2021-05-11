@@ -9,23 +9,17 @@ toc: true
 
 > :warning: **NOTE:** Under Construction
 
-
-# Media Security
-
-To secure media the most common design is to use **SRTP** to achieve integrity protection and confidentiality in the media session.
-In some cases, media keying material (**MIKEY**) is exchanged over the signaling channel and  other approaches use the RTP media path itself to perform the key agreement are covered, such as **DTLS-SRTP** and **ZRTP**.
-
-## Secure RTP
+## SRTP
 
 **SRTP** (Secure RTP) is a profile extension to RTP, published as [RFC 3711](https://tools.ietf.org/html/rfc3711), that adds confidentiality, authentication, and integrity protection to RTP and RTCP sessions, taking an RTP stream and adding encryption and integrity protection before handing the media stream to UDP for transport.
 
-Uses symmetric **keys** and **ciphers** for media stream encryption, but does not provide any key management or generation functionality. It must be performed out of band, assuming a key management protocol was used to exchange/derive a set of master keys for the set of ciphers to be used. Two protocols specifically designed to be used are ZRTP and MIKEY, but there are also other methods that use the SDES key exchange.
+Uses symmetric **keys** and **ciphers** for media stream encryption, but does not provide any key management or generation functionality. It must be performed out of band, assuming a key management protocol was used to exchange/derive a set of master keys for the set of ciphers to be used.
 
 **SRTCP** is also defined as a Secure RTP Control Protocol. Since it is also used for multicast session control the SRTCP message authentication is mandatory in the specification although not particularly useful in VoIP applications.
 
 #### Data flow encryption
 
-SRTP defines how **session keys** are generated (from master cryptographic keys) utilized, or refreshed, during the lifetime of the media session, using the AES cipher in Segmented Integer Counter Mode (AES-CTR, aka AES-CM) or f8-mode, which allow the AES block cipher to be used as a stream cipher.
+SRTP defines how **session keys** are generated (from master cryptographic keys) utilized, or refreshed, during the lifetime of the media session, using the AES cipher in Segmented Integer Counter Mode (AES-CTR, aka AES-CM) or f8-mode, which allow block cipher to be used as a stream cipher.
 
 The key stream is initialized with a specific initialization vector (IV) of configurable length. This algorithm allows blocks to be calculated in parallel. The result is then included in the SRTP packet and occupies the same number of bytes.
 The IV is generated using:
@@ -134,22 +128,43 @@ Approaches to key management that are usable with SRTP media.
 The first item in the attribute is a cipher suite. This example below shows AES counter mode as the encryption cipher, a 128 bit key length and SHA-1 80 bit as the HMAC authentication algorithm. In the next item, we concatenate the master key and master salt and encode the value using base64 following the in-line: separator. The third item, separated from the keys by a `|` indicates that the master key is valid for 220 SRTP packets, and the MKI (identified as 1 and the MKI length of 32 bits. Since the MKI field is optional in SRTP, its presence, and length in bits must be signaled prior to the SRTP session.
 
 ```
-m=video 51372 RTP/SAVP 31
+m=video 41372 RTP/SAVP 31
 a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:d0RmdmcmVCspeEc3QGZiNWpVLFJhQX1cfHAwJSoj|2^20|1:32
-m=audio 49170 RTP/SAVP 0
+m=audio 39170 RTP/SAVP 0
 a=crypto:1 AES_CM_128_HMAC_SHA1_32 inline:NzB4d1BINUAvLEw6UzF3WSJ+PSdFcGdUJShpX1Zj|2^20|1:32
 ```
 
-The example shows two different master keys, one for audio and the other for video. Note that the secure RTP session is signaled by the `RTP/SAVP` token in each of the media `m=` lines. This approach for key exchange requires some other method to protect the keys, for example, S/MIME or TLS. However, if the destination is unable to decrypt the S/MIME, the INVITE will fail.
+The example shows two different master keys, one for audio and the other for video. This approach for key exchange requires some other method to protect the keys, for example, S/MIME or TLS. However, if the destination is unable to decrypt the S/MIME, the INVITE will fail.
+* Note that the secure RTP session is signaled by the `RTP/SAVP` token in each of the media `m=` lines.
 
-Note if keying material is carried in SDP over TLS, whether end-to-end integrity protection over the SDP or keying material is needed, or if the keying material could be altered or deleted by intermediaries.
+If keying material is carried in SDP over TLS, whether end-to-end integrity protection over the SDP or keying material is needed, or if the keying material could be altered or deleted by intermediaries.
 
-SDP Security Descriptions is one of the most common key management approaches, however it does not address the "end-to-end" media encryption, unlike ZRTP.
+> SDES is one of the most common key management approaches, however it does not address the "end-to-end" media encryption, unlike ZRTP.
 
 
 ##### MIKEY
 
-Multimedia internet keying (MIKEY)
+**Multimedia Internet Keying** (MIKEY) is a key exchange protocol developed for multimedia session security, with a profile for SRTP.
+Supports key exchange methods (preshared, public and Diffie-Hellman) key generation. The key exchange method chosen by the initiator must also be supported by the recipient, otherwise, the exchange will fail.
 
+MIKEY provides its own confidentiality, integrity and authentication services, so it does not require that the entire SDP message body be encrypted, however requires message authentication to assure that it remains associated with a specific SDP and SIP message.
 
+MIKEY uses an offer/answer model and is transported using extensions to SDP. One party sends a MIKEY message to the other party during call setup, for example, in an INVITE message.
+The responding party answers with a MIKEY reply, allowing each UA to generate session keys and begin the encrypted SRTP media session. Can be used in either of two ways.
+* negotiate separate security associations for each media stream
+* negotiate a single security association for all media streams communicated over this common session.
+
+We can see the `a=key-mgt` SDP attribute extension in the following SDP offer: `a=key-mgt:mikey Lkdlf3mdFLKES98fFk:wekDHJQodfje92dv...`
+
+The token mikey indicates that the key management protocol offered is MIKEY with a base64 encoded MIKEY offer that will result in the exchange or derivation of a single session key, used in each direction of the SRTP flow.
+Both media streams can use the same master key since each RTP session has a unique SSRC that results in a unique IV. If separate keys are to be used for each media stream, the `a=key-mgt` attribute line will be included after the media lines
+
+> MIKEY has not been found to be useful for key management for real-time communication and is not widely used.
+
+##### DTLS-SRTP
+
+**DTLS-SRTP** Key Agreement is a media path key generation approach. A DTLS handshake is performed between the two end points using the same ports that the resulting SRTP session will use. The master secret generated during the handshake is then used to generate the SRTP keys. Note that each set of transport ports will have a separate DTLS handshake and hence will use different keys. A call flow showing DTLS-SRTP is shown in Figure 16.4.
+Since DTLS is a client/server protocol, while media sessions are peer-to-peer, during the establishment of a session, one end point will act as the server and the other end point will act as the client (i.e., initiate the handshake with the DTLS Hello). This is negotiated in the SDP offer/answer using the connection-ori”
+
+Excerpt From: Alan B. Johnston. “SIP: Understanding the Session Initiation Protocol, Fourth Edition.” Apple Books.
 ------------------------------------------------------------------------------------------------------------------------

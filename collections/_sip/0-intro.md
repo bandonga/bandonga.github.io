@@ -2,7 +2,7 @@
 title: "SIP: Introduction"
 excerpt: "Guide to better understand VoIP communications and protocols"
 header:
-  image: "/assets/images/academy/sip.png"
+  image: "/assets/images/academy/sip.svg"
 last_modified_at: 2021-01-02 21:28:04 +00:00
 toc: true
 ---
@@ -63,35 +63,35 @@ SIP methods are sometimes referred to as SIP requests or even messages.
 
 #### Responses
 
-**1xx – Provisional**: Indicates the request has been received and it is being processed
-* `100 Trying` - Extended search being performed may take a significant time so a proxy must send a 100 Trying response.
-* `180 Ringing` - Destination user agent received INVITE, and is alerting user of call. This response MAY be used to initiate local ringback.
-* `183 Session in Progress` - Used to convey information about the progress of the call that is not otherwise classified. This response may be used to send extra information for a call which is still being set up. The 180 Ringing message instructs the UA to create the dial-tone locally, whereas the 183 Session Progress contains an SDP, which allows for regional ring-back and carrier announcements as well.
+* **1xx – Provisional**: Indicates the request has been received and it is being processed
+  * `100 Trying` - Extended search being performed may take a significant time so a proxy must send a 100 Trying response.
+  * `180 Ringing` - Destination user agent received INVITE, and is alerting user of call. This response MAY be used to initiate local ringback.
+  * `183 Session in Progress` - Used to convey information about the progress of the call that is not otherwise classified. This response may be used to send extra information for a call which is still being set up. The 180 Ringing message instructs the UA to create the dial-tone locally, whereas the 183 Session Progress contains an SDP, which allows for regional ring-back and carrier announcements as well.
 
-**2xx – Successful**
-* 200 OK - Ex. Indicates the request was successful.
+* **2xx – Successful**
+  * `200 OK` - Ex. Indicates the request was successful.
 
 **3xx – Redirection**
-* 301 Moved Permanently - Ex. The original Request-URI is no longer valid, the new address is given in the Contact header field, and the client should update any records of the original Request-URI with the new value.
+* `301 Moved Permanently` - Ex. The original Request-URI is no longer valid, the new address is given in the Contact header field, and the client should update any records of the original Request-URI with the new value.
 
-**4xx – Client Failure**
-* 401 Unauthorized - Ex. The request requires user authentication. Issued by UASs and registrars.
-* 403 Forbidden - Ex. The server understood the request, but is refusing to fulfil it.
-* 404 Not Found - Ex. The server has definitive information that the user does not exist at the domain specified in the Request-URI.
-* 408 Request Timeout - Ex. The server could not produce a response within a suitable amount of time, for example, if it could not determine the location of the user in time.
-* 480 Temporarily Unavailable - Ex. Callee currently unavailable.
-* 486 Busy Here - Ex. Callee is busy.
-* 487 Request Terminated - Request has terminated by bye or cancel. https://www.cs.columbia.edu/sip/sipit/classification.html
-* 491 Request Pending - Server has some pending request from the same dialog.
+* **4xx – Client Failure**
+  * `401 Unauthorized` - Ex. The request requires user authentication. Issued by UASs and registrars.
+  * `403 Forbidden` - Ex. The server understood the request, but is refusing to fulfil it.
+  * `404 Not Found` - Ex. The server has definitive information that the user does not exist at the domain specified in the Request-URI.
+  * `408 Request Timeout` - Ex. The server could not produce a response within a suitable amount of time, for example, if it could not determine the location of the user in time.
+  * `480 Temporarily Unavailable` - Ex. Callee currently unavailable.
+  * `486 Busy Here` - Ex. Callee is busy.
+  * `487 Request Terminated` - Request has terminated by bye or cancel. https://www.cs.columbia.edu/sip/sipit/classification.html
+  * `491 Request Pending` - Server has some pending request from the same dialog.
 
-**5xx – Server Failure**
-* 500 Server Internal Error - Ex. The server could not fulfill the request due to an unexpected condition.
-* 503 Service Unavailable - Ex. The server is undergoing maintenance or is temporarily overloaded and so cannot process the request.
+* **5xx – Server Failure**
+  * `500 Server Internal Error` - Ex. The server could not fulfill the request due to an unexpected condition.
+  * `503 Service Unavailable` - Ex. The server is undergoing maintenance or is temporarily overloaded and so cannot process the request.
 
-**6xx – Global Failure**
-* 603 Decline - Ex. The destination does not wish to participate in the call, or cannot do so, and additionally the destination knows there are no alternative (eg voicemail) willing to accept the call.
+* **6xx – Global Failure**
+  * `603 Decline` - Ex. The destination does not wish to participate in the call, or cannot do so, and additionally the destination knows there are no alternative (eg voicemail) willing to accept the call.
 
-> **Note**: The reason phrase,  is suggested in the standard, but any text can be used to convey more information.
+> **NOTE**: The `XXX Reason` phrase,  is suggested in the standard, but any text can be used to convey more information.
 A complete list can be found at http://www.iana.org/assignments/sip-parameters/sip-parameters.txt
 
 ### SIP Headers
@@ -168,11 +168,11 @@ v     Via              RFC 3261
 
 ### SIP Concepts
 
-**Transaction** - A transaction consists of a Request, any non-final (1xx) Responses received, and a final Response (2xx, 3xx, 4xx, 5xx, or 6xx), as well as the acknowledgements of the Responses (ACK or PRACK), except for ACKs to 2xx Responses.
+**Transaction** - A transaction consists of a Request, any non-final `1XX` Responses received, and a final Response (`199`), as well as the acknowledgements of the Responses (ACK or PRACK), except for ACKs to `2XX` Responses.
 
 **Dialog** - Dialog is a peer-to-peer SIP relationship between two UAs that persists for some time. Is composed by a group of Transactions;
-* Dialogs are created through the generation of non-failure responses to requests with specific methods. Only 2xx and 101-199 responses with a To tag, where the request was INVITE, will establish a dialog;
-* A dialog is identified at each UA with a dialog ID, which consists of a "Call-ID" value, a local "FROM" tag and a remote "TO" tag.
+* Dialogs are created through the generation of non-failure responses to requests with specific methods. Only `2XX` and `101-199` responses with a To tag, where the request was INVITE, will establish a dialog;
+* A dialog is identified at each UA with a dialog ID, which consists of a `Call-ID` value, a local `FROM` tag and a remote `TO` tag.
 
 **Early-dialog** - A dialog established by a non-final response to a request is in the "early" state and it is called an early dialog.
 
