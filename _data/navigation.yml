@@ -38,5 +38,5 @@ sip:
     children:
       - title: "NAT"
         url: /sip/0-nat/
-      - title: "Media Security"
-        url: /sip/0-media-security/
+      - title: "SRTP"
+        url: /sip/0-srtp/

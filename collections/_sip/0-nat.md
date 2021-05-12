@@ -101,7 +101,7 @@ Older NAT terminology classified as:
 ## SIP with NAT
 
 Usually NAT doesn't cause issues http connections, however can cause issues with IPSec VPNs (failed signature checks) and specific protocols:
-* Peer-to-Peer protocols, such as SIP .
+* Peer-to-Peer protocols, such as SIP.
 * Protocols that can carry imbeds IP address and ports, such as SIP in the headers and SDP body.
 
 [rfc3235](https://datatracker.ietf.org/doc/html/rfc3235) developed NAT-Friendly Application Design Guidelines, mostly violated by SIP:
@@ -111,3 +111,44 @@ Usually NAT doesn't cause issues http connections, however can cause issues with
 * Multicast can be problematic
 * Avoid session bundles (e.g. one session controlling)
 * Use TCP instead of UDP
+
+Summary of how a NAT Should BEHAVE with SIP
+* End point-independent mapping
+* Address-independent or address-dependent filtering
+* Pair IP address pooling
+* Not port preservation
+* Not port overloading
+* Port parity preservation (helpful)
+* UDP refresh timer 5 minutes
+
+Early solutions:
+* **ALG**: (Application Layer Gateway) makes NAT SIP aware. It uses Deep packet inspection, by router firewalls by inspecting VoIP traffic (packets) and if necessary modifying it. However, modifies packets in unexpected ways, corrupting them and making them unreadable. It is also common to interfere with other NAT technologies, and various providers recommend turning it off.
+* **Discovery approach**:  A UA would send test packets to determine if it was behind a NAT and to discover mapped addresses, using STUN.
+
+> The [rfc6314](https://datatracker.ietf.org/doc/html/rfc6314) discusses the  NAT Traversal Practices for Client-Server SIP and https://datatracker.ietf.org/doc/html/rfc5853 Requirements for SBC Deployments.
+
+Specifications for the traversal of NATs
+* Session Traversal Utilities for NAT (STUN) [RFC5389],
+* Interactive Connectivity Establishment (ICE) [RFC5245]
+* symmetric response [RFC3581]
+* symmetric RTP [RFC4961], Traversal Using Relay NAT (TURN) [RFC5766]
+* SIP Outbound [RFC5626]
+* The Session Description Protocol (SDP) attribute for RTP Control Protocol (RTCP) [RFC3605]
+* Multiplexing RTP Data and Control Packets on a Single Port [RFC5761]
+
+
+SIP Signaling
+*  Symmetric Response
+*  Client-Initiated Connections
+Media Traversal
+*  Symmetric RTP/RTCP
+*  RTCP
+*  STUN/TURN/ICE
+
+
+##### STUN
+
+[rfc8489](https://datatracker.ietf.org/doc/html/rfc8489)
+
+
+STUN did not work for all type of NAS. To overcome STUN limitations, ICE was developed, which runs a series of E2E tests, known as connectivity checks, using STUN between 2 UAs, using the "home pushing" approach.

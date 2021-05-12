@@ -164,7 +164,8 @@ Both media streams can use the same master key since each RTP session has a uniq
 ##### DTLS-SRTP
 
 **DTLS-SRTP** Key Agreement is a media path key generation approach. A DTLS handshake is performed between the two end points using the same ports that the resulting SRTP session will use. The master secret generated during the handshake is then used to generate the SRTP keys. Note that each set of transport ports will have a separate DTLS handshake and hence will use different keys. A call flow showing DTLS-SRTP is shown in Figure 16.4.
-Since DTLS is a client/server protocol, while media sessions are peer-to-peer, during the establishment of a session, one end point will act as the server and the other end point will act as the client (i.e., initiate the handshake with the DTLS Hello). This is negotiated in the SDP offer/answer using the connection-ori”
+Since DTLS is a client/server protocol, while media sessions are peer-to-peer, during the establishment of a session, one end point will act as the server and the other end point will act as the client (i.e., initiate the handshake with the DTLS Hello). This is negotiated in the SDP offer/answer using the connection-ori
 
-Excerpt From: Alan B. Johnston. “SIP: Understanding the Session Initiation Protocol, Fourth Edition.” Apple Books.
+
+
 ------------------------------------------------------------------------------------------------------------------------

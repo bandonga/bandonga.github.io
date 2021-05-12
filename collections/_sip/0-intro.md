@@ -34,8 +34,6 @@ Primarily for routing, can change specific parts of the message.
 * **Session Border Controller (SBC)**: Serve as middle boxes between UA and SIP servers for various types of functions, including network topology hiding, assistance in NAT traversal, security, etc.
 * **Gateway**: Can be used to interconnect a SIP network to other networks, such as the PSTN, which use different protocols or technologies.
 
-
-
 ### SIP Methods
 
 SIP methods are sometimes referred to as SIP requests or even messages.
@@ -45,7 +43,7 @@ SIP methods are sometimes referred to as SIP requests or even messages.
 **Core methods**
 * **INVITE** - The invite message initiates a SIP dialog with the intent to establish a call. It is sent by a user agent client to a user agent server.
 * **ACK** - Confirm that an entity has received a final response to an INVITE request.
-* **BYE** - This method signals termination of a dialog and ends a call.
+* **BYE** - This method signals the termination of a dialog and ends a call.
 * **CANCEL** - Cancel any pending request.
 * **OPTIONS** - Query the capabilities of an endpoint.
 * **REGISTER** - Register the SIP URI listed in the To header field with a location server and associates it with the network address given in a Contact header field.
@@ -58,7 +56,7 @@ SIP methods are sometimes referred to as SIP requests or even messages.
 * **INFO** - Send mid-session information that does not modify the session state. Can also be sued to transmit DTMF. RFC 6086
 * **MESSAGE** - Transport text messages. RFC 3428
 * **UPDATE** - Modifies the state of a session parameters. Allows a UAC to update the parameters of a session, such as the SDP and session timers. The Method has no impact on the state of a dialogue. In that sense, is like a re-INVITE, except that it can be sent before the initial INVITE has been completed. This makes it very useful for updating session parameters within early dialogues (renegotiate early media). RFC 3311
-* **REFER**- Asks recipient to issue SIP request, used in transfers. RFC 3515: the message contains the “Refer-To” header field containing SIP address of the transfer agent and “Referred-By” header field which contains the SIP adddress of the initiator (the callee).
+* **REFER**- Asks recipient to issue SIP request, used in transfers. RFC 3515: the message contains the “Refer-To” header field containing SIP address of the transfer agent and “Referred-By” header field which contains the SIP address of the initiator (the callee).
 
 
 #### Responses
@@ -71,17 +69,17 @@ SIP methods are sometimes referred to as SIP requests or even messages.
 * **2xx – Successful**
   * `200 OK` - Ex. Indicates the request was successful.
 
-**3xx – Redirection**
-* `301 Moved Permanently` - Ex. The original Request-URI is no longer valid, the new address is given in the Contact header field, and the client should update any records of the original Request-URI with the new value.
+* **3xx – Redirection**
+  * `301 Moved Permanently` - Ex. The original Request-URI is no longer valid, the new address is given in the Contact header field, and the client should update any records of the original Request-URI with the new value.
 
 * **4xx – Client Failure**
   * `401 Unauthorized` - Ex. The request requires user authentication. Issued by UASs and registrars.
-  * `403 Forbidden` - Ex. The server understood the request, but is refusing to fulfil it.
+  * `403 Forbidden` - Ex. The server understood the request, but is refusing to fulfill it.
   * `404 Not Found` - Ex. The server has definitive information that the user does not exist at the domain specified in the Request-URI.
   * `408 Request Timeout` - Ex. The server could not produce a response within a suitable amount of time, for example, if it could not determine the location of the user in time.
   * `480 Temporarily Unavailable` - Ex. Callee currently unavailable.
   * `486 Busy Here` - Ex. Callee is busy.
-  * `487 Request Terminated` - Request has terminated by bye or cancel. https://www.cs.columbia.edu/sip/sipit/classification.html
+  * `487 Request Terminated` - Request has terminated by bye or cancel.
   * `491 Request Pending` - Server has some pending request from the same dialog.
 
 * **5xx – Server Failure**
@@ -92,7 +90,7 @@ SIP methods are sometimes referred to as SIP requests or even messages.
   * `603 Decline` - Ex. The destination does not wish to participate in the call, or cannot do so, and additionally the destination knows there are no alternative (eg voicemail) willing to accept the call.
 
 > **NOTE**: The `XXX Reason` phrase,  is suggested in the standard, but any text can be used to convey more information.
-A complete list can be found at http://www.iana.org/assignments/sip-parameters/sip-parameters.txt
+A complete list can be found at [IANA SIP parameters](https://www.iana.org/assignments/sip-parameters/sip-parameters.xhtml)
 
 ### SIP Headers
 
@@ -176,7 +174,7 @@ v     Via              RFC 3261
 
 **Early-dialog** - A dialog established by a non-final response to a request is in the "early" state and it is called an early dialog.
 
-**Session** - A session is just a media stream (e.g. audio or video) flowing between peers, usually consisting of RTP (and possibly RTCP) packets..
+**Session** - A session is just a media stream (e.g. audio or video) flowing between peers, usually consisting of RTP packets.
 
 Example 1
 
