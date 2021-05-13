@@ -73,3 +73,6 @@ By type of key used ciphers are divided into:
 Ciphers can be distinguished into two types by the type of input data:
 * **block ciphers** which encrypt block of data of fixed size.
 * **stream ciphers** which encrypt continuous streams of data.
+
+* a **salt** is random data that is used as an additional input to a one-way function that hashes data, a password or passphrase. Salts are used to safeguard passwords in storage.
+* a **nonce** is an arbitrary number that can be used just once in a cryptographic communication. It is often a random or pseudo-random number issued in an authentication protocol.
