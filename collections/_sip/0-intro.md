@@ -49,7 +49,7 @@ SIP methods are sometimes referred to as SIP requests or even messages.
 * **REGISTER** - Register the SIP URI listed in the To header field with a location server and associates it with the network address given in a Contact header field.
 
 **Extended Methods**
-* **PRACK** - (Provisional Responses ACK) Provisional  (1xx responses) acknowledgement for reliability. RFC 3262.
+* **PRACK** - (Provisional Responses ACK) Provisional  (1xx responses) acknowledgment for reliability. RFC 3262.
 * **SUBSCRIBE** - Initiates a subscription for notification of events from a notifier, for instance, DND has been activated. RFC 6665
 * **NOTIFY** - Inform a subscriber of notifications of a new event. RFC 6665
 * **PUBLISH** - Publish an event to a notification server. RFC 3903
@@ -166,7 +166,7 @@ v     Via              RFC 3261
 
 ### SIP Concepts
 
-**Transaction** - A transaction consists of a Request, any non-final `1XX` Responses received, and a final Response (`199`), as well as the acknowledgements of the Responses (ACK or PRACK), except for ACKs to `2XX` Responses.
+**Transaction** - A transaction consists of a Request, any non-final `1XX` Responses received, and a final Response (`199`), as well as the acknowledgments of the Responses (ACK or PRACK), except for ACKs to `2XX` Responses.
 
 **Dialog** - Dialog is a peer-to-peer SIP relationship between two UAs that persists for some time. Is composed by a group of Transactions;
 * Dialogs are created through the generation of non-failure responses to requests with specific methods. Only `2XX` and `101-199` responses with a To tag, where the request was INVITE, will establish a dialog;
