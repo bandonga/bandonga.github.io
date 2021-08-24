@@ -39,16 +39,8 @@ algolia:
 
 # Collections
 collections:
-  1Z0-133:
-    title: 1Z0-133
-    output: true
-    permalink: "/:collection/:path/"
-  RHCSA:
-    title: RHCSA
-    output: true
-    permalink: "/:collection/:path/"
-  CCNA:
-    title: CCNA
+  linux:
+    title: linux
     output: true
     permalink: "/:collection/:path/"
   network:
@@ -65,6 +57,14 @@ collections:
     permalink: "/:collection/:path/"
   kamailio:
     title: kamailio
+    output: true
+    permalink: "/:collection/:path/"
+  docker:
+    title: docker
+    output: true
+    permalink: "/:collection/:path/"
+  kubernetes:
+    title: kubernetes
     output: true
     permalink: "/:collection/:path/"
   posts:
@@ -94,10 +94,10 @@ defaults:
   values:
     layout: single
     author_profile: false
-# 1Z0-133
+# linux
 - scope:
     path: ''
-    type: 1Z0-133
+    type: linux
   values:
     layout: single
     author_profile: false
@@ -106,37 +106,9 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/1Z0-133/1Z0-133_oracle_certification.png"
-# RHCSA
-- scope:
-    path: ''
-    type: RHCSA
-  values:
-    layout: single
-    author_profile: false
-    read_time: true
-    comments: true
-    share: true
-    related: true
-    header:
-      teaser: "/assets/images/RHCSA/rhcsa.png"
+      teaser: "/assets/images/academy/linux.png"
     sidebar:
-      nav: RHCSA
-# CCNA
-- scope:
-    path: ''
-    type: CCNA
-  values:
-    layout: single
-    author_profile: false
-    read_time: true
-    comments: true
-    share: true
-    related: true
-    header:
-      teaser: "/assets/images/CCNA/ccna.png"
-    sidebar:
-      nav: CCNA
+      nav: linux
 # network
 - scope:
     path: ''
@@ -197,6 +169,36 @@ defaults:
       teaser: "/assets/images/academy/ansible.png"
     sidebar:
       nav: ansible
+# docker
+- scope:
+    path: ''
+    type: docker
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/academy/docker.png"
+    sidebar:
+      nav: docker
+# kubernetes
+- scope:
+    path: ''
+    type: kubernetes
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/academy/kubernetes.png"
+    sidebar:
+      nav: kubernetes
 collections_dir: collections
 
 comments:

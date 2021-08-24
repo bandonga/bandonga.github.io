@@ -3,11 +3,11 @@ title: Academy
 permalink: "/academy/"
 layout: archive
 feature_row:
-- image_path: "/assets/images/academy/sysadmin.png"
+- image_path: "/assets/images/academy/sre.png"
   alt: sysadmin
-  title: Sysadmin
+  title: SRE
   excerpt: "A guide to help you be a better System Administrator."
-  url: "/academy/sysadmin/"
+  url: "/academy/sre/"
   btn_class: btn--primary
   btn_label: Read More
 - image_path: "/assets/images/academy/networking.png"

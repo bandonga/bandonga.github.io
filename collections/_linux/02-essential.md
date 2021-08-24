@@ -14,11 +14,11 @@ A **Shell** is *command-line* interpreter that provides a user interface. Users 
 
 When using a shell interactivelly, it displays a string, warning for a command, the *shell prompt*. When using a regular user, the prompt is the `$` character.
 ```console
-marcelo@mo:~$
+marcelo@bandonga:~ $
 ```
 The `$` is replaced by `#`, if the you are the *superuser*, root, to avoid accidents
 ```console
-root@mo:~#
+root@bandonga:~ #
 ```
 The bash shell also provides a scripting language that can support automation of tasks.
 
