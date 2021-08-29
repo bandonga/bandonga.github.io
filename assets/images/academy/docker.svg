@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="sre.svg"
+   sodipodi:docname="docker.svg"
    inkscape:export-filename="/Users/marcelo.felix/default/projects/bandonga/posts/images/sip.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
@@ -77,9 +77,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.16"
-     inkscape:cx="428.59181"
-     inkscape:cy="424.83378"
+     inkscape:zoom="0.64"
+     inkscape:cx="407.04145"
+     inkscape:cy="153.76661"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -87,7 +87,7 @@
      inkscape:window-width="1878"
      inkscape:window-height="1023"
      inkscape:window-x="42"
-     inkscape:window-y="387"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:document-rotation="0" />
@@ -201,20 +201,33 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:96px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d6dbdf;fill-opacity:0.94117647;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="341.66965"
-       y="908.02124"
+       x="370.01468"
+       y="789.09021"
        id="text4160-3-3"
        transform="scale(1.0015244,0.99847792)"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan4162-6-6"
-         x="341.66965"
-         y="908.02124"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:229.33332825px;line-height:1.25;font-family:Impact;-inkscape-font-specification:'Impact Bold';fill:#d6dbdf;fill-opacity:0.94117647">SRE</tspan></text>
+         x="370.01468"
+         y="789.09021"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;line-height:1.25;font-family:Impact;-inkscape-font-specification:'Impact Bold';fill:#d6dbdf;fill-opacity:0.94117647">Docker</tspan></text>
     <text
        xml:space="preserve"
        id="text1296"
        style="font-size:26.66669999999999874px;line-height:1.25;font-family:Verdana;-inkscape-font-specification:Verdana;white-space:pre;shape-inside:url(#rect1298);" />
+    <g
+       id="g842"
+       transform="matrix(2.1520247,0,0,2.1520247,379.64731,805.15716)">
+      <path
+         id="path840"
+         d="m 121.68,33.34 c -0.34,-0.28 -3.42,-2.62 -10.03,-2.62 -1.71,0 -3.48,0.17 -5.19,0.46 -1.25,-8.72 -8.49,-12.94 -8.78,-13.16 l -1.77,-1.03 -1.14,1.65 c -1.42,2.22 -2.51,4.73 -3.13,7.29 -1.2,4.96 -0.46,9.63 2.05,13.62 -3.02,1.71 -7.92,2.11 -8.95,2.17 H 3.81 c -2.11,0 -3.82,1.71 -3.82,3.82 -0.11,7.07 1.08,14.13 3.53,20.8 2.79,7.29 6.95,12.71 12.31,16.01 6.04,3.7 15.9,5.81 27.01,5.81 5.01,0 10.03,-0.46 14.99,-1.37 6.9,-1.25 13.51,-3.65 19.6,-7.12 5.02,-2.91 9.52,-6.61 13.34,-10.94 6.44,-7.24 10.26,-15.33 13.05,-22.51 0.4,0 0.74,0 1.14,0 7.01,0 11.34,-2.79 13.73,-5.19 1.6,-1.48 2.79,-3.31 3.65,-5.36 l 0.51,-1.48 z m -50.09,6.04 h 10.83 c 0.51,0 0.97,-0.4 0.97,-0.97 v -9.69 c 0,-0.51 -0.4,-0.97 -0.97,-0.97 v 0 H 71.59 c -0.51,0 -0.97,0.4 -0.97,0.97 v 0 9.69 c 0.06,0.57 0.46,0.97 0.97,0.97 z M 56.49,11.63 h 10.83 c 0.51,0 0.97,-0.4 0.97,-0.97 V 0.97 C 68.29,0.46 67.83,0 67.32,0 H 56.49 c -0.51,0 -0.97,0.4 -0.97,0.97 v 0 9.69 c 0,0.51 0.45,0.97 0.97,0.97 z m 0,13.9 h 10.83 c 0.51,0 0.97,-0.46 0.97,-0.97 v -9.69 c 0,-0.51 -0.46,-0.97 -0.97,-0.97 H 56.49 c -0.51,0 -0.97,0.4 -0.97,0.97 v 0 9.69 c 0,0.52 0.45,0.97 0.97,0.97 z m -14.99,0 h 10.83 c 0.51,0 0.97,-0.46 0.97,-0.97 v -9.69 c 0,-0.51 -0.4,-0.97 -0.97,-0.97 v 0 H 41.5 c -0.51,0 -0.97,0.4 -0.97,0.97 v 0 9.69 c 0,0.52 0.4,0.97 0.97,0.97 z m -15.22,0 h 10.83 c 0.51,0 0.97,-0.46 0.97,-0.97 v -9.69 c 0,-0.51 -0.4,-0.97 -0.97,-0.97 v 0 H 26.28 c -0.51,0 -0.97,0.4 -0.97,0.97 v 9.69 c 0.06,0.52 0.46,0.97 0.97,0.97 z m 30.21,13.85 h 10.83 c 0.51,0 0.97,-0.4 0.97,-0.97 v -9.69 c 0,-0.51 -0.4,-0.97 -0.97,-0.97 v 0 H 56.49 c -0.51,0 -0.97,0.4 -0.97,0.97 v 0 9.69 c 0,0.57 0.45,0.97 0.97,0.97 z m -14.99,0 h 10.83 c 0.51,0 0.97,-0.4 0.97,-0.97 v 0 -9.69 c 0,-0.51 -0.4,-0.97 -0.97,-0.97 v 0 H 41.5 c -0.51,0 -0.97,0.4 -0.97,0.97 v 0 9.69 c 0,0.57 0.4,0.97 0.97,0.97 z m -15.22,0 h 10.83 c 0.51,0 0.97,-0.4 0.97,-0.97 v 0 -9.69 c 0,-0.51 -0.4,-0.97 -0.97,-0.97 v 0 H 26.28 c -0.51,0 -0.97,0.4 -0.97,0.97 v 9.69 c 0.06,0.57 0.46,0.97 0.97,0.97 z m -14.93,0 h 10.83 c 0.51,0 0.97,-0.4 0.97,-0.97 v 0 -9.69 c 0,-0.51 -0.4,-0.97 -0.97,-0.97 v 0 H 11.35 c -0.51,0 -0.97,0.4 -0.97,0.97 v 0 9.69 c 0.06,0.57 0.46,0.97 0.97,0.97 z"
+         class="st0"
+         inkscape:connector-curvature="0"
+         style="fill:#0091e2" />
+    </g>
   </g>
+  <style
+     id="style838"
+     type="text/css">.st0{fill:#0091E2;}</style>
 </svg>
