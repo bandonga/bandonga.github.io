@@ -2,6 +2,37 @@ main:
   - title: "Academy"
     url: /academy/
 
+docker:
+  - title: "Getting Started"
+    children:
+      - title: "Introduction"
+        url: /docker/0-intro/
+  - title: "Fundamentals"
+    children:
+      - title: "Develop"
+        url: /docker/01.1-dev/
+      - title: "SRTP"
+        url: /docker/02.1-engine/
+  - title: "Appendix"
+    children:
+      - title: "Cheatsheet"
+        url: /docker/a-cheatsheet/
+
+kubernetes:
+  - title: "Getting Started"
+    children:
+      - title: "Introduction"
+        url: /kubernetes/0-intro/
+  - title: "Fundamentals"
+    children:
+      - title: "Pods"
+        url: /kubernetes/0-pods/
+      - title: "Deployments"
+        url: /kubernetes/0-deploy/
+  - title: "Appendix"
+    children:
+      - title: "Cheatsheet"
+        url: /kubernetes/a-cheatsheet/
 
 linux:
   - title: "Getting Started"

@@ -1,9 +1,9 @@
 ---
 title: "Kubernetes: Introduction"
-excerpt: "Guide to better understand kubernetes containers"
+excerpt: "Guide to understand kubernetes containers"
 header:
   image: "/assets/images/academy/kubernetes.svg"
-last_modified_at: 2021-01-02 21:28:04 +00:00
+last_modified_at: 2021-12-02 21:28:04 +00:00
 toc: true
 ---
 
@@ -25,10 +25,9 @@ A **cloud native** app was design to run on kubernetes.
 A **microservice** is an app build from multiples small specialized parts (services) that communicate and form a meaningful app.
 Each microservice can have it's release and scale independently.
 
-The CRI (Container Runtime Interface) is a layer that standardizes the 3rd party containers runtimes, allowing different secure classes, such as gVisor or kata.
-
-kubernetes abstracts the differences between clouds, allowing to balance workload across multiple different public or private cloud infrastructure.
-
+Kubernetes abstracts
+* The container runtime, using the CRI (Container Runtime Interface), a layer that standardizes the 3rd party containers runtimes, also allowing different secure classes, such as gVisor or kata.
+* The differences between clouds, allowing to balance workload across multiple different public or private cloud infrastructure.
 
 The Kubernetes cluster has nodes and a master (aka heads, control plane), that exposes an API, scheduler to assign work, persistent store to record state, perform monitoring, respond to events, implement changes, with auto scaling and rolling updates.
 
@@ -37,21 +36,20 @@ The Kubernetes cluster has nodes and a master (aka heads, control plane), that e
   * DaemonSets: run one instance of a service on every node in the cluster.
   * StatefulSets: are the stateful application  
   * CronJobs: short-lived tasks that need to run at set times.
-
-Apps are managed declarative, in a set of yaml file.
+* Apps are managed declarative, in a set of yaml file.
 
 
 ### Master
 
 ```
-               API
-                |
-  ______________|__________________
-  |             |                 |
-scheduler   cluster store     controller
+                                      API
+                                       |
+    ___________________________________|________________________________
+    |                                  |                               |
+scheduler                        cluster store                     controller
 ```
 
-For production, multi-master HA is a must have (3 to 5).
+For production, multi-master HA is a must have (3 to 5 masters).
 Apps shouldn't run on Masters. It offers the following services:
 
 **API Server**: all communications must go through the API Server. Exposes a RESTful API that receives YAML config files via POST requests.
@@ -76,3 +74,8 @@ Nodes watch the API for new work assignments, to execute and report back to mast
 
 **kubelet**:  when a node joins a cluster, kubelet is installed, which registers the node with the cpu, mem and storage into the cluster.
 Watches the API for new assignment, executes it and reports it back to the master. If it can't run a specific task, reports it back to the master.
+
+**CRI** (Container Runtime Interface) is the API that Kubernetes uses to control the different runtimes that create and manage containers. It's used by kubectl to perform tasks.
+It exposes an interface for 3rd party container runtimes to plug into, such as docker, containerd or CRI-O.
+
+**Kube-proxy**: Responsible for local cluster networking. Manages IP Addresses, local IP tables, routing and load balancing the traffic on the pod's network.
