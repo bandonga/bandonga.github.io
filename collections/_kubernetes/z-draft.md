@@ -46,58 +46,16 @@ Tools
 
 https://k8slens.dev/
 
-
----
-title: Kubernetes
-date: 2021-05-27 00:00:00 +01:00
-header:
-  teaser: "/assets/images/academy/kubernetes.svg"
-  image: "/assets/images/academy/kubernetes.svg"
-categories:
-- academy
-tags:
-- academy
-- sre
-- kubernetes
-excerpt: "Linux is a free and open-source software (FOSS) operating systems built around the Linux kernel, packaged in a distro, by Linus Torvalds."
----
-
-> :book: Related with: [SRE]({{ site.baseurl }}{% post_url /academy/2018-06-31-sre %}).
-> :blue_book: **Topics:**
-* [Kubernetes Administration](/kubernetes/0-start/)
-
-Linux is a free and open-source software (FOSS) operating systems built around the Linux kernel, packaged in a distro, by Linus Torvalds.
-
-The main distros for the Enterprise Servers are the Red Hat *RHEL*, SUSE *SLES* (based on Slackware) and *Ubuntu Server* (based on Debian). There is also *Debian* and *Oracle Linux* (based on RHEL, but with Oracle Support).
-
-For desktop, the most common are probably *fedora* or *ubuntu* distros, but there are too many, for different proposes, such as *lubuntu*, that works really well on old computers.
-Another worthy mention is the *alpine*, *arch*,  and *gentoo* independent distros. Highly customizable, but recommended only for advanced users.  See more in this [image](https://upload.wikimedia.org/wikipedia/commons/8/83/Linux_Distribution_Timeline_27_02_21.svg) or let [distro chooser](https://distrochooser.de/en) get the best Linux for you.
-
-### Resources
-
-#### General
-* [kubernetes.io Documentation](https://kubernetes.io/docs)
-
 https://kubernetes.io/docs/tutorials/kubernetes-basics/
 https://github.com/tomhuang12/awesome-k8s-resources
 
-#### Course
-* [bandonga - RHCSA: Red Hat Certified System Administrator](/RHCSA/0-start/)
-* [Udemy - Red Hat: RHEL Technical Overview](https://www.edx.org/course/introduction-to-kubernetes?index=product&queryID=e76c9c97c2ba1d72531ca047110a48d6&position=1)
-
-#### Books
-* ["UNIX and Linux System Administration Handbook"](https://www.amazon.com/dp/0131480057/), by Evi Nemeth,  et al
-
-
+\
 #### Tutorials
-* [Ops Schools](http://www.omnisecu.com/gnu-linux/index.php)
-* [OmniSecu](http://www.opsschool.org/en/latest/unix_101.htm)
-
-
-#### Certification
-If you wish to get certified, the standard is by Red Hat. We recommend to start with the [RHCSA](https://www.redhat.com/en/services/certification/rhcsa) certification and follow our **[guide](/RHCSA/0-start/)**. As an alternative, you can check the [Linux Professional Institute](http://www.lpi.org/our-certifications/summary-of-certifications) and [Linux Foundation](https://training.linuxfoundation.org/certification) certification programs.
-
 
 ##### References:
   * r/linuxadmin [start](https://www.reddit.com/r/linuxadmin/comments/2s924h/how_did_you_get_your_start/cnnw1ma);
   * https://hackr.io/tutorials/learn-kubernetes
+
+
+
+### Resources

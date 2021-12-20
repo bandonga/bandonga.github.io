@@ -51,11 +51,11 @@ by Russ White
 
 ### Certification
 
-If you wish to get certified, the standard is by [Cisco](http://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html). We recommend to start with the [CCNA](www.cisco.com/go/ccna) certification. As an alternative, you can check the [comptia](https://certification.comptia.org/certifications/network) and [juniper](https://www.juniper.net/uk/en/training/certification/certification-tracks/ent-routing-switching-track/) certification programs.
+If you wish to get certified, the standard is by [Cisco](http://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html). We recommend to start with the [CCNA](www.cisco.com/go/ccna) certification. 
 
-* [CCNA](www.cisco.com/go/ccna)
-* [CCNP](www.cisco.com/go/ccnp)
-* [CCIE](www.cisco.com/go/ccie)
+* Cisco [CCNA](www.cisco.com/go/ccna)
+* Comptia [Network+](https://certification.comptia.org/certifications/network)
+* Juniper [JNCP](https://www.juniper.net/uk/en/training/certification/certification-tracks/ent-routing-switching-track/)
 
 Another extra possibility is the [wireshark](https://www.wiresharktraining.com/certification.html) certification.
 

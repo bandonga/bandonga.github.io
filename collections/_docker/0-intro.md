@@ -11,6 +11,9 @@ toc: true
 
 # Introduction
 
+![](https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/eb693/images/docs/container_evolution.svg)
+source: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
+
 A VM (Virtual Machine) is a hardware abstraction, it takes physical CPUs and RAM from a host, and shares it across several VMs.
 
 Unlike VMs, containers are an application abstraction, an isolated system that do not require a full OS, sharing the host's license, and are fast to start and portable.
@@ -19,7 +22,23 @@ A Linux Containers (LXC) is an OS-level virtualization method for running multip
 The kernel provides the cgroups functionality that allows limitation and prioritization of resources without the need for starting any VM, and also the namespace isolation functionality that allows complete isolation of an application's view of the OS environment, including process trees, networking, user IDs and mounted file systems.
 LXC is similar to other technologies on Linux such as OpenVZ, Linux-VServer, as well as those on other OS's, such as FreeBSD jails, and Solaris Zones.
 
+Docker is a platform for developing, shipping, and running applications, that separate your apps from your infrastructure so you can deliver software quickly.
+
+Containers
+A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state.
+
+By default, a container is relatively well isolated from other containers and its host machine. You can control how isolated a container’s network, storage, or other underlying subsystems are from other containers or from the host machine.
+
+A container is defined by its image as well as any configuration options you provide to it when you create or start it. When a container is removed, any changes to its state that are not stored in persistent storage disappear.
+
+An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization. For example, you may build an image which is based on the ubuntu image, but installs the Apache web server and your application, as well as the configuration details needed to make your application run.
+
+You might create your own images or you might only use those created by others and published in a registry. To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image. When you change the Dockerfile and rebuild the image, only those layers which have changed are rebuilt. This is part of what makes images so lightweight, small, and fast, when compared to other virtualization technologies.
+
 ## Architecture
+
+![](https://docs.docker.com/engine/images/architecture.svg)
+source: https://docs.docker.com/get-started/overview/
 
 Docker as a technology can be referred as:
 * runtime
@@ -31,3 +50,11 @@ Docker as a technology can be referred as:
 Operates at a lower lever, responsible to start/stop containers and build all OS constructs, such as namespaces and cgroups.
 A tiered architecture is used, with a high and low level runtime, that work together:
 * **runc** - is the low level runtime that works as an interface with the underlying OS and stop/starts the containers.
+
+Docker registries🔗
+A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. You can even run your own private registry.
+
+When you use the docker pull or docker run commands, the required images are pulled from your configured registry. When you use the docker push command, your image is pushed to your configured registry.
+
+The Docker client
+The Docker client (docker) is the primary way that many Docker users interact with Docker. When you use commands such as docker run, the client sends these commands to dockerd, which carries them out. The docker command uses the Docker API. The Docker client can communicate with more than one daemon.

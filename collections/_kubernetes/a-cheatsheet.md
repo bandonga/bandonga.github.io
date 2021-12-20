@@ -58,3 +58,4 @@ kubectl get deployment -n default
 
 ## check pods running in context-name
 ~ $ kubectl get deploy app_name -n context-name
+```

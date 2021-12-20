@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes: Introduction"
-excerpt: "Guide to understand kubernetes containers"
+excerpt: "Guide to understand kubernetes"
 header:
   image: "/assets/images/academy/kubernetes.svg"
 last_modified_at: 2021-12-02 21:28:04 +00:00
@@ -38,8 +38,14 @@ The Kubernetes cluster has nodes and a master (aka heads, control plane), that e
   * CronJobs: short-lived tasks that need to run at set times.
 * Apps are managed declarative, in a set of yaml file.
 
+## Components
 
 ### Master
+
+
+
+For production, multi-master HA is a must have (3 to 5 masters).
+Apps shouldn't run on Masters.
 
 ```
                                       API
@@ -49,8 +55,7 @@ The Kubernetes cluster has nodes and a master (aka heads, control plane), that e
 scheduler                        cluster store                     controller
 ```
 
-For production, multi-master HA is a must have (3 to 5 masters).
-Apps shouldn't run on Masters. It offers the following services:
+It offers the following services:
 
 **API Server**: all communications must go through the API Server. Exposes a RESTful API that receives YAML config files via POST requests.
 These are manifest files that contain the desired state of the application (number of replicas to run, ports to be exposed, etc), that are persisted in the cluster store and deployed.
@@ -79,3 +84,16 @@ Watches the API for new assignment, executes it and reports it back to the maste
 It exposes an interface for 3rd party container runtimes to plug into, such as docker, containerd or CRI-O.
 
 **Kube-proxy**: Responsible for local cluster networking. Manages IP Addresses, local IP tables, routing and load balancing the traffic on the pod's network.
+
+**DNS** service has a static IP address that is hardcoded into every pod cluster.
+Every new service is registred automatically with the cluster's DNS (CoreDNS is used).
+
+### Packaging apps
+
+1. package as a container
+2. wrapped in a pod
+3. deployed via a declarative manifest file (YAML).
+
+### Declarative model
+
+The desired state
