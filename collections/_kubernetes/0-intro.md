@@ -86,14 +86,28 @@ It exposes an interface for 3rd party container runtimes to plug into, such as d
 **Kube-proxy**: Responsible for local cluster networking. Manages IP Addresses, local IP tables, routing and load balancing the traffic on the pod's network.
 
 **DNS** service has a static IP address that is hardcoded into every pod cluster.
-Every new service is registred automatically with the cluster's DNS (CoreDNS is used).
+Every new service is registered automatically with the cluster's DNS (CoreDNS is used).
 
 ### Packaging apps
 
 1. package as a container
 2. wrapped in a pod
-3. deployed via a declarative manifest file (YAML).
+3. deployed via a declarative manifest file.
 
 ### Declarative model
 
-The desired state
+The desired state of an app is declared in a YAML manifest file (describing the image, number of replicas, network config) and it's
+posted to the API. The Master
+* Verifies the config and stores in the cluster store as the app desired state.
+* Implements the desired state, were the scheduler deploys the app to a healthy node.
+* Implements watch loops to to make sure the current state doesn't change from the desired state.
+
+The state changes from `pending > downloading > starting > running`. After completing all tasks, enters in a succeeded or failed state.
+
+### Pods
+
+You can use a pod with a single container or using multi container pods (communicating using localhost).
+
+```
+Main + supporting container
+```

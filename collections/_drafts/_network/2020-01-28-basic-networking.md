@@ -74,3 +74,19 @@ When SCTP sends a message to a remote address, the source interface will only be
 ##### DCCP  
 
 DCCP [11] is another new transport protocol that tries to provide congestion and flow control similar to TCP but without the reliability or in-order delivery of TCP. It shows some promise for use as a real-time transport. However, its support is very limited today, and limited NAT support will delay its adoption.
+
+---
+
+
+https://howhttps.works/
+https://howdns.works/
+
+
+https://en.wikipedia.org/wiki/Digital_Signal_1
+
+PCM
+https://en.wikipedia.org/wiki/Statistical_time-division_multiplexing
+
+* http://support.voiceelements.com/index.php?title=How_do_I_setup_QoS_settings_in_Windows%3F
+* bandwidth management: https://www.cisco.com/c/en/us/support/docs/smb/routers/cisco-rv-series-small-business-routers/smb1298-bandwidth-management-rate-control-configuration-on-wrvs4400n.html
+* https://www.google.com/search?q=wds&oq=wds&aqs=chrome..69i57j0l7.706j0j7&sourceid=chrome&ie=UTF-8

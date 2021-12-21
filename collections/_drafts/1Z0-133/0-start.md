@@ -1,71 +1,44 @@
 ---
-title: WebRTC
-date: 2018-10-31 00:00:00 +01:00
+title: 1Z0-133 Oracle WebLogic Server 12c Administration I
+excerpt: This certification guide will provide a comprehensive overview of Weblogic 12c.
 header:
-  teaser: "/assets/images/academy/webrtc.png"
-  image: "/assets/images/academy/webrtc.png"
-categories:
-- academy
-tags:
-- academy
-- telephony
-excerpt: "A guide to help you know more about WebRTC."
+  image: "/assets/images/1Z0-133/1Z0-133_oracle_certification.png"
+last_modified_at: 2018-01-02 21:28:04 +00:00
+toc: true
 ---
 
-A guide to help you know more about WebRTC.
+> Related with: [Sysadmin]({{ site.baseurl }}{% post_url /academy/2018-05-18-sysadmin %}) > [Weblogic]({{ site.baseurl }}{% post_url /academy/2018-03-01-weblogic %})
 
-> **Related with:** [Telephony]({{ site.baseurl }}{% post_url /academy/2019-11-10-telephony %}).
+* 1Z0-133 [exam topics](https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-133).
+* Official [documentation](https://docs.oracle.com/middleware/1212/wls/index.html). The exam is validated against version 12.1.2.
 
 ### Resources
 
 #### General
-* [Mozilla developer docs](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
-* Google html5rocks [Getting Started with WebRTC](https://www.html5rocks.com/en/tutorials/webrtc/basics/), [STUN, TURN and signaling](https://www.html5rocks.com/en/tutorials/webrtc/infrastructure/), [WebRTC data channels](https://www.html5rocks.com/en/tutorials/webrtc/datachannels/), [Capturing Audio & Video](https://www.html5rocks.com/en/tutorials/getusermedia/intro/)
-* [Altanai blog](https://telecom.altanai.com/webrtc/)
+* [Documentation](https://docs.oracle.com/middleware/1212/wls/index.html)
+* [YouTube channel](http://www.youtube.com/user/OracleWebLogic)
+* [Blog](https://blogs.oracle.com/weblogicserver/)
+* [bandonga Weblogic Resources]({{ site.baseurl }}{% post_url /academy/2018-03-01-weblogic %})
 
 #### Course
-* The WebRTC School [WebRTC Integrator training](https://www.webrtcschool.com/courses/view)
-* FREE webrtccourse [WebRTC Basics](https://webrtccourse.com/course/webrtc-basics/), by Tsahi Levent-Levi
-* Pluralsight [WebRTC Fundamentals](https://www.pluralsight.com/courses/webrtc-fundamentals), by Lisa Larson-Kelley
-* Udemy [Introduction to WebRTC](https://www.udemy.com/course/introduction-to-webrtc/), by Infinite Skills
-* FREE Google [Real time communication with WebRTC](https://misi.github.io/webrtc-c0d3l4b/#0) updated Developers Codelabs
+* [Udemy - Weblogic 12c Essentials](https://www.udemy.com/learn-oracle-weblogic-12c-essentials)
+* [PAID Udemy - Weblogic 12c Administrators](https://www.udemy.com/oracle-weblogic-12c-for-administrators/)
+
+#### Tutorials
+* [Oracle Partner - Specialization Training](https://competencycenter.oracle.com/opncc/full_glp.cc?group_id=22243)
+* [Learning Library Basic Admin Tasks](https://apexapps.oracle.com/pls/apex/f?p=44785:24:105172019871425:::24:P24_CONTENT_ID,P24_PREV_PAGE:6079,24)
+* [Learning Library Tutorials](https://apexapps.oracle.com/pls/apex/f?p=44785:24:11999717944735::NO:RP,24:P24_CONTENT_ID,P24_PREV_PAGE:12304,2)
+* [Oracle University](http://ilearning.oracle.com/ilearn/en/learner/jsp/category.jsp?keywords=&btn=&srchfor=&start=0&sortby=-1&sortasc=null&categoryid=28758)
+* [Oracle-Base](https://oracle-base.com/articles/web/articles-web#weblogic-server-12c)
 
 #### Books
-* **["WebRTC: APIs and RTCWEB Protocols of the HTML5 Real-Time Web"](https://www.amazon.com/WebRTC-Blueprints-Andrii-Sergiienko-ebook/dp/B00KD9NI1Q)**, by Alan B. Johnston
-* ["Getting Started with WebRTC"](https://www.amazon.com/Getting-Started-WebRTC-Rob-Manson-ebook/dp/B00FF8OJZE), by Rob Manson
-* ["Real-Time Communication with WebRTC"](https://www.amazon.com/Real-Time-Communication-WebRTC-Peer-Peer-ebook/dp/B00JQOL0QE), by Salvatore Loreto
-* ["WebRTC blueprints"](https://www.amazon.com/WebRTC-Blueprints-Andrii-Sergiienko-ebook/dp/B00KD9NI1Q), by Andrii Sergiienko
-* FREE ["High Performance Browser Networking"](https://hpbn.co/), by Ilya Grigorik
+* [Oracle WebLogic Server 12c Administration Handbook, Sam R. Alapati](https://www.amazon.com/Oracle-WebLogic-Server-Administration-Handbook/dp/0071825355)
+* [Oracle WebLogic Server 12c Administration I Exam 1Z0-133: A Comprehensive Certification Guide,  Gustavo Garnica](https://www.amazon.com/Oracle-WebLogic-Server-Administration-IZ0-133/dp/1484225619)
+* [Oracle WebLogic Server 12c Advanced Administration Cookbook, by Dalton Iwazaki](https://www.amazon.com/Oracle-WebLogic-Advanced-Administration-Cookbook/dp/184968684X)
 
-### Certification
-* The WebRTC School [WSQI](https://www.webrtcschool.com/courses/view)
+### How to register for Exam
 
-##### tools
-* [chrome webrtc internals](chrome://webrtc-internals/)
-* [sipjs](https://sipjs.com/), JS library that takes care of WebRTC and SIP signaling.
-* [rtc.io](http://rtc.io/), collection of node.js modules
-* [adapter.js](https://github.com/webrtchacks/adapter) a shim to insulate apps from different browser implementations of WebRTC.
-
-##### Standards and protocols
-* [WebRTC 1.0](https://w3c.github.io/webrtc-pc/)
-* [ietf rtcweb work group](https://datatracker.ietf.org/wg/rtcweb/documents/)
-* [W3C Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-* [JSEP - JavaScript Session Establishment Protocol](https://tools.ietf.org/html/draft-ietf-rtcweb-jsep)
-* [WebSocket Protocol as a Transport for SIP](https://tools.ietf.org/html/rfc7118)
-
-##### Blogs
-* [webrtchacks](https://webrtchacks.com/), technical explanations on how WebRTC works
-* [bloggeek](https://bloggeek.me/blog/), by Tsahi Levent-Levi
-* [WebRTC Weekly](https://webrtcweekly.com/), the best content about WebRTC every week
-
-##### Test
-* [test.webrtc.org](https://test.webrtc.org/)
-* [appr.tc](https://appr.tc/)
-* [testrtc.com](https://testrtc.com/webrtc-api-trace/)
-
-##### Others
-* [webrtc-internals documentation](https://testrtc.com/webrtc-internals-documentation/)
-* [How to get webrtc-internals using js](https://stackoverflow.com/questions/24066850/is-there-an-api-for-the-chrome-webrtc-internals-variables-in-javascript)
-
-##### References:
-* https://webrtc.org/start/
+What Accounts do I need to access Oracle training?
+* Oracle Web Account - To use the Oracle University website, you need a web account. You can also request [Partner Access](http://www.oracle.com/partners/en/partner-with-oracle/get-started/register-for-access/index.html).
+*  Pearson VUE Account - To take your Oracle exams for certification, you will need a Pearson VUE account. [Login](http://pearsonvue.com/oracle) to  and follow the instructions to create your account.
+*  CertView Account- To manage, retrieve and track your exam and course scores, [login](https://certview.oracle.com)  and follow the instructions to create your account.

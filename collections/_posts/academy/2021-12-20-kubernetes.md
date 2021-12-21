@@ -25,7 +25,7 @@ Kubernetes is a container-orchestration system for automating computer applicati
 * [kubernetes Documentation](https://kubernetes.io/docs)
 
 #### Course
-* [bandonga - kubernetes Administrator](/kubernetes/0-start/)
+* [bandonga - kubernetes Administrator](/kubernetes/0-intro/)
 * [edx - Introduction to Kubernetes](https://www.edx.org/course/introduction-to-kubernetes)
 
 #### Books
@@ -33,4 +33,4 @@ Kubernetes is a container-orchestration system for automating computer applicati
 
 
 #### Certification
-* * Linux Foundation [CKA](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/)
+* Linux Foundation [CKA](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/)

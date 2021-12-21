@@ -51,7 +51,7 @@ by Russ White
 
 ### Certification
 
-If you wish to get certified, the standard is by [Cisco](http://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html). We recommend to start with the [CCNA](www.cisco.com/go/ccna) certification. 
+If you wish to get certified, the standard is by [Cisco](http://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html). We recommend to start with the [CCNA](www.cisco.com/go/ccna) certification.
 
 * Cisco [CCNA](www.cisco.com/go/ccna)
 * Comptia [Network+](https://certification.comptia.org/certifications/network)
