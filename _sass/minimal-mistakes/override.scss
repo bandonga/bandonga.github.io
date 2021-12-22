@@ -13,7 +13,7 @@
 }
 
 blockquote {
-  @include notice($code-background-color);
+  @include notice($light-gray);
 }
 
 .page__content {
