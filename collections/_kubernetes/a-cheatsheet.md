@@ -15,19 +15,6 @@ toc: true
 https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
 
-> :book: Related with: [SRE]({{ site.baseurl }}{% post_url /academy/2018-06-31-sre %}).
-> :blue_book: **Topics:**
-* [Basic concepts]({{ site.baseurl }}{% post_url /academy/2018-05-28-basic-sysadmin %})
-
-**Watch out!** This paragraph of [Basic concepts]({{ site.baseurl }}{% post_url /academy/2018-05-28-basic-sysadmin %}) text has been [emphasized](#) with the `{: .notice}` class.
-{: .notice}
-
-**Watch out!** This paragraph of [Basic concepts]({{ site.baseurl }}{% post_url /academy/2018-05-28-basic-sysadmin %}) text has been [emphasized](#) with the `{: .notice--primary}` class.
-{: .notice--primary}
-
-**Watch out!** This paragraph of [Basic concepts]({{ site.baseurl }}{% post_url /academy/2018-05-28-basic-sysadmin %}) text has been [emphasized](#) with the `{: .notice--info}` class.
-{: .notice--info}
-
 
 ```console
 ~ $ kubectl config get-contexts

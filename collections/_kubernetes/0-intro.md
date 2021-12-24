@@ -111,3 +111,12 @@ You can use a pod with a single container or using multi container pods (communi
 ```
 Main + supporting container
 ```
+A pod is a sandbox for hosting containers, with a network stack and some kernel namespaces. The containers in a pod share the same environment (network, ip, memmory, volumes).
+
+
+sudo pkill docker
+sudo iptables -t nat -F
+sudo ip link set dev br-priv1 down
+sudo apt-get install bridge-utils
+sudo brctl delbr br-priv1
+sudo docker -d
