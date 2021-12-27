@@ -35,7 +35,7 @@ docker run -dit --name deb marcelofpfelix/debian:11 bash
  docker container attach alpine1
 
 
-  docker network rm docker1
+docker network rm bridge1
 
 
 
@@ -57,10 +57,27 @@ docker network create \
 --gateway=172.18.0.1 \
   bridge2
 
-  docker network create \
+docker network create \
   --driver=bridge \
   --subnet=10.0.1.0/24 \
   --gateway=10.0.1.1 \
-    bridge3
+  -o "com.docker.network.bridge.name"="br1" \
+  -o "com.docker.network.driver.mtu"="1500" \
+  -o "com.docker.network.bridge.enable_ip_masquerade"="true" \
+  bridge1
+
+HOw Masquerade works
+
+By default, containers are allowed to access the outside network by masquerading or hiding their real IP address behind that of the Docker host. This is accomplished through netfilter masquerade rules that hide container traffic behind the Docker host interface referenced in the next hop.
+While this type of configuration is ideal in many respects, there are some cases when you might prefer to disable the outbound masquerading capability.
+-o "com.docker.network.bridge.enable_ip_masquerade"="false"
+  https://medium.com/@havloujian.joachim/advanced-docker-networking-outgoing-ip-921fc3090b09
+
+
+
+  docker run -dit --name alpine2 --network bridge1 alpine ash
+
+  docker run -dit --name alpine4 --network bridge3 alpine ash
+
 
 ```

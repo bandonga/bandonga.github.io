@@ -67,6 +67,14 @@ collections:
     title: kubernetes
     output: true
     permalink: "/:collection/:path/"
+  python:
+    title: python
+    output: true
+    permalink: "/:collection/:path/"
+  golang:
+    title: golang
+    output: true
+    permalink: "/:collection/:path/"
   posts:
     title: Posts
     output: true
@@ -136,7 +144,7 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/academy/sip.png"
+      teaser: "/assets/images/academy/sip.svg"
     sidebar:
       nav: sip
 # kamailio
@@ -151,7 +159,7 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/academy/kamailio.png"
+      teaser: "/assets/images/academy/kamailio.svg"
     sidebar:
       nav: kamailio
 # ansible
@@ -166,7 +174,7 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/academy/ansible.png"
+      teaser: "/assets/images/academy/ansible.svg"
     sidebar:
       nav: ansible
 # docker
@@ -181,7 +189,7 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/academy/docker.png"
+      teaser: "/assets/images/academy/docker.svg"
     sidebar:
       nav: docker
 # kubernetes
@@ -196,9 +204,39 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/academy/kubernetes.png"
+      teaser: "/assets/images/academy/kubernetes.svg"
     sidebar:
       nav: kubernetes
+# python
+- scope:
+    path: ''
+    type: python
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/academy/python.svg"
+    sidebar:
+      nav: python
+# golang
+- scope:
+    path: ''
+    type: golang
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/academy/golang.svg"
+    sidebar:
+      nav: golang
 collections_dir: collections
 
 comments:

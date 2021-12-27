@@ -71,3 +71,15 @@ sip:
         url: /sip/0-nat/
       - title: "SRTP"
         url: /sip/0-srtp/
+
+python:
+  - title: "Getting Started"
+    children:
+      - title: "Introduction"
+        url: /python/0-start/
+
+golang:
+  - title: "Getting Started"
+    children:
+      - title: "Introduction"
+        url: /golang/0-start/
