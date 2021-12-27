@@ -218,3 +218,11 @@ https://stackoverflow.com/a/45620892
 * https://gist.github.com/sloria/7001839
 * https://jacobtomlinson.dev/posts/2020/versioning-and-formatting-your-python-code/
 * https://towardsdatascience.com/how-to-set-up-python3-the-right-easy-way-11c18b0b4ac0
+
+
+sudo apt install pylint
+
+pip install pytest
+
+pylint lasagna.py
+python3 -m pytest lasagna_test.py -v

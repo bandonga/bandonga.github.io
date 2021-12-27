@@ -14,5 +14,16 @@ excerpt: "Notes about codding"
 ---
 
 > :book: Related with: [SRE]({{ site.baseurl }}{% post_url /academy/2018-06-31-sre %}).
+> :blue_book: **Topics:**
+* [Python](/python/0-start/)
+* [Go](/golang/0-start/)
 
 Notes about codding
+
+# Resources
+
+## Language Index:
+* https://www.tiobe.com/tiobe-index/
+* http://githut.info/
+* http://pypl.github.io/PYPL.html
+* https://insights.stackoverflow.com/survey

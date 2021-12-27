@@ -14,10 +14,11 @@ toc: true
 ## Resources
 
 ## Course
-  * https://www.freecodecamp.org/learn/
-  * https://www.youtube.com/watch?v=_uQrJ0TkZlc
-  * https://www.edx.org/course/introduction-to-computer-science-and-programming-7 / https://www.futurelearn.com/programs/start-programming-with-python#accordion-learn-free
-  * http://exercism.io/
+  * [freeCodeCamp Certifications](https://www.freecodecamp.org/learn)
+  * [exercism](https://exercism.io/)
+  * Youtube [Programming with Mosh](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
+  * https://www.edx.org/course/introduction-to-computer-science-and-programming-7
+  * https://www.futurelearn.com/programs/start-programming-with-python#accordion-learn-free
   * https://github.com/huangsam/ultimate-python
   * https://www.learnpython.org/
   * https://www.py4e.com/lessons
@@ -28,9 +29,10 @@ toc: true
   * [Free] [Think Python](http://greenteapress.com/thinkpython/html/index.html)
   * [Free] [A Byte of Python](https://python.swaroopch.com/)
   * [Free] [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/)
-  * [Free] Official [ documentation](https://docs.python.org/3.6/reference/index.html) or [ tuturial](https://docs.python.org/3.6/tutorial/index.html)
+  * [Free] Official [ documentation](https://docs.python.org/3/) or [ tuturial](https://docs.python.org/3/tutorial/index.html)
 
 ## References
   * https://www.reddit.com/r/learnpython/wiki/index
   * https://hackr.io/tutorials/learn-python
   * https://github.com/Michael0x2a/curated-programming-resources/blob/master/resources.md#python
+  * [Pythontutor](http://pythontutor.com/) for stepping through small code snippets visually.
