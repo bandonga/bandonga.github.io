@@ -1,9 +1,9 @@
 ---
-title: Sysadmin - Basic concepts
+title: Sysadmin Concepts
 date: 2018-04-20 00:00:00 +01:00
 header:
-  teaser: "/assets/images/academy/sysadmin.png"
-  image: "/assets/images/academy/sysadmin.png"
+  teaser: "/assets/images/academy/sysadmin.svg"
+  image: "/assets/images/academy/sysadmin.svg"
 categories:
 - academy
 tags:
@@ -16,7 +16,7 @@ toc_hmax: 5
 
 > Related with: [Sysadmin]({{ site.baseurl }}{% post_url /academy/2018-05-18-sysadmin %})
 
-# Concepts
+# Sysadmin Concepts
 
 ### Security
 

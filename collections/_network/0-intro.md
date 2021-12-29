@@ -2,14 +2,14 @@
 title: "Networking: Introduction"
 excerpt: "Guide to better understand IP Networks routing and switching"
 header:
-  image: "/assets/images/academy/networking.png"
+  image: "/assets/images/academy/networking.svg"
 last_modified_at: 2020-01-02 21:28:04 +00:00
 toc: true
 ---
 
 > Related with: [Networking]({{ site.baseurl }}{% post_url /academy/2018-10-31-networking %})
 > :warning: **NOTE:**  
-* :construction: Under Construction 
+* :construction: Under Construction
 
 # Introduction
 

@@ -75,11 +75,15 @@ sip:
 python:
   - title: "Getting Started"
     children:
-      - title: "Introduction"
+      - title: "Resources"
         url: /python/0-start/
+      - title: "Introduction"
+        url: /python/01-intro/
 
 golang:
   - title: "Getting Started"
     children:
-      - title: "Introduction"
+      - title: "Resources"
         url: /golang/0-start/
+      - title: "Introduction"
+        url: /golang/01-intro/

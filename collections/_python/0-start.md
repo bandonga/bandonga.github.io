@@ -13,7 +13,7 @@ toc: true
 
 ## Resources
 
-## Course
+### Course
   * [freeCodeCamp Certifications](https://www.freecodecamp.org/learn)
   * [exercism](https://exercism.io/)
   * Youtube [Programming with Mosh](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
@@ -23,7 +23,7 @@ toc: true
   * https://www.learnpython.org/
   * https://www.py4e.com/lessons
 
-## Books
+### Books
   * [Learn Python the Hard Way](https://learnpythonthehardway.org/book/)
   * [Free] [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
   * [Free] [Think Python](http://greenteapress.com/thinkpython/html/index.html)
@@ -31,7 +31,7 @@ toc: true
   * [Free] [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/)
   * [Free] Official [ documentation](https://docs.python.org/3/) or [ tuturial](https://docs.python.org/3/tutorial/index.html)
 
-## References
+### References
   * https://www.reddit.com/r/learnpython/wiki/index
   * https://hackr.io/tutorials/learn-python
   * https://github.com/Michael0x2a/curated-programming-resources/blob/master/resources.md#python

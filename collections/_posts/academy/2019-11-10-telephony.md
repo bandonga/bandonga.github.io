@@ -2,8 +2,8 @@
 title: Telephony
 date: 2018-10-31 00:00:00 +01:00
 header:
-  teaser: "/assets/images/academy/telephony.png"
-  image: "/assets/images/academy/telephony.png"
+  teaser: "/assets/images/academy/telephony.svg"
+  image: "/assets/images/academy/telephony.svg"
 categories:
 - academy
 tags:
