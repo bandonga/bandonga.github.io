@@ -219,10 +219,20 @@ https://stackoverflow.com/a/45620892
 * https://jacobtomlinson.dev/posts/2020/versioning-and-formatting-your-python-code/
 * https://towardsdatascience.com/how-to-set-up-python3-the-right-easy-way-11c18b0b4ac0
 
+python3 -m pip install pytest pytest-cache pytest-subtests pytest-pylint
 
-sudo apt install pylint
 
 pip install pytest
 
+pytest -v -x -ff  lasagna_test.py
+Stop After First Failure [-x]
+Failed Tests First [--ff]
+
+https://realpython.com/python-code-quality/
+sudo apt install pylint
+pip install pylama[all]
+pip install flake8
+
 pylint lasagna.py
-python3 -m pytest lasagna_test.py -v
+flake8 exchange.py
+pylama exchange.py

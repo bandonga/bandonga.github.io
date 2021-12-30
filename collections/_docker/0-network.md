@@ -81,3 +81,13 @@ While this type of configuration is ideal in many respects, there are some cases
 
 
 ```
+
+Enable forwarding from Docker containers to the outside world
+By default, traffic from containers connected to the default bridge network is not forwarded to the outside world. To enable forwarding, you need to change two settings. These are not Docker commands and they affect the Docker host’s kernel.
+
+Configure the Linux kernel to allow IP forwarding.
+
+ sysctl net.ipv4.conf.all.forwarding=1
+Change the policy for the iptables FORWARD policy from DROP to ACCEPT.
+
+ sudo iptables -P FORWARD ACCEPT

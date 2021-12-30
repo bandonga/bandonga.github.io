@@ -79,6 +79,10 @@ python:
         url: /python/0-start/
       - title: "Introduction"
         url: /python/01-intro/
+  - title: "Data Types"
+    children:
+      - title: "Numbers"
+        url: /python/02-numbers/
 
 golang:
   - title: "Getting Started"
@@ -87,3 +91,7 @@ golang:
         url: /golang/0-start/
       - title: "Introduction"
         url: /golang/01-intro/
+  - title: "Data Types"
+    children:
+      - title: "Numbers"
+        url: /golang/02-numbers/

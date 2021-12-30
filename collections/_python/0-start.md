@@ -29,7 +29,8 @@ toc: true
   * [Free] [Think Python](http://greenteapress.com/thinkpython/html/index.html)
   * [Free] [A Byte of Python](https://python.swaroopch.com/)
   * [Free] [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/)
-  * [Free] Official [ documentation](https://docs.python.org/3/) or [ tuturial](https://docs.python.org/3/tutorial/index.html)
+  * [Free] Official [ documentation](https://docs.python.org/3/) or [ tuturial](https://docs.python.org/3/tutorial)
+  * https://docs.python.org/3/library
 
 ### References
   * https://www.reddit.com/r/learnpython/wiki/index

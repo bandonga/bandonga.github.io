@@ -52,6 +52,13 @@ A var declaration can include **initializers** (one per variable), in which the 
 
 ```go
 var c, python, java = true, false, "no!"
+
+  // using blocks
+var (
+	ToBe   bool       = false
+	MaxInt uint64     = 1<<64 - 1
+	z      complex128 = cmplx.Sqrt(-5 + 12i)
+)
 ```
 
 Inside a function, the `:=` short assignment statement can be used in place of a var declaration with implicit type.
@@ -110,3 +117,34 @@ func split(sum int) (x, y int) {
 
 These names should be used to document the meaning of the return values.
 A return statement without arguments returns the named return values. This is known as a "naked" return.
+
+
+### Documentation
+
+In Go, comments play an important role in documenting code. They are used by the `go doc` command, which extracts these comments to create documentation about Go packages. A documentation comment should be a complete sentence that starts with the name of the thing being described and ends with a period `.` .
+
+Comments should precede packages as well as exported identifiers(functions, methods, package variables, constants, and structs).
+
+* Any public function that is not both obvious and short must be commented.
+* Any function in a library must be commented regardless of length or complexity
+
+```go
+
+  // A package-level variable can look like this:
+
+// TemperatureCelsius represents a certain temperature in degrees Celsius.
+var TemperatureCelsius float64
+
+  // Package comments should be written directly before a package clause and begin with `Package x ...`
+
+// Package kelvin provides tools to convert
+// temperatures to and from Kelvin.
+package kelvin
+
+  //It should explain what arguments the function takes, what it does with them, and what its return values mean
+
+// CelsiusFreezingTemp returns an integer value equal to the temperature at which water freezes in degrees Celsius.
+func CelsiusFreezingTemp() int {
+	return 0
+}
+```
