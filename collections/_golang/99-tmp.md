@@ -172,6 +172,51 @@ t.Add() - add some time
 
 https://blog.cloudflare.com/using-go-as-a-scripting-language-in-linux/
 
+```
+# You can use git checkout to get an specific version and build your program using this version.
+# Example:
+# export GOPATH=~/
+# go get github.com/whateveruser/whateverrepo
+# cd ~/src/github.com/whateveruser/whateverrepo
+# git tag -l
+# # supose tag v0.0.2 is correct version
+# git checkout tags/v0.0.2
+# go run whateverpackage/main.go
+
+# RUN set -o nounset -o errexit -o xtrace -o verbose \
+#    && curl -sSL -O https://github.com/sipcapture/heplify-server/archive/refs/tags/${HEPLIFY_VERSION}.tar.gz \
+#    && tar zxf ${HEPLIFY_VERSION}.tar.gz -C /go/src/ \
+#    && cd /go/src/heplify-server-${HEPLIFY_VERSION} \
+#    && go mod download
+#WORKDIR /go/src/heplify-server-${HEPLIFY_VERSION}/cmd/heplify-server/
+#RUN CGO_ENABLED=1 GOOS=linux go build -v -a --ldflags '-linkmode external -extldflags "-static -s -w"' -o /heplify-server .
+
+
+RUN go get -d -u -v github.com/sipcapture/heplify-server@v0.0.0-20220105121138-4d4a9c1330e5 && \
+    cd /go/pkg/mod/github.com/sipcapture/heplify-server@v0.0.0-20220105121138-4d4a9c1330e5/cmd/heplify-server && \
+    GO_ENABLED=1 GOOS=linux go build -v -a --ldflags '-linkmode external -extldflags "-static -s -w"' -o /heplify-server .
+
+go get          github.com/sipcapture/heplify-server@v0.0.0-20220105121138-4d4a9c1330e5
+go get -u -d -v github.com/sipcapture/heplify-server@0.0.0-20220105121138-4d4a9c1330e5
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 test
 go test -v --bench . --benchmem

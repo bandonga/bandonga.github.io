@@ -19,6 +19,10 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 ```console
 ~ $ kubectl config get-contexts
 
+kubectl cluster-info
+
+kubectl get nodes
+
 ~ $ kubectl config use-context lab
 
 ~ $ kubectl config use-context lab

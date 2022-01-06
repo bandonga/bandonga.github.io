@@ -111,12 +111,9 @@ You can use a pod with a single container or using multi container pods (communi
 ```
 Main + supporting container
 ```
-A pod is a sandbox for hosting containers, with a network stack and some kernel namespaces. The containers in a pod share the same environment (network, ip, memmory, volumes).
+A pod is a sandbox for hosting containers, with a network stack and kernel namespaces. The containers in a pod share the same environment (network, ip, memmory, volumes).
 
-
-sudo pkill docker
-sudo iptables -t nat -F
-sudo ip link set dev br-priv1 down
-sudo apt-get install bridge-utils
-sudo brctl delbr br-priv1
-sudo docker -d
+Pods are the minimun unit of scheduling (you you need to scale, add, remove pods).
+Deployments of a pod is an atomic operation.
+A pod is only "ready for service" when all containers are running.
+A pod can only be scheduled to a single node (even with multi-containers)
