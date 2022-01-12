@@ -2,25 +2,12 @@
 
 
 
+- Python Programming - Python, Machine learning
 
+- Devoted Learner - Python
 
-### Data Types
+- Python Principles - Python
 
-Python has the following data types built-in by default, in these categories:
-
-* Text Type:	str
-* Numeric Types:	int, float, complex
-* Sequence Types:	list, tuple, range
-* Mapping Type:	dict
-* Set Types:	set, frozenset
-* Boolean Type:	bool
-* Binary Types:	bytes, bytearray, memoryview
-
-##### Strings
-
-Python strings are immutable, which means once you create them, you can't change them. What you do instead is use existing strings to transform their value and create new strings.
-
-Python's string object has many methods which enable you to return a new string with some kind of transformation applied to it. Methods are functions which operate on a specific instance (copy) of an object.
 
 ##### Bitwise Operators
 https://www.geeksforgeeks.org/python-bitwise-operators/#:~:text=In%20Python%2C%20bitwise%20operators%20are,is%20returned%20in%20decimal%20format.&text=Bitwise%20AND%20operator%3A%20Returns%201,bits%20are%201%20else%200.
@@ -79,6 +66,23 @@ There are four collection data types in the Python programming language:
 * Dictionary is a collection which is ordered* and changeable. No duplicate members.
 
 Set is a collection which is unordered and unindexed. No duplicate members.
+
+
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+
+
+
+
+
+
+
+
+
 
 
 Ellipsis
@@ -236,3 +240,4 @@ pip install flake8
 pylint lasagna.py
 flake8 exchange.py
 pylama exchange.py
+https://www.sonarqube.org/ ?

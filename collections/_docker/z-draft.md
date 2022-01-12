@@ -10,6 +10,8 @@ toc: true
 > :warning: **NOTE:** Under Construction
 
 
+https://www.cloudsavvyit.com/14880/whats-the-difference-between-exposing-and-publishing-a-docker-port/
+
 ### containers
 * https://linuxcontainers.org/
 * https://www.redhat.com/en/topics/containers/whats-a-linux-container

@@ -1,6 +1,13 @@
+---
+title: "Python: Data Types - Strings"
+excerpt: "Guide to understand python"
+header:
+  image: "/assets/images/academy/python.svg"
+last_modified_at: 2021-12-26 00:00:00 +00:00
+toc: true
+---
 
-
-##### Strings
+## Strings
 
 Python strings are immutable, which means once you create them, you can't change them. What you do instead is use existing strings to transform their value and create new strings.
 

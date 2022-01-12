@@ -33,10 +33,12 @@ sudo docker logs -t myapp
 sudo docker ps | awk '{ print $NF }' | sort
 
   ## Removing all stopped containers
-docker container prune
+
 docker container ls -a --filter status=exited --filter status=created
-docker image prune
-docker image prune -a
+docker container prune -f
+docker image prune -f -a
+  ## -a		Remove all unused images, not just dangling ones
+  ## -f		Do not prompt for confirmation
 
 sudo docker volume create cloudflared
 sudo docker volume inspect cloudflared
