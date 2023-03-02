@@ -9,12 +9,12 @@ categories:
 tags:
 - academy
 - sysadmin
-- sre
+- devops
 - kubernetes
 excerpt: "Kubernetes is a container-orchestration system for automating computer application deployment, scaling, and management."
 ---
 
-> :book: Related with: [SRE]({{ site.baseurl }}{% post_url /academy/2018-06-31-sre %}).
+> :book: Related with: [DevOps]({{ site.baseurl }}{% post_url /academy/2018-06-31-devops %}).
 > :blue_book: **Topics:**
 * [Kubernetes Administration](/kubernetes/0-intro/)
 

@@ -1,15 +1,15 @@
 ---
 title: "Go: Introduction"
-excerpt: "Guide to understand golang"
+excerpt: "Guide to understand go"
 header:
-  image: "/assets/images/academy/golang.svg"
+  image: "/assets/images/academy/go.svg"
 last_modified_at: 2021-12-26 00:00:00 +00:00
 toc: true
 ---
 
 > :warning: **NOTE:** Under Construction
 
-Go is a statically typed, compiled programming language, syntactically similar to C, often referred to as Golang.
+Go is a statically typed, compiled programming language, syntactically similar to C, often referred to as go.
 
 
 ## Basics

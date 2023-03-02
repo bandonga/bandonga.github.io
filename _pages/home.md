@@ -12,16 +12,18 @@ feature_row:
 - image_path: "/assets/images/know.jpg"
   alt: know
   title: Academy
-  excerpt: Learn from our Library. Career focused material, to improve your skills
+  excerpt: Career focused material, to improve skills
     at Business, Computer Science and Telecommunications.
+#  Learn from our Library. Career focused material, to improve skills
+#    at Business, Computer Science and Telecommunications.
   url: "/academy/"
   btn_class: btn--primary
   btn_label: Learn More
 - image_path: "/assets/images/blog.jpg"
   alt: blog
   title: Notepad
-  excerpt: The latest everyday life tricks and news. You can also find guides about
-    different topics, such as Care, Finance, Food and Travel.
+  excerpt: Notes about different topics, such as Finance, Food and Travel.
+#  The latest everyday life tricks and news. You can also find guides about
   url: "/notepad/"
   btn_class: btn--primary
   btn_label: Learn More

@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="sre.svg"
+   sodipodi:docname="devops.svg"
    inkscape:export-filename="/Users/marcelo.felix/default/projects/bandonga/posts/images/sip.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
@@ -88,9 +88,9 @@
              y="908.02124"
              x="341.66965"
              id="tspan941"
-             sodipodi:role="line">SRE</tspan></text>
+             sodipodi:role="line">DevOps</tspan></text>
         <g
-           aria-label="SRE"
+           aria-label="DevOps"
            transform="scale(1.0015244,0.99847792)"
            style="font-style:normal;font-weight:normal;font-size:96px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d6dbdf;fill-opacity:0.94117647;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            id="g951">
@@ -123,7 +123,7 @@
              y="1310.491"
              x="329.87048"
              id="tspan953"
-             sodipodi:role="line">SRE</tspan></text>
+             sodipodi:role="line">DevOps</tspan></text>
       </g>
     </clipPath>
   </defs>
@@ -328,7 +328,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       aria-label="SRE"
+       aria-label="DevOps"
        transform="scale(1.0015244,0.99847792)"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;line-height:0%;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.98000004;fill:#d6dbdf;fill-opacity:0.94117647;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text4160-3-3-9-0">
@@ -370,7 +370,7 @@
          y="1425.4304"
          x="343.39825"
          id="tspan4162-6-6-0-6-0"
-         sodipodi:role="line">SRE</tspan></text>
+         sodipodi:role="line">DevOps</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot869"

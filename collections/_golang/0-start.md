@@ -1,8 +1,8 @@
 ---
 title: "Go: Introduction"
-excerpt: "Guide to understand golang"
+excerpt: "Guide to understand go"
 header:
-  image: "/assets/images/academy/golang.svg"
+  image: "/assets/images/academy/go.svg"
 last_modified_at: 2021-12-26 00:00:00 +00:00
 toc: true
 ---
@@ -16,9 +16,9 @@ toc: true
 
 ##### Course
 * https://www.youtube.com/watch?v=SqrbIlUwR0U
-* https://www.coursera.org/specializations/google-golang
+* https://www.coursera.org/specializations/google-go
 * https://github.com/ardanlabs/gotraining-studyguide
-* https://tour.golang.org/
+* https://tour.go.org/
 * https://quii.gitbook.io/learn-go-with-tests/
 * https://gophercises.com/
 * https://exercism.io/tracks/go
@@ -27,9 +27,9 @@ toc: true
 ##### Books
 * https://www.openmymind.net/The-Little-Go-Book/
 * https://essential-go.programming-books.io/
-* http://www.golangbootcamp.com/book
+* http://www.gobootcamp.com/book
 
 
 ##### References
-* https://hackr.io/tutorials/learn-golang
+* https://hackr.io/tutorials/learn-go
 * https://gobyexample.com/

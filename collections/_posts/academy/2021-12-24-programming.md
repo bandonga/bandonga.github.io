@@ -8,15 +8,15 @@ categories:
 - academy
 tags:
 - academy
-- sre
+- devops
 - programming
 excerpt: "Notes about codding"
 ---
 
-> :book: Related with: [SRE]({{ site.baseurl }}{% post_url /academy/2018-06-31-sre %}).
+> :book: Related with: [DevOps]({{ site.baseurl }}{% post_url /academy/2018-06-31-devops %}).
 > :blue_book: **Topics:**
 * [Python](/python/0-start/)
-* [Go](/golang/0-start/)
+* [Go](/go/0-start/)
 
 Notes about codding
 

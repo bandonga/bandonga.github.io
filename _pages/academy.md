@@ -3,17 +3,17 @@ title: Academy
 permalink: "/academy/"
 layout: archive
 feature_row:
-- image_path: "/assets/images/academy/sre.svg"
+- image_path: "/assets/images/academy/devops.svg"
   alt: sysadmin
-  title: SRE
-  excerpt: "A guide to help you know more about SRE."
-  url: "/academy/sre/"
+  title: DevOps
+  excerpt: Notes and resources about DevOps.
+  url: "/academy/de/"
   btn_class: btn--primary
   btn_label: Read More
 - image_path: "/assets/images/academy/telephony.svg"
   alt: telephony
   title: Telephony
-  excerpt: A guide to help you know more about Telephony.
+  excerpt: Notes and resources about Telephony.
   url: "/academy/telephony/"
   btn_class: btn--primary
   btn_label: Read More

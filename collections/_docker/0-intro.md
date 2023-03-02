@@ -14,9 +14,26 @@ toc: true
 ![](https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/eb693/images/docs/container_evolution.svg)
 source: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
 
-A VM (Virtual Machine) is a hardware abstraction, it takes physical CPUs and RAM from a host, and shares it across several VMs.
 
-Unlike VMs, containers are an application abstraction, an isolated system that do not require a full OS, sharing the host's license, and are fast to start and portable.
+### Physical servers
+
+When apps run on physical servers, there is no way to define resource boundaries, and this caused resource allocation issues. If multiple apps are running, there can be instances where one app would take up most of the resources, and the other applications would underperform.
+A solution for this would be to run each application on a different physical server, but this did not scale as resources were underutilized, and it was expensive for organizations to maintain many physical servers.
+
+### virtualization
+
+It allows you to run multiple Virtual Machines on a single physical server. allowing apps to be resource and security isolation between VMs.
+
+Each VM is a full machine running all the components, including its own operating system, on top of the virtualized hardware.
+A VM is a hardware abstraction, it takes physical CPUs and RAM from a host, and shares it across several VMs.
+
+### Containers
+
+Unlike VMs, containers are an application abstraction, an isolated system that do not require a full OS, sharing the license and the OS among the apps.
+Containers are lightweight, but have their own filesystem, share of CPU, memory, process space, are consistent and fast to start, deploy, rollback, scale and portable across clouds and OS distributions.
+
+
+
 
 A Linux Containers (LXC) is an OS-level virtualization method for running multiple on a control host using a single kernel.
 The kernel provides the cgroups functionality that allows limitation and prioritization of resources without the need for starting any VM, and also the namespace isolation functionality that allows complete isolation of an application's view of the OS environment, including process trees, networking, user IDs and mounted file systems.
@@ -58,3 +75,8 @@ When you use the docker pull or docker run commands, the required images are pul
 
 The Docker client
 The Docker client (docker) is the primary way that many Docker users interact with Docker. When you use commands such as docker run, the client sends these commands to dockerd, which carries them out. The docker command uses the Docker API. The Docker client can communicate with more than one daemon.
+
+
+#### Resources:
+* https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
+* https://docs.docker.com/get-started/overview/

@@ -84,14 +84,14 @@ python:
       - title: "Numbers"
         url: /python/02-numbers/
 
-golang:
+go:
   - title: "Getting Started"
     children:
       - title: "Resources"
-        url: /golang/0-start/
+        url: /go/0-start/
       - title: "Introduction"
-        url: /golang/01-intro/
+        url: /go/01-intro/
   - title: "Data Types"
     children:
       - title: "Numbers"
-        url: /golang/02-numbers/
+        url: /go/02-numbers/

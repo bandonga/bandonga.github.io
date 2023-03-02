@@ -26,7 +26,7 @@ div.highlighter-rouge {
   line-height: 1;
 }
 
-.btn {
+.btn--reddit {
   /* button colors */
   $buttoncolors:
   (primary, $primary-color),
@@ -39,4 +39,23 @@ div.highlighter-rouge {
   (facebook, $facebook-color),
   (twitter, $twitter-color),
   (reddit, #ff4500);
+
+  @each $buttoncolor, $color in $buttoncolors {
+    &--#{$buttoncolor} {
+      @include yiq-contrasted($color);
+      @if ($buttoncolor == inverse) {
+        border: 1px solid $border-color;
+      }
+      @if ($buttoncolor == light-outline) {
+        border: 1px solid #fff;
+      }
+
+      &:visited {
+        @include yiq-contrasted($color);
+      }
+
+      &:hover {
+        @include yiq-contrasted(mix(#000, $color, 20%));
+      }
+    }
 }
