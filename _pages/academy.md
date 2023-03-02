@@ -12,7 +12,7 @@ feature_row:
   btn_label: Read More
 - image_path: "/assets/images/academy/sip.svg"
   alt: sip
-  title: sip
+  title: SIP
   excerpt: "Notes about VoIP communications and protocols."
   url: "/sip/"
   btn_class: btn--primary
