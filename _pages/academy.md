@@ -10,11 +10,11 @@ feature_row:
   url: "/academy/devops/"
   btn_class: btn--primary
   btn_label: Read More
-- image_path: "/assets/images/academy/telephony.svg"
-  alt: telephony
-  title: Telephony
-  excerpt: Notes and resources about Telephony.
-  url: "/academy/telephony/"
+- image_path: "/assets/images/academy/sip.svg"
+  alt: sip
+  title: sip
+  excerpt: "Notes about VoIP communications and protocols."
+  url: "/sip/"
   btn_class: btn--primary
   btn_label: Read More
 tag: academy

@@ -63,14 +63,16 @@ network:
 sip:
   - title: "Getting Started"
     children:
+      - title: "Resources"
+        url: /sip/start/
       - title: "Introduction"
-        url: /sip/0-intro/
+        url: /sip/intro/
   - title: "Fundamentals"
     children:
       - title: "NAT"
-        url: /sip/0-nat/
+        url: /sip/nat/
       - title: "SRTP"
-        url: /sip/0-srtp/
+        url: /sip/srtp/
 
 python:
   - title: "Getting Started"
