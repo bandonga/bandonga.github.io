@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Posts by Collection"
-permalink: /collection-archive/
+permalink: /collection-archive2/
 author_profile: true
 ---
 
@@ -11,8 +11,8 @@ author_profile: true
   {% unless collection.output == false or collection.label == "posts" %}
     {% capture label %}{{ collection.label }}{% endcapture %}
     {% if label != written_label %}
-    <h2>{{ label }}</h2>
-    {% capture written_label %}{{ label }}{% endcapture %}
+      {% capture written_label %}{{ label }}{% endcapture %}
+      <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
     {% endif %}
   {% endunless %}
   {% for post in collection.docs %}

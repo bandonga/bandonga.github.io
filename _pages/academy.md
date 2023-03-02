@@ -7,7 +7,7 @@ feature_row:
   alt: sysadmin
   title: DevOps
   excerpt: Notes and resources about DevOps.
-  url: "/academy/de/"
+  url: "/academy/devops/"
   btn_class: btn--primary
   btn_label: Read More
 - image_path: "/assets/images/academy/telephony.svg"
