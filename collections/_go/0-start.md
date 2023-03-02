@@ -1,5 +1,5 @@
 ---
-title: "Go: Introduction"
+title: "Go: Resources"
 excerpt: "Guide to understand go"
 header:
   image: "/assets/images/academy/go.svg"
