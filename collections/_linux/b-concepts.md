@@ -1,6 +1,7 @@
 ---
-title: "B - Concepts"
-excerpt: "Linux Concepts"
+title: "Linux: Concepts"
+permalink: /linux/concepts/
+excerpt: ""Notes and resources about Linux"
 last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true
 ---

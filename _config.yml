@@ -37,6 +37,26 @@ algolia:
 
 # Collections
 collections:
+  devops:
+    title: SIP
+    output: true
+    permalink: "/:collection/:path/"
+  docker:
+    title: docker
+    output: true
+    permalink: "/:collection/:path/"
+  go:
+    title: go
+    output: true
+    permalink: "/:collection/:path/"
+  # kamailio:
+  #   title: kamailio
+  #   output: true
+  #   permalink: "/:collection/:path/"
+  kubernetes:
+    title: kubernetes
+    output: true
+    permalink: "/:collection/:path/"
   linux:
     title: linux
     output: true
@@ -45,40 +65,22 @@ collections:
     title: Network
     output: true
     permalink: "/:collection/:path/"
-  sip:
-    title: SIP
+  posts:
+    title: Posts
     output: true
-    permalink: "/:collection/:path/"
-  # ansible:
-  #   title: ansible
-  #   output: true
-  #   permalink: "/:collection/:path/"
-  # kamailio:
-  #   title: kamailio
-  #   output: true
-  #   permalink: "/:collection/:path/"
-  docker:
-    title: docker
-    output: true
-    permalink: "/:collection/:path/"
-  kubernetes:
-    title: kubernetes
+  programming:
+    title: programming
     output: true
     permalink: "/:collection/:path/"
   python:
     title: python
     output: true
     permalink: "/:collection/:path/"
-  go:
-    title: go
+  sip:
+    title: SIP
     output: true
     permalink: "/:collection/:path/"
-  posts:
-    title: Posts
-    output: true
-  # uploads:
-  #   title: Uploads
-  #   output: true
+
 
 
 defaults:
@@ -100,6 +102,67 @@ defaults:
   values:
     layout: single
     author_profile: false
+
+# devops
+- scope:
+    path: ''
+    type: DevOps
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/academy/devops.svg"
+    sidebar:
+      nav: devops
+# docker
+- scope:
+    path: ''
+    type: docker
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/academy/docker.svg"
+    sidebar:
+      nav: docker
+# go
+- scope:
+    path: ''
+    type: go
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/academy/go.svg"
+    sidebar:
+      nav: go
+# kubernetes
+- scope:
+    path: ''
+    type: kubernetes
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/academy/kubernetes.svg"
+    sidebar:
+      nav: kubernetes
 # linux
 - scope:
     path: ''
@@ -130,10 +193,10 @@ defaults:
       teaser: "/assets/images/academy/network.png"
     sidebar:
       nav: network
-# sip
+# programming
 - scope:
     path: ''
-    type: sip
+    type: programming
   values:
     layout: single
     author_profile: false
@@ -142,69 +205,9 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/academy/sip.svg"
+      teaser: "/assets/images/academy/code.svg"
     sidebar:
-      nav: sip
-# kamailio
-# - scope:
-#     path: ''
-#     type: kamailio
-#   values:
-#     layout: single
-#     author_profile: true
-#     read_time: true
-#     comments: true
-#     share: true
-#     related: true
-#     header:
-#       teaser: "/assets/images/academy/kamailio.svg"
-#     sidebar:
-#       nav: kamailio
-# # ansible
-# - scope:
-#     path: ''
-#     type: ansible
-#   values:
-#     layout: single
-#     author_profile: false
-#     read_time: true
-#     comments: true
-#     share: true
-#     related: true
-#     header:
-#       teaser: "/assets/images/academy/ansible.svg"
-#     sidebar:
-#       nav: ansible
-# docker
-- scope:
-    path: ''
-    type: docker
-  values:
-    layout: single
-    author_profile: false
-    read_time: true
-    comments: true
-    share: true
-    related: true
-    header:
-      teaser: "/assets/images/academy/docker.svg"
-    sidebar:
-      nav: docker
-# kubernetes
-- scope:
-    path: ''
-    type: kubernetes
-  values:
-    layout: single
-    author_profile: false
-    read_time: true
-    comments: true
-    share: true
-    related: true
-    header:
-      teaser: "/assets/images/academy/kubernetes.svg"
-    sidebar:
-      nav: kubernetes
+      nav: programming
 # python
 - scope:
     path: ''
@@ -220,10 +223,10 @@ defaults:
       teaser: "/assets/images/academy/python.svg"
     sidebar:
       nav: python
-# go
+# sip
 - scope:
     path: ''
-    type: go
+    type: sip
   values:
     layout: single
     author_profile: false
@@ -232,9 +235,27 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/academy/go.svg"
+      teaser: "/assets/images/academy/sip.svg"
     sidebar:
-      nav: go
+      nav: sip
+
+# kamailio
+# - scope:
+#     path: ''
+#     type: kamailio
+#   values:
+#     layout: single
+#     author_profile: true
+#     read_time: true
+#     comments: true
+#     share: true
+#     related: true
+#     header:
+#       teaser: "/assets/images/academy/kamailio.svg"
+#     sidebar:
+#       nav: kamailio
+
+
 collections_dir: collections
 
 comments:

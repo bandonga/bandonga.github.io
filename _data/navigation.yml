@@ -2,63 +2,59 @@ main:
   - title: "Academy"
     url: /academy/
 
+devops:
+  - title: "Getting Started"
+    children:
+      - title: "Resources"
+        url: /devops/start/
+
 docker:
   - title: "Getting Started"
     children:
       - title: "Introduction"
-        url: /docker/0-intro/
-  - title: "Fundamentals"
+        url: /docker/intro/
+
+go:
+  - title: "Getting Started"
     children:
-      - title: "Develop"
-        url: /docker/01.1-dev/
-      - title: "Engine"
-        url: /docker/02.1-engine/
-  - title: "Appendix"
-    children:
-      - title: "Cheatsheet"
-        url: /docker/a-cheatsheet/
+      - title: "Resources"
+        url: /go/start/
+      - title: "Introduction"
+        url: /go/intro/
 
 kubernetes:
   - title: "Getting Started"
     children:
       - title: "Introduction"
-        url: /kubernetes/0-intro/
-  - title: "Fundamentals"
-    children:
-      - title: "Pods"
-        url: /kubernetes/0-pods/
-      - title: "Deployments"
-        url: /kubernetes/0-deploy/
-  - title: "Appendix"
-    children:
-      - title: "Cheatsheet"
-        url: /kubernetes/a-cheatsheet/
+        url: /kubernetes/intro/
 
 linux:
   - title: "Getting Started"
     children:
-      - title: "Introduction"
-        url: /linux/0-start/
-      - title: "Exam Topics"
-        url: /linux/0.01-exam-topics/
-  - title: "Exam Topics"
-    children:
-      - title: "1 Installation"
-        url: /linux/01-install/
-      - title: "2 Using Essential Tools"
-        url: /linux/02-essential/
+      - title: "Using Essential Tools"
+        url: /linux/essential/
+      - title: "Concepts"
+        url: /linux/concepts/
 
 network:
   - title: "Getting Started"
     children:
       - title: "Introduction"
-        url: /network/0-intro/
-      - title: "Exam Topics"
-        url: /network/0.01-ccna/
-  - title: "Fundamentals"
+        url: /network/intro/
+
+programming:
+  - title: "Getting Started"
     children:
-      - title: "LAN"
-        url: /network/01-fundamentals/
+      - title: "Resources"
+        url: /programming/0-start/
+
+python:
+  - title: "Getting Started"
+    children:
+      - title: "Resources"
+        url: /python/start/
+      - title: "Introduction"
+        url: /python/intro/
 
 sip:
   - title: "Getting Started"
@@ -74,26 +70,3 @@ sip:
       - title: "SRTP"
         url: /sip/srtp/
 
-python:
-  - title: "Getting Started"
-    children:
-      - title: "Resources"
-        url: /python/0-start/
-      - title: "Introduction"
-        url: /python/01-intro/
-  - title: "Data Types"
-    children:
-      - title: "Numbers"
-        url: /python/02-numbers/
-
-go:
-  - title: "Getting Started"
-    children:
-      - title: "Resources"
-        url: /go/0-start/
-      - title: "Introduction"
-        url: /go/01-intro/
-  - title: "Data Types"
-    children:
-      - title: "Numbers"
-        url: /go/02-numbers/

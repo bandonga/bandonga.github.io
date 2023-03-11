@@ -1,5 +1,6 @@
 ---
 title: "Docker: Introduction"
+permalink: /docker/intro/
 excerpt: "Guide to better understand docker containers"
 header:
   image: "/assets/images/academy/docker.svg"

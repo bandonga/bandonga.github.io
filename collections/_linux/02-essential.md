@@ -1,8 +1,8 @@
 ---
-title: "2 - Using Essential Tools"
-excerpt: "This certification guide will provide a comprehensive overview of Red Hat Enterprise Linux, RHEL 7,
-covering the EX200 exam topics, in order to be a RHCSA - Red Hat Certified System Administrator Guide."
-last_modified_at: 2018-01-02 21:28:04 +00:00
+title: "Linux: Using Essential Tools"
+permalink: /linux/essential/
+excerpt: "Notes and resources about Linux"
+last_modified_at: 2022-02-07 21:28:04 +00:00
 toc: true
 ---
 
@@ -171,18 +171,6 @@ can read the Info page using the command `pinfo`.
 The is also the *documentation files*, copied to the `/usr/share/doc directory`, for services and larger systems that are a bit more complex.
 
 > To get help on shell *built-in* (internal) commands use `help` command, such as `help export`.
-
-#### Help from Red Hat
-
-If you have a subscripion, you can use the (...).
-
-### Laboratory
-
-* [2.1 lab - Using Essential Tools](/RHCSA/02.01-essential-lab/)
-
-### Practice
-
-* [2.2 lab - Using Essential Tools](/RHCSA/02.01-essential-ex/)
 
 ### References
 [^1]: man intro page

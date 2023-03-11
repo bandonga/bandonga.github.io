@@ -1,5 +1,6 @@
 ---
 title: "Kubernetes: Introduction"
+permalink: /kubernetes/intro/
 excerpt: "Guide to understand kubernetes"
 header:
   image: "/assets/images/academy/kubernetes.svg"

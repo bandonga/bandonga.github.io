@@ -1,5 +1,6 @@
 ---
-title: "Networking: Introduction"
+title: "Network: Introduction"
+permalink: /network/intro/
 excerpt: "Guide to better understand IP Networks routing and switching"
 header:
   image: "/assets/images/academy/networking.svg"
@@ -141,16 +142,6 @@ functions:
 3. Encapsulate the data supplied by the transport layer inside a network layer (IP) header. IP defines the IP addresses that uniquely identify each computer.
 4. Encapsulate the data supplied by the network layer inside a data-link layer header and trailer. This layer uses both a header and a trailer.
 5. Transmit the bits. The physical layer encodes a signal onto the medium to transmit the frame.
-
-
-
-### Laboratory
-
-* [1.1 lab - Fundamentals](/CCNA/01.01-fundamentals-lab/)
-
-### Practice
-
-* [1.2 lab - Fundamentals](/CCNA/01.02-fundamentals-ex/)
 
 ### References
 [^1]:

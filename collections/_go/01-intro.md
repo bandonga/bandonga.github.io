@@ -1,5 +1,6 @@
 ---
 title: "Go: Introduction"
+permalink: /go/intro/
 excerpt: "Guide to understand go"
 header:
   image: "/assets/images/academy/go.svg"
