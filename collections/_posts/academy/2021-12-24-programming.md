@@ -13,10 +13,10 @@ tags:
 excerpt: "Notes about codding"
 ---
 
-> :book: Related with: [DevOps]({{ site.baseurl }}{% post_url /academy/2018-06-31-devops %}).
+> :book: Related with: [DevOps](/devops/).
 > :blue_book: **Topics:**
-* [Python](/python/0-start/)
-* [Go](/go/0-start/)
+* [Python](/python/)
+* [Go](/go/)
 
 Notes about codding
 

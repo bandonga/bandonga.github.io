@@ -16,7 +16,7 @@ excerpt: "Kubernetes is a container-orchestration system for automating computer
 
 > :book: Related with: [DevOps]({{ site.baseurl }}{% post_url /academy/2018-06-31-devops %}).
 > :blue_book: **Topics:**
-* [Kubernetes Administration](/kubernetes/0-intro/)
+* [Kubernetes Administration](/kubernetes/)
 
 Kubernetes is a container-orchestration system for automating computer application deployment, scaling, and management.
 
@@ -25,7 +25,6 @@ Kubernetes is a container-orchestration system for automating computer applicati
 * [kubernetes Documentation](https://kubernetes.io/docs)
 
 #### Course
-* [bandonga - kubernetes Administrator](/kubernetes/0-intro/)
 * [edx - Introduction to Kubernetes](https://www.edx.org/course/introduction-to-kubernetes)
 
 #### Books
