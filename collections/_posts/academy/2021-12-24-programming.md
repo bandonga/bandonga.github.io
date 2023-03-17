@@ -23,7 +23,7 @@ Notes about codding
 # Resources
 
 ## Language Index:
-* https://www.tiobe.com/tiobe-index/
-* http://githut.info/
-* http://pypl.github.io/PYPL.html
-* https://insights.stackoverflow.com/survey
+* [tiobe](https://www.tiobe.com/tiobe-index/)
+* [githut](http://githut.info/)
+* [pypl](http://pypl.github.io/PYPL.html)
+* [stackoverflow insights](https://insights.stackoverflow.com/survey)

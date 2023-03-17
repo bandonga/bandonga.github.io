@@ -22,6 +22,12 @@ go:
       - title: "Introduction"
         url: /go/intro/
 
+kamailio:
+  - title: "Getting Started"
+    children:
+      - title: "Data Structures"
+        url: /kamailio/vars/
+
 kubernetes:
   - title: "Getting Started"
     children:

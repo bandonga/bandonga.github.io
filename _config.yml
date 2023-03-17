@@ -49,10 +49,10 @@ collections:
     title: go
     output: true
     permalink: "/:collection/:path/"
-  # kamailio:
-  #   title: kamailio
-  #   output: true
-  #   permalink: "/:collection/:path/"
+  kamailio:
+    title: kamailio
+    output: true
+    permalink: "/:collection/:path/"
   kubernetes:
     title: kubernetes
     output: true
@@ -148,6 +148,21 @@ defaults:
       teaser: "/assets/images/academy/go.svg"
     sidebar:
       nav: go
+# kamailio
+- scope:
+    path: ''
+    type: kamailio
+  values:
+    layout: single
+    author_profile: true
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/academy/kamailio.svg"
+    sidebar:
+      nav: kamailio
 # kubernetes
 - scope:
     path: ''
@@ -238,22 +253,6 @@ defaults:
       teaser: "/assets/images/academy/sip.svg"
     sidebar:
       nav: sip
-
-# kamailio
-# - scope:
-#     path: ''
-#     type: kamailio
-#   values:
-#     layout: single
-#     author_profile: true
-#     read_time: true
-#     comments: true
-#     share: true
-#     related: true
-#     header:
-#       teaser: "/assets/images/academy/kamailio.svg"
-#     sidebar:
-#       nav: kamailio
 
 
 collections_dir: collections
