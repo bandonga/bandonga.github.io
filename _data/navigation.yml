@@ -25,6 +25,8 @@ go:
 kamailio:
   - title: "Getting Started"
     children:
+      - title: "Pre-Processor Directives"
+        url: /sip/directives/
       - title: "Data Structures"
         url: /kamailio/vars/
 
