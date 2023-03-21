@@ -106,7 +106,7 @@ defaults:
 # devops
 - scope:
     path: ''
-    type: DevOps
+    type: devops
   values:
     layout: single
     author_profile: false
