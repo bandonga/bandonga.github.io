@@ -2,8 +2,8 @@
 title: Networking
 date: 2018-10-31 00:00:00 +01:00
 header:
-  teaser: "/assets/images/academy/networking.svg"
-  image: "/assets/images/academy/networking.svg"
+  teaser: "/assets/images/academy/network.svg"
+  image: "/assets/images/academy/network.svg"
 categories:
 - academy
 tags:
