@@ -10,61 +10,46 @@ participant "Bob@B" as UAS
 
 UAC     [#red]->   Proxy1: ""INVITE bob@P1"" 
 note left 
+  ""v: A""
   ""f: alice@A""
   ""t: bob@P1""
-  ""v: A""
-  ""m: A""
 end note
 Proxy1  [#red]->  Proxy2: ""INVITE bob@P2""
-note left 
-  ""f: alice@A""
-  ""t: bob@P1""
-  ""RR: P1""
+note left
   ""v: P1""
   ""v: A""
-  ""m: A""
-end note
-Proxy2  [#red]-> UAS:    ""INVITE bob@B""
-note left 
   ""f: alice@A""
   ""t: bob@P1""
-  ""RR: P1""
-  ""RR: P2""
+end note
+Proxy2  [#red]-> UAS:    ""INVITE bob@B""
+note left
   ""v: P2""
   ""v: P1""
   ""v: A""
-  ""m: A""
+  ""f: alice@A""
+  ""t: bob@P1""
 end note
 
 UAS    -[#green]-> Proxy2:   200 OK
-note left 
-  ""f: alice@A""
-  ""t: bob@P1""
-  ""RR: P1""
-  ""RR: P2""
+note left
   ""v: P2""
   ""v: P1""
   ""v: A""
-  ""m: B""
+  ""f: alice@A""
+  ""t: bob@P1""
 end note
 Proxy2 -[#green]->  Proxy1:   200 OK
-note left 
-  ""f: alice@A""
-  ""t: bob@P1""
-  ""RR: P1""
-  ""RR: P2""
+note left
   ""v: P1""
   ""v: A""
-  ""m: B""
-end note
-Proxy1 -[#green]->   UAC: 200 OK
-note left 
   ""f: alice@A""
   ""t: bob@P1""
-  ""RR: P1""
-  ""RR: P2""
+end note
+Proxy1 -[#green]->   UAC: 200 OK
+note left
   ""v: A""
-  ""m: B""
+  ""f: alice@A""
+  ""t: bob@P1""
 end note
 
 @enduml

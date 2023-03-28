@@ -1,0 +1,69 @@
+@startuml proxy
+
+!includeurl https://raw.githubusercontent.com/marcelofpfelix/plantuml-diagrams/master/skins/skin_dark.puml
+
+participant "alice@A" as UAC
+participant "Proxy1@P1" as Proxy1
+participant "Proxy2@P2" as Proxy2
+participant "Bob@B" as UAS
+
+
+UAC     [#red]->   Proxy1: ""INVITE bob@P1"" 
+note left 
+  ""m: A""
+end note
+Proxy1  [#red]->  Proxy2: ""INVITE bob@P2""
+note left 
+  ""RR: P1""
+  ""m: A""
+end note
+Proxy2  [#red]-> UAS:    ""INVITE bob@B""
+note left 
+  ""RR: P1""
+  ""RR: P2""
+  ""m: A""
+end note
+
+
+UAS    -[#green]-> Proxy2:   200 OK
+note left 
+  ""RR: P1""
+  ""RR: P2""
+  ""m: Bo""
+end note
+Proxy2 -[#green]->  Proxy1:   200 OK
+note left 
+  ""RR: P1""
+  ""RR: P2""
+  ""m: Bo""
+end note
+Proxy1 -[#green]->   UAC: 200 OK
+note left 
+  ""RR: P1""
+  ""RR: P2""
+  ""m: Bo""
+end note
+
+UAC     [#red]->   Proxy1: ""ACK Bo@B"" 
+note left 
+  ""R: P1""
+  ""R: P2""
+  ""m: A""
+end note
+Proxy1  [#red]->  Proxy2: ""ACK Bo@B""
+note left 
+  ""RR: P1""
+  ""R: P1""
+  ""R: P2""
+  ""m: A""
+end note
+Proxy2  [#red]-> UAS:    ""ACK Bo@B""
+note left
+  ""RR: P1""
+  ""RR: P2""
+  ""R: P1""
+  ""R: P2""
+  ""m: A""
+end note
+
+@enduml
