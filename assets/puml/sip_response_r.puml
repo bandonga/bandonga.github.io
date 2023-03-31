@@ -2,7 +2,7 @@
 
 !includeurl https://raw.githubusercontent.com/marcelofpfelix/plantuml-diagrams/master/skins/skin_dark.puml
 
-participant "alice@A" as UAC
+participant "Alice@A" as UAC
 participant "Proxy1@P1" as Proxy1
 participant "Proxy2@P2" as Proxy2
 participant "Bob@B" as UAS
@@ -51,5 +51,13 @@ note left
   ""f: alice@A""
   ""t: bob@P1""
 end note
+
+UAC     [#red]->   UAS: ""ACK Bo@B"" 
+note left 
+  ""v: A""
+  ""f: alice@A""
+  ""t: bob@P1""
+end note
+
 
 @enduml
