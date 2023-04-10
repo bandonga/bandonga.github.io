@@ -1,23 +1,18 @@
 ---
-title: Networking
-date: 2018-10-31 00:00:00 +01:00
+title: "Network: Resources"
+permalink: /network/start/
+excerpt: "Notes and resources about IP Networks routing and switching"
 header:
-  teaser: "/assets/images/academy/network.svg"
   image: "/assets/images/academy/network.svg"
-categories:
-- academy
-tags:
-- academy
-- networking
-excerpt: "A guide to help you know more about networking."
+last_modified_at: 2020-01-02 21:28:04 +00:00
+toc: true
 ---
 
-A guide to help you know more about networking.
+# Network
 
-> :blue_book: **Topics:**
-* [Networking: guide to IP routing and switching](/network/)
+Notes and resources about IP Networks routing and switching
 
-### Resources
+## Resources
 
 #### General
 * [Ops Schools](https://www.opsschool.org/networking_101.html)
