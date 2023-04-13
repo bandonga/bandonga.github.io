@@ -1,6 +1,9 @@
 ---
 title: "Linux: Using Essential Tools"
 permalink: /linux/essential/
+header:
+  teaser: "/assets/images/academy/linux.svg"
+  image: "/assets/images/academy/linux.svg"
 excerpt: "Notes and resources about Linux"
 last_modified_at: 2022-02-07 21:28:04 +00:00
 toc: true

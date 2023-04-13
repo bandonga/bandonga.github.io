@@ -1,6 +1,9 @@
 ---
 title: "Linux: Concepts"
 permalink: /linux/concepts/
+header:
+  teaser: "/assets/images/academy/linux.svg"
+  image: "/assets/images/academy/linux.svg"
 excerpt: "Notes and resources about Linux"
 last_modified_at: 2018-01-02 21:28:04 +00:00
 toc: true

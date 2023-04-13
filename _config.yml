@@ -68,8 +68,8 @@ collections:
   posts:
     title: Posts
     output: true
-  programming:
-    title: programming
+  code:
+    title: code
     output: true
     permalink: "/:collection/:path/"
   python:
@@ -190,7 +190,7 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/academy/linux.png"
+      teaser: "/assets/images/academy/linux.svg"
     sidebar:
       nav: linux
 # network
@@ -205,13 +205,13 @@ defaults:
     share: true
     related: true
     header:
-      teaser: "/assets/images/academy/network.png"
+      teaser: "/assets/images/academy/network.svg"
     sidebar:
       nav: network
-# programming
+# code
 - scope:
     path: ''
-    type: programming
+    type: code
   values:
     layout: single
     author_profile: false
@@ -222,7 +222,7 @@ defaults:
     header:
       teaser: "/assets/images/academy/code.svg"
     sidebar:
-      nav: programming
+      nav: code
 # python
 - scope:
     path: ''
