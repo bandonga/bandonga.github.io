@@ -50,11 +50,19 @@ network:
       - title: "Introduction"
         url: /network/intro/
 
-programming:
+code:
   - title: "Getting Started"
     children:
       - title: "Resources"
-        url: /programming/0-start/
+        url: /code/start/
+  - title: "Data Structures and Algorithms"
+    children:
+      - title: "DSA Resources"
+        url: /code/dsa/
+      - title: "Big O"
+        url: /code/bigo/
+      - title: "Arrays"
+        url: /code/array/
 
 python:
   - title: "Getting Started"
