@@ -5,7 +5,7 @@ header:
   overlay_color: "#00adb5"
   overlay_image: "/assets/images/home2.jpg"
   overlay_filter: rgba(0, 173, 181, 0.7)
-  caption: 
+  caption:
 excerpt: >
   Yet Another Blog<br />
 feature_row:

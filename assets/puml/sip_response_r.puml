@@ -8,8 +8,8 @@ participant "Proxy2@P2" as Proxy2
 participant "Bob@B" as UAS
 
 
-UAC     [#red]->   Proxy1: ""INVITE bob@P1"" 
-note left 
+UAC     [#red]->   Proxy1: ""INVITE bob@P1""
+note left
   ""v: A""
   ""f: alice@A""
   ""t: bob@P1""
@@ -52,8 +52,8 @@ note left
   ""t: bob@P1""
 end note
 
-UAC     [#red]->   UAS: ""ACK Bo@B"" 
-note left 
+UAC     [#red]->   UAS: ""ACK Bo@B""
+note left
   ""v: A""
   ""f: alice@A""
   ""t: bob@P1""
