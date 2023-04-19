@@ -63,6 +63,8 @@ code:
         url: /code/bigo/
       - title: "Arrays"
         url: /code/array/
+      - title: "Search"
+        url: /code/search/
 
 python:
   - title: "Getting Started"
