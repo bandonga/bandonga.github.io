@@ -2,6 +2,22 @@ main:
   - title: "Academy"
     url: /academy/
 
+code:
+  - title: "Getting Started"
+    children:
+      - title: "Resources"
+        url: /code/start/
+  - title: "Data Structures and Algorithms"
+    children:
+      - title: "DSA Resources"
+        url: /code/dsa/
+      - title: "Big O"
+        url: /code/bigo/
+      - title: "Arrays"
+        url: /code/array/
+      - title: "Search"
+        url: /code/search/
+
 devops:
   - title: "Getting Started"
     children:
@@ -29,6 +45,8 @@ kamailio:
         url: /kamailio/directives/
       - title: "Data Structures"
         url: /kamailio/vars/
+      - title: "AVP"
+        url: /kamailio/avp/
 
 kubernetes:
   - title: "Getting Started"
@@ -49,22 +67,6 @@ network:
     children:
       - title: "Introduction"
         url: /network/intro/
-
-code:
-  - title: "Getting Started"
-    children:
-      - title: "Resources"
-        url: /code/start/
-  - title: "Data Structures and Algorithms"
-    children:
-      - title: "DSA Resources"
-        url: /code/dsa/
-      - title: "Big O"
-        url: /code/bigo/
-      - title: "Arrays"
-        url: /code/array/
-      - title: "Search"
-        url: /code/search/
 
 python:
   - title: "Getting Started"
@@ -89,6 +91,5 @@ sip:
         url: /sip/nat/
       - title: "SRTP"
         url: /sip/srtp/
-      - title: "VoIP"
+      - title: "WebRTC Resources"
         url: /sip/webrtc/
-#  - title: "Fundamentals"

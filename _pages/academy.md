@@ -7,14 +7,14 @@ feature_row:
   alt: sysadmin
   title: DevOps
   excerpt: Notes and resources about DevOps.
-  url: "/devops/"
+  url: "/devops/start/"
   btn_class: btn--primary
   btn_label: Read More
 - image_path: "/assets/images/academy/sip.svg"
   alt: sip
   title: SIP
   excerpt: "Notes about VoIP communications and protocols."
-  url: "/sip/"
+  url: "/sip/start/"
   btn_class: btn--primary
   btn_label: Read More
 tag: academy
