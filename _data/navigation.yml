@@ -17,6 +17,10 @@ code:
         url: /code/array/
       - title: "Search"
         url: /code/search/
+      - title: "2 Crystal Balls"
+        url: /code/crystal-balls/
+      - title: "Sort"
+        url: /code/sort/
 
 devops:
   - title: "Getting Started"
