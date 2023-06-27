@@ -76,6 +76,10 @@ collections:
     title: python
     output: true
     permalink: "/:collection/:path/"
+  rust:
+    title: Rust
+    output: true
+    permalink: "/:collection/:path/"
   sip:
     title: SIP
     output: true
@@ -238,6 +242,21 @@ defaults:
       teaser: "/assets/images/academy/python.svg"
     sidebar:
       nav: python
+# rust
+- scope:
+    path: ''
+    type: rust
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/academy/rust.svg"
+    sidebar:
+      nav: rust
 # sip
 - scope:
     path: ''

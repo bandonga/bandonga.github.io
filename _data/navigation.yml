@@ -34,13 +34,7 @@ docker:
       - title: "Introduction"
         url: /docker/intro/
 
-go:
-  - title: "Getting Started"
-    children:
-      - title: "Resources"
-        url: /go/start/
-      - title: "Introduction"
-        url: /go/intro/
+
 
 kamailio:
   - title: "Getting Started"
@@ -72,6 +66,14 @@ network:
       - title: "Introduction"
         url: /network/intro/
 
+go:
+  - title: "Getting Started"
+    children:
+      - title: "Resources"
+        url: /go/start/
+      - title: "Introduction"
+        url: /go/intro/
+
 python:
   - title: "Getting Started"
     children:
@@ -79,6 +81,14 @@ python:
         url: /python/start/
       - title: "Introduction"
         url: /python/intro/
+
+rust:
+  - title: "Getting Started"
+    children:
+      - title: "Resources"
+        url: /rust/start/
+      - title: "Introduction"
+        url: /rust/intro/
 
 sip:
   - title: "Getting Started"
