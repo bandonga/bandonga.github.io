@@ -71,6 +71,8 @@ go:
     children:
       - title: "Resources"
         url: /go/start/
+      - title: "Basic Tools"
+        url: /python/tools/
       - title: "Introduction"
         url: /go/intro/
 
@@ -79,6 +81,8 @@ python:
     children:
       - title: "Resources"
         url: /python/start/
+      - title: "Basic Tools"
+        url: /python/tools/
       - title: "Introduction"
         url: /python/intro/
 
@@ -87,6 +91,8 @@ rust:
     children:
       - title: "Resources"
         url: /rust/start/
+      - title: "Basic Tools"
+        url: /python/tools/
       - title: "Introduction"
         url: /rust/intro/
 
