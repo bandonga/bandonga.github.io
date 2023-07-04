@@ -95,6 +95,11 @@ rust:
         url: /python/tools/
       - title: "Introduction"
         url: /rust/intro/
+  - title: "Data Types"
+    children:
+      - title: "Numbers"
+        url: /rust/numbers/
+
 
 sip:
   - title: "Getting Started"
