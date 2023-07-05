@@ -1,6 +1,7 @@
 ---
 title: "Rust: Projects"
-excerpt: "Guide to understand rust"
+permalink: /rust/projects/
+excerpt: "Notes and resources about rust."
 header:
   image: "/assets/images/academy/rust.svg"
 last_modified_at: 2023-06-29 00:00:00 +00:00

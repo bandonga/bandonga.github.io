@@ -66,6 +66,7 @@ network:
       - title: "Introduction"
         url: /network/intro/
 
+
 go:
   - title: "Getting Started"
     children:
@@ -98,8 +99,9 @@ rust:
   - title: "Data Types"
     children:
       - title: "Numbers"
+        url: /rust/types/
+      - title: "Numbers"
         url: /rust/numbers/
-
 
 sip:
   - title: "Getting Started"
