@@ -76,6 +76,12 @@ go:
         url: /python/tools/
       - title: "Introduction"
         url: /go/intro/
+  - title: "Data Types"
+    children:
+      - title: "Basic Types"
+        url: /go/types/
+      - title: "Type Operations"
+        url: /go/type-ops/
 
 python:
   - title: "Getting Started"
@@ -86,6 +92,12 @@ python:
         url: /python/tools/
       - title: "Introduction"
         url: /python/intro/
+  - title: "Data Types"
+    children:
+      - title: "Basic Types"
+        url: /python/types/
+      - title: "Type Operations"
+        url: /python/type-ops/
 
 rust:
   - title: "Getting Started"
@@ -98,10 +110,10 @@ rust:
         url: /rust/intro/
   - title: "Data Types"
     children:
-      - title: "Numbers"
+      - title: "Basic Types"
         url: /rust/types/
-      - title: "Numbers"
-        url: /rust/numbers/
+      - title: "Type Operations"
+        url: /rust/type-ops/
 
 sip:
   - title: "Getting Started"
