@@ -248,7 +248,7 @@ defaults:
     type: rust
   values:
     layout: single
-    author_profile: false
+    author_profile: true
     read_time: true
     comments: true
     share: true
@@ -359,9 +359,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bandonga"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
 
   # Site Footer
 footer:

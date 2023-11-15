@@ -6,4 +6,4 @@ permalink: /python/
 author_profile: false
 ---
 
-Programming articles:
+Python articles:

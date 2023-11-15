@@ -1,9 +1,9 @@
 ---
 layout: collection
-title: "Python"
-collection: python
-permalink: /python/
+title: "Rust"
+collection: rust
+permalink: /rust/
 author_profile: false
 ---
 
-Programming articles:
+Rust articles:
