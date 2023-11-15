@@ -1,8 +1,8 @@
 ---
 layout: collection
-title: "Programming"
-collection: programming
-permalink: /programming/
+title: "Python"
+collection: python
+permalink: /python/
 author_profile: false
 ---
 

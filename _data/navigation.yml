@@ -105,7 +105,7 @@ rust:
       - title: "Resources"
         url: /rust/start/
       - title: "Basic Tools"
-        url: /python/tools/
+        url: /rust/tools/
       - title: "Introduction"
         url: /rust/intro/
   - title: "Data Types"
