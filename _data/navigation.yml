@@ -128,7 +128,5 @@ sip:
     children:
       - title: "NAT"
         url: /sip/nat/
-      - title: "SRTP"
-        url: /sip/srtp/
       - title: "WebRTC Resources"
         url: /sip/webrtc/

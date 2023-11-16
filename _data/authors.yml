@@ -1,11 +1,8 @@
 marcelo:
   name        : "Marcelo Felix"
-  uri         : "https://bandonga.com/u/marcelo"
-  avatar      : "/assets/images/u/marcelo.jpeg"
+  uri         : "https://bandonga.com/cv/marcelo" #"https://bandonga.com/u/marcelo"
+  avatar      : "/assets/images/u/marcelo.jpg"
   links:
-    - label: "Resume"
-      icon: "fas fa-fw fa-link"
-      url: "https://bandonga.com/cv/marcelo"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/marcelofpfelix"
@@ -14,4 +11,4 @@ marcelo:
       url: "https://github.com/marcelofpfelix"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/marcelofpfelix"
+      url: "https://linkedin.com/in/marcelofelix"

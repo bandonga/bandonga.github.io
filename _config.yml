@@ -346,19 +346,19 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           :
-  bio              : "in the web"
-  location         : "Portugal"
-  links:
-    - label: "webpage"
-      icon: "fas fa-fw fa-link"
-      url: "http://bandonga.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/bandongatech"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/bandonga"
+#  avatar           :
+#  bio              : "in the web"
+  # location         : "Portugal"
+  # links:
+  #   - label: "webpage"
+  #     icon: "fas fa-fw fa-link"
+  #     url: "http://bandonga.com"
+  #   - label: "Twitter"
+  #     icon: "fab fa-fw fa-twitter-square"
+  #     url: "https://twitter.com/bandongatech"
+  #   - label: "GitHub"
+  #     icon: "fab fa-fw fa-github"
+  #     url: "https://github.com/bandonga"
 
   # Site Footer
 footer:
