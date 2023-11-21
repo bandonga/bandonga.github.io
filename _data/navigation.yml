@@ -63,9 +63,16 @@ linux:
 network:
   - title: "Getting Started"
     children:
-      - title: "Introduction"
-        url: /network/intro/
-
+      - title: "Resources"
+        url: /network/start/
+  - title: "Datagrams"
+    children:
+      - title: "UDP"
+        url: /network/udp/
+      - title: "MTU"
+        url: /network/mtu/
+      - title: "Fragmentation"
+        url: /network/fragmentation/
 
 go:
   - title: "Getting Started"
@@ -73,7 +80,7 @@ go:
       - title: "Resources"
         url: /go/start/
       - title: "Basic Tools"
-        url: /python/tools/
+        url: /go/tools/
       - title: "Introduction"
         url: /go/intro/
   - title: "Data Types"
