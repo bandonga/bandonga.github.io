@@ -41,10 +41,16 @@ kamailio:
     children:
       - title: "Pre-Processor Directives"
         url: /kamailio/directives/
+  - title: "Data Types"
+    children:
+      # - title: "Basic Types"
+      #  url: /kamailio/types/
       - title: "Data Structures"
         url: /kamailio/vars/
       - title: "AVP"
-        url: /kamailio/avp/
+        url: /kamailio/HTable/
+      - title: "AVP"
+        url: /kamailio/htable/
 
 kubernetes:
   - title: "Getting Started"
