@@ -3,7 +3,7 @@ layout: collection
 title: "Rust"
 collection: rust
 permalink: /rust/
-author_profile: false
+author_profile: true
 ---
 
 Rust articles:

@@ -37,8 +37,12 @@ algolia:
 
 # Collections
 collections:
+  aws:
+    title: AWS
+    output: true
+    permalink: "/:collection/:path/"
   devops:
-    title: SIP
+    title: DevOps
     output: true
     permalink: "/:collection/:path/"
   docker:
@@ -107,6 +111,21 @@ defaults:
     layout: single
     author_profile: false
 
+# aws
+- scope:
+    path: ''
+    type: aws
+  values:
+    layout: single
+    author_profile: false
+    read_time: true
+    comments: true
+    share: true
+    related: true
+    header:
+      teaser: "/assets/images/academy/aws.svg"
+    sidebar:
+      nav: devops
 # devops
 - scope:
     path: ''

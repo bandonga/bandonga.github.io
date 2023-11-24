@@ -2,6 +2,12 @@ main:
   - title: "Academy"
     url: /academy/
 
+aws:
+  - title: "Getting Started"
+    children:
+      - title: "Resources"
+        url: /aws/start/
+
 code:
   - title: "Getting Started"
     children:
@@ -45,11 +51,11 @@ kamailio:
     children:
       # - title: "Basic Types"
       #  url: /kamailio/types/
-      - title: "Data Structures"
+      - title: "Pseudo-Variables"
         url: /kamailio/vars/
       - title: "AVP"
-        url: /kamailio/HTable/
-      - title: "AVP"
+        url: /kamailio/avp/
+      - title: "HTable"
         url: /kamailio/htable/
 
 kubernetes:
