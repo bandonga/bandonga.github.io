@@ -5,7 +5,7 @@ name                     : &name bandonga
 subtitle                 :
 description: &description Notes about stuff.
 
-remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
+remote_theme             : "mmistakes/minimal-mistakes@4.26.0"
 minimal_mistakes_skin    : "bdark"  # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", bandonga
 
 url: https://bandonga.com
