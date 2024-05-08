@@ -3,8 +3,8 @@ marcelo:
   uri         : "https://bandonga.com/cv/marcelo" #"https://bandonga.com/u/marcelo"
   avatar      : "/assets/images/u/marcelo.jpg"
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    - label: "X"
+      icon: "fab fa-fw fa-x-twitter-square"
       url: "https://twitter.com/marcelofpfelix"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"

@@ -11,10 +11,12 @@ $warning-color    : #f9e2af !default;
 $danger-color     : #f38ba8 !default;
 $info-color       : #89b4fa !default;
 $gray             : #7f849c !default;
+$twitter-color    : #11111b !default;
+
 
 /* syntax highlighting (base16) */
-$base00: #181825 !default; // base
-$base01: #11111b !default; // mantle
+$base00: #181825 !default; // mantle
+$base01: #11111b !default; // crust
 $base02: #313244 !default; // surface0
 $base03: #45475a !default; // surface1
 $base04: #585b70 !default; // surface2
@@ -25,7 +27,7 @@ $base08: #f38ba8 !default; // red
 $base09: #fab387 !default; // peach
 $base0a: #f9e2af !default; // yellow
 $base0b: #a6e3a1 !default; // green
-$base0c: #141a19 !default; // teal
+$base0c: #94e2d5 !default; // teal
 $base0d: #89b4fa !default; // blue
 $base0e: #cba6f7 !default; // mauve
 $base0f: #f2cdcd !default; // flamingo

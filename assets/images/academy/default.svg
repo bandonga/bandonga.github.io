@@ -26,11 +26,11 @@
       <stop
          id="stop1292"
          offset="0"
-         style="stop-color:#212f3c;stop-opacity:1" />
+         style="stop-color:#313244;stop-opacity:1" />
       <stop
          id="stop1294"
          offset="1"
-         style="stop-color:#17202a;stop-opacity:1" />
+         style="stop-color:#181825;stop-opacity:1" />
     </linearGradient>
     <filter
        x="0"
@@ -2306,11 +2306,11 @@
        inkscape:collect="always"
        id="linearGradient5741-6">
       <stop
-         style="stop-color:#212f3c;stop-opacity:0.94117647"
+         style="stop-color:#313244;stop-opacity:0.94117647"
          offset="0"
          id="stop5743-7" />
       <stop
-         style="stop-color:#17202a;stop-opacity:0.94117647"
+         style="stop-color:#181825;stop-opacity:0.94117647"
          offset="1"
          id="stop5745-5" />
     </linearGradient>
@@ -2575,12 +2575,12 @@
     </g>
     <g
        aria-label="Rust"
-       style="font-style:normal;font-weight:normal;font-size:161.93812561px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d6dbdf;fill-opacity:0.94117647;stroke:none;stroke-width:12.14535999"
+       style="font-style:normal;font-weight:normal;font-size:161.93812561px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#bac2de;fill-opacity:0.94117647;stroke:none;stroke-width:12.14535999"
        id="text1362"
        transform="translate(18.75,141.01563)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:Georgia;-inkscape-font-specification:Georgia;letter-spacing:0px;word-spacing:0px;fill:#d6dbdf;fill-opacity:0.94117647;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:Georgia;-inkscape-font-specification:Georgia;letter-spacing:0px;word-spacing:0px;fill:#bac2de;fill-opacity:0.94117647;stroke:none"
        x="207.22795"
        y="888.02142"
        id="text1325"><tspan
@@ -2588,10 +2588,10 @@
          id="tspan1323"
          x="207.22795"
          y="888.02142"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:173.33332825px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Heavy';fill:#d6dbdf;fill-opacity:0.94117647">Default</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:173.33332825px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Heavy';fill:#bac2de;fill-opacity:0.94117647">Default</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:Georgia;-inkscape-font-specification:Georgia;letter-spacing:0px;word-spacing:0px;fill:#d6dbdf;fill-opacity:0.94117647;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:Georgia;-inkscape-font-specification:Georgia;letter-spacing:0px;word-spacing:0px;fill:#bac2de;fill-opacity:0.94117647;stroke:none"
        x="360.31668"
        y="651.81531"
        id="text1325-4"><tspan
@@ -2599,6 +2599,6 @@
          id="tspan1323-6"
          x="360.31668"
          y="651.81531"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:53.33333206px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Medium';fill:#d6dbdf;fill-opacity:0.94117647">By Example</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:53.33333206px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Medium';fill:#bac2de;fill-opacity:0.94117647">By Example</tspan></text>
   </g>
 </svg>
