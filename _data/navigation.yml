@@ -45,6 +45,12 @@ docker:
 kamailio:
   - title: "Getting Started"
     children:
+      - title: "Resources"
+        url: /kamailio/start/
+      - title: "Kamalab"
+        url: /kamailio/tools/
+#      - title: "Introduction"
+#        url: /kamailio/intro/
       - title: "Pre-Processor Directives"
         url: /kamailio/directives/
   - title: "Data Types"
