@@ -48,7 +48,7 @@ kamailio:
       - title: "Resources"
         url: /kamailio/start/
       - title: "Kamalab"
-        url: /kamailio/tools/
+        url: /kamailio/kamalab/
 #      - title: "Introduction"
 #        url: /kamailio/intro/
       - title: "Pre-Processor Directives"
