@@ -49,8 +49,8 @@ kamailio:
         url: /kamailio/start/
       - title: "Kamalab"
         url: /kamailio/kamalab/
-#      - title: "Introduction"
-#        url: /kamailio/intro/
+      - title: "Introduction"
+        url: /kamailio/intro/
       - title: "Pre-Processor Directives"
         url: /kamailio/directives/
   - title: "Data Types"
