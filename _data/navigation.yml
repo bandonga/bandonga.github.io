@@ -53,10 +53,14 @@ kamailio:
         url: /kamailio/intro/
       - title: "Pre-Processor Directives"
         url: /kamailio/directives/
+      - title: "Directive Operations"
+        url: /kamailio/directive-ops/
+  - title: "KEMI Framework"
+    children:
+      - title: "KEMI Intro"
+        url: /kamailio/kemi/
   - title: "Data Types"
     children:
-      # - title: "Basic Types"
-      #  url: /kamailio/types/
       - title: "Pseudo-Variables"
         url: /kamailio/vars/
       - title: "AVP"
