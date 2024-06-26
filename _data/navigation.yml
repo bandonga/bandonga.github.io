@@ -55,6 +55,8 @@ kamailio:
         url: /kamailio/directives/
       - title: "Directive Operations"
         url: /kamailio/directive-ops/
+      - title: "Keywords"
+        url: /kamailio/keywords/
   - title: "KEMI Framework"
     children:
       - title: "KEMI Intro"
