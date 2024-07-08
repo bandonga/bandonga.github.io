@@ -59,8 +59,10 @@ kamailio:
         url: /kamailio/keywords/
   - title: "KEMI Framework"
     children:
-      - title: "KEMI Intro"
+      - title: "KEMI Intro with lua"
         url: /kamailio/kemi/
+      - title: "KEMI with python"
+        url: /kamailio/python/
   - title: "Data Types"
     children:
       - title: "Pseudo-Variables"
