@@ -30,7 +30,61 @@ blockquote {
 }
 
 div.highlighter-rouge {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
   line-height: 1;
+  overflow: hidden;
+}
+
+.archive__item-caption,
+.page__hero-caption {
+  color: $text-color;
+  background: $footer-background-color;
+
+  a {
+    color: $text-color;
+  }
+}
+
+.taxonomy__index {
+  a {
+    &:hover {
+      color: $background-color;
+      background-color: $primary-color;
+
+      &::before,
+      &::after {
+        background-color: $background-color;
+      }
+    }
+  }
+
+  input:checked + label {
+    color: $background-color;
+    background-color: $primary-color;
+
+    &::before,
+    &::after {
+      background-color: $background-color;
+    }
+  }
+}
+
+.screen-reader-text:focus,
+.screen-reader-shortcut:focus {
+  background: $background-color;
+  box-shadow: 0 0 2px 2px rgba($primary-color, 0.6);
+  color: $text-color;
+}
+
+.well {
+  background-color: $form-background-color;
+  border-color: $border-color;
+  box-shadow: inset 0 1px 1px rgba($background-color, 0.05);
+}
+
+pre.highlight .clipboard-copy-button {
+  color: $primary-color;
 }
 
 @media (max-width: 600px) {
