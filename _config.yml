@@ -6,7 +6,7 @@ subtitle                 :
 description: &description Notes about stuff.
 
 remote_theme             : "mmistakes/minimal-mistakes@4.28.0"
-minimal_mistakes_skin    : "catppuccin_mocha" # "default", "air", "aqua", "catppuccin_latte", "catppuccin_mocha", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "bandonga_mocha"
 
 url: https://bandonga.com
 baseurl: "/"

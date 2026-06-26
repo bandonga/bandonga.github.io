@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-theme="${1:-catppuccin_mocha}"
+theme="${1:-bandonga_mocha}"
 
 case "$theme" in
-  catppuccin_mocha | mocha)
-    theme="catppuccin_mocha"
+  bandonga_mocha | catppuccin_mocha | mocha)
+    theme="bandonga_mocha"
     ;;
   *)
     echo "Unsupported theme: $theme" >&2
-    echo "Supported themes: catppuccin_mocha" >&2
+    echo "Supported themes: bandonga_mocha" >&2
     exit 1
     ;;
 esac
@@ -34,6 +34,16 @@ required = %i[
 ]
 missing = required.reject { |name| palette.key?(name) }
 abort "Theme #{skin_path} is missing palette colors: #{missing.join(', ')}" unless missing.empty?
+
+palette_source_path = "_data/catppuccin-palette.json"
+if File.file?(palette_source_path)
+  source = File.read(palette_source_path)
+  source_palette = source.scan(/"([a-z0-9]+)"\s*:\s*\{[^{}]*?"hex"\s*:\s*"(#[0-9a-fA-F]{6})"/m).to_h do |name, hex|
+    [name.to_sym, hex.downcase]
+  end
+  drift = required.reject { |name| source_palette[name] == palette[name] }
+  abort "#{skin_path} differs from #{palette_source_path} for: #{drift.join(', ')}" unless drift.empty?
+end
 
 def resolve_theme_color(skin, palette, variable)
   direct = skin[/\$#{Regexp.escape(variable)}:\s*(#[0-9a-fA-F]{6})/, 1]
@@ -132,6 +142,7 @@ tracked_files = `git ls-files -z`.split("\0")
 
 tracked_files.each do |path|
   next if path == skin_path
+  next if path == "_data/catppuccin-palette.json"
   next unless path == "_config.yml" || target_exts.include?(File.extname(path))
   next unless File.file?(path)
 
@@ -141,7 +152,7 @@ tracked_files.each do |path|
   if path == "_config.yml"
     text = text.gsub(
       /^minimal_mistakes_skin\s*:.*$/,
-      'minimal_mistakes_skin    : "catppuccin_mocha" # "default", "air", "aqua", "catppuccin_latte", "catppuccin_mocha", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"'
+      %(minimal_mistakes_skin    : "#{theme}")
     )
   end
 
@@ -159,6 +170,7 @@ tracked_files.each do |path|
   if path.start_with?("assets/images/academy/") && File.extname(path) == ".svg"
     text = text.gsub(/fill:#{Regexp.escape(palette.fetch(:surface0))}\b/i, "fill:#{academy_background}")
     text = text.gsub(/fill="#{Regexp.escape(palette.fetch(:surface0))}"/i, %(fill="#{academy_background}"))
+    text = text.gsub(/(style="[^"]*fill:)#[0-9a-fA-F]{3,8}([^"]*stroke-width:(?:5|4\.68749952)[^"]*")/i, "\\1#{academy_background}\\2")
   end
 
   if File.extname(path) == ".svg"

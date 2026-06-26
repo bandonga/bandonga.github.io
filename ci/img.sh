@@ -118,7 +118,7 @@ render_safari_mask() {
 
   ruby - "$src" "$dst" <<'RUBY'
 src, dst = ARGV
-skin = File.read("_sass/minimal-mistakes/skins/_catppuccin_mocha.scss")
+skin = File.read("_sass/minimal-mistakes/skins/_bandonga_mocha.scss")
 palette = skin.scan(/"([a-z0-9]+)"\s*:\s*(#[0-9a-fA-F]{6})/).to_h do |name, hex|
   [name, hex.downcase]
 end
