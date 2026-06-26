@@ -8,16 +8,16 @@ participant "Proxy2@P2" as Proxy2
 participant "Bob@B" as UAS
 
 
-UAC     [#red]->   Proxy1: ""INVITE bob@P1""
+UAC     [#f38ba8]->   Proxy1: ""INVITE bob@P1""
 note left
   ""m: A""
 end note
-Proxy1  [#red]->  Proxy2: ""INVITE bob@P2""
+Proxy1  [#f38ba8]->  Proxy2: ""INVITE bob@P2""
 note left
   ""RR: P1""
   ""m: A""
 end note
-Proxy2  [#red]-> UAS:    ""INVITE bob@B""
+Proxy2  [#f38ba8]-> UAS:    ""INVITE bob@B""
 note left
   ""RR: P1""
   ""RR: P2""
@@ -25,39 +25,39 @@ note left
 end note
 
 
-UAS    -[#green]-> Proxy2:   200 OK
+UAS    -[#a6e3a1]-> Proxy2:   200 OK
 note left
   ""RR: P1""
   ""RR: P2""
   ""m: Bo""
 end note
-Proxy2 -[#green]->  Proxy1:   200 OK
+Proxy2 -[#a6e3a1]->  Proxy1:   200 OK
 note left
   ""RR: P1""
   ""RR: P2""
   ""m: Bo""
 end note
-Proxy1 -[#green]->   UAC: 200 OK
+Proxy1 -[#a6e3a1]->   UAC: 200 OK
 note left
   ""RR: P1""
   ""RR: P2""
   ""m: Bo""
 end note
 
-UAC     [#red]->   Proxy1: ""ACK Bo@B""
+UAC     [#f38ba8]->   Proxy1: ""ACK Bo@B""
 note left
   ""R: P1""
   ""R: P2""
   ""m: A""
 end note
-Proxy1  [#red]->  Proxy2: ""ACK Bo@B""
+Proxy1  [#f38ba8]->  Proxy2: ""ACK Bo@B""
 note left
   ""RR: P1""
   ""R: P1""
   ""R: P2""
   ""m: A""
 end note
-Proxy2  [#red]-> UAS:    ""ACK Bo@B""
+Proxy2  [#f38ba8]-> UAS:    ""ACK Bo@B""
 note left
   ""RR: P1""
   ""RR: P2""

@@ -7,26 +7,26 @@ participant "Proxy-O" as Proxy1
 participant "Proxy-T" as Proxy2
 participant "Bob" as UAS
 
-UAC     [#red]->   Proxy1: INVITE
-Proxy1 -[#red]->   UAC:    100 Trying
-Proxy1  [#blue]->  Proxy2: INVITE
-Proxy2 -[#blue]->  Proxy1: 100 Trying
-Proxy2  [#green]-> UAS:    INVITE
-UAS    -[#green]-> Proxy2: 100 Trying
-UAS    -[#green]-> Proxy2: 180 Ringing
-Proxy2 -[#blue]->  Proxy1: 180 Ringing
-Proxy1 -[#red]->   UAC: 180 Ringing
-UAS    -[#green]-> Proxy2:   200 OK
-Proxy2 -[#blue]->  Proxy1:   200 OK
-Proxy1 -[#red]->   UAC: 200 OK
-UAC     [#red]->   Proxy1:   ACK
-Proxy1  [#blue]->  Proxy2: ACK
-Proxy2  [#green]-> UAS: ACK
+UAC     [#f38ba8]->   Proxy1: INVITE
+Proxy1 -[#f38ba8]->   UAC:    100 Trying
+Proxy1  [#89b4fa]->  Proxy2: INVITE
+Proxy2 -[#89b4fa]->  Proxy1: 100 Trying
+Proxy2  [#a6e3a1]-> UAS:    INVITE
+UAS    -[#a6e3a1]-> Proxy2: 100 Trying
+UAS    -[#a6e3a1]-> Proxy2: 180 Ringing
+Proxy2 -[#89b4fa]->  Proxy1: 180 Ringing
+Proxy1 -[#f38ba8]->   UAC: 180 Ringing
+UAS    -[#a6e3a1]-> Proxy2:   200 OK
+Proxy2 -[#89b4fa]->  Proxy1:   200 OK
+Proxy1 -[#f38ba8]->   UAC: 200 OK
+UAC     [#f38ba8]->   Proxy1:   ACK
+Proxy1  [#89b4fa]->  Proxy2: ACK
+Proxy2  [#a6e3a1]-> UAS: ACK
 ...RTP Call Established...
-UAC     [#red]->   Proxy1:   BYE
-Proxy1  [#blue]->  Proxy2: BYE
-Proxy2  [#green]-> UAS: BYE
-UAS    -[#green]-> Proxy2:   200 OK
-Proxy2 -[#blue]->  Proxy1: 200 OK
-Proxy1 -[#red]->   UAC: 200 OK
+UAC     [#f38ba8]->   Proxy1:   BYE
+Proxy1  [#89b4fa]->  Proxy2: BYE
+Proxy2  [#a6e3a1]-> UAS: BYE
+UAS    -[#a6e3a1]-> Proxy2:   200 OK
+Proxy2 -[#89b4fa]->  Proxy1: 200 OK
+Proxy1 -[#f38ba8]->   UAC: 200 OK
 @enduml

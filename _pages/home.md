@@ -4,7 +4,7 @@ layout: splash
 header:
   overlay_color: "#94e2d5"
   overlay_image: "/assets/images/home2.jpg"
-  overlay_filter: rgba(0, 173, 181, 0.7)
+  overlay_filter: rgba(116, 199, 236, 0.7)
   caption:
 excerpt: >
   Yet Another Blog<br />

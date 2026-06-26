@@ -20,18 +20,6 @@
    width="1024">
   <defs
      id="defs4">
-    <linearGradient
-       id="linearGradient1296"
-       inkscape:collect="always">
-      <stop
-         id="stop1292"
-         offset="0"
-         style="stop-color:#313244;stop-opacity:1" />
-      <stop
-         id="stop1294"
-         offset="1"
-         style="stop-color:#181825;stop-opacity:1" />
-    </linearGradient>
     <filter
        x="0"
        y="0"
@@ -2292,38 +2280,6 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 0.5 : 1"
        sodipodi:type="inkscape:persp3d" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5741-6"
-       id="linearGradient5747-3"
-       x1="553.625"
-       y1="989.86218"
-       x2="491.68762"
-       y2="591.42468"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(1.0625476,-1.3125304)" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient5741-6">
-      <stop
-         style="stop-color:#313244;stop-opacity:0.94117647"
-         offset="0"
-         id="stop5743-7" />
-      <stop
-         style="stop-color:#181825;stop-opacity:0.94117647"
-         offset="1"
-         id="stop5745-5" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1296"
-       id="linearGradient5747"
-       x1="553.625"
-       y1="989.86218"
-       x2="491.68762"
-       y2="591.42468"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(1.0626146,-1.3124802)" />
   </defs>
   <sodipodi:namedview
      inkscape:document-rotation="0"
@@ -2343,8 +2299,8 @@
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
+     bordercolor="#585b70"
+     pagecolor="#cdd6f4"
      id="base" />
   <metadata
      id="metadata7">
@@ -2364,7 +2320,7 @@
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
     <rect
-       style="display:inline;opacity:1;fill:url(#linearGradient5747);fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="display:inline;opacity:1;fill:#313244;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4164-4"
        width="1024.0001"
        height="512.00006"
@@ -2394,7 +2350,7 @@
          id="text3340-3-0"
          y="1527.2913"
          x="689.02264"
-         style="font-style:normal;font-weight:normal;font-size:12.09029961px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#fab387;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.09029961px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#11111b;fill-opacity:1;stroke:#fab387;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          xml:space="preserve"><tspan
            style="font-size:39.957901px;line-height:1.25;stroke:#fab387;stroke-width:30;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            y="1527.2913"
@@ -2425,7 +2381,7 @@
        id="g1288">
       <flowRoot
          transform="matrix(0.99896342,0,0,0.9974429,34.76245,146.21251)"
-         style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#11111b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          id="flowRoot4235-6"
          xml:space="preserve"><flowRegion
            id="flowRegion4237-2"><rect

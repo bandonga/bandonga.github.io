@@ -20,55 +20,12 @@
    inkscape:export-ydpi="96">
   <defs
      id="defs4">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient4542">
-      <stop
-         style="stop-color:#ebedef;stop-opacity:1;"
-         offset="0"
-         id="stop4538" />
-      <stop
-         style="stop-color:#ebedef;stop-opacity:0;"
-         offset="1"
-         id="stop4540" />
-    </linearGradient>
     <rect
        x="-53.125"
        y="1432.5497"
        width="862.5"
        height="918.75"
        id="rect1298" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient5741">
-      <stop
-         style="stop-color:#313244;stop-opacity:0.94117647"
-         offset="0"
-         id="stop5743" />
-      <stop
-         style="stop-color:#181825;stop-opacity:0.94117647"
-         offset="1"
-         id="stop5745" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5741"
-       id="linearGradient5747"
-       x1="553.625"
-       y1="989.86218"
-       x2="491.68762"
-       y2="591.42468"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(1.0625571,-1.3123785)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4542"
-       id="linearGradient4544"
-       x1="315.5401"
-       y1="637.81217"
-       x2="707.31489"
-       y2="637.81217"
-       gradientUnits="userSpaceOnUse" />
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath844">
@@ -117,9 +74,9 @@
            id="text955"
            y="1310.491"
            x="329.87048"
-           style="font-style:normal;font-weight:normal;font-size:96px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.98000004;fill:#11dbdf;fill-opacity:0.94117647;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:96px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.98000004;fill:#74c7ec;fill-opacity:0.94117647;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:229.33332825px;line-height:1.25;font-family:Impact;-inkscape-font-specification:'Impact Bold';fill:#11dbdf;fill-opacity:0.94117647"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:229.33332825px;line-height:1.25;font-family:Impact;-inkscape-font-specification:'Impact Bold';fill:#74c7ec;fill-opacity:0.94117647"
              y="1310.491"
              x="329.87048"
              id="tspan953"
@@ -129,8 +86,8 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
+     pagecolor="#cdd6f4"
+     bordercolor="#585b70"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
@@ -167,21 +124,21 @@
      id="layer1"
      transform="translate(0,-540.36216)">
     <rect
-       style="opacity:0.98000004;fill:#18dbdf;fill-opacity:0.94117647;stroke:#fab387;stroke-opacity:1"
+       style="opacity:0.98000004;fill:#74c7ec;fill-opacity:0.94117647;stroke:#fab387;stroke-opacity:1"
        id="rect906"
        width="775"
        height="398.4375"
        x="128.125"
        y="1086.7372" />
     <rect
-       style="opacity:1;fill:#22995f;fill-opacity:0.941176;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#585b70;fill-opacity:0.941176;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4164"
        width="1024.0001"
        height="512.00006"
        x="0"
        y="540.36212" />
     <rect
-       style="opacity:1;fill:url(#linearGradient5747);fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#313244;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4164-4"
        width="1024.0001"
        height="512.00006"
@@ -190,7 +147,7 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot4235"
-       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#11111b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        transform="matrix(0.99896342,0,0,0.9974429,1.0614558,1.381783)"><flowRegion
          id="flowRegion4237"><rect
            id="rect4239"
@@ -223,7 +180,7 @@
          id="text3340-3"
          y="1527.2913"
          x="689.02264"
-         style="font-style:normal;font-weight:normal;font-size:12.0903px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#fab387;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:12.0903px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#11111b;fill-opacity:1;stroke:#fab387;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          xml:space="preserve"><tspan
            style="font-size:39.9579px;line-height:1.25;stroke:#fab387;stroke-width:30;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            y="1527.2913"

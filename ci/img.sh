@@ -55,8 +55,8 @@ render_ico() {
   local dst="$2"
 
   if ! command -v magick >/dev/null 2>&1; then
-    echo "Skipping $dst; ICO generation requires ImageMagick's magick command." >&2
-    return
+    echo "Cannot generate $dst; ICO generation requires ImageMagick's magick command." >&2
+    exit 1
   fi
 
   magick -background none "$src" \
@@ -64,15 +64,18 @@ render_ico() {
     "$dst"
 }
 
-for src in assets/svg/academy/*.svg; do
-  name="$(basename "$src" .svg)"
-  render_png "$src" "assets/png/academy/${name}.png" 1024 512
-done
+render_safari_mask() {
+  local src="$1"
+  local dst="$2"
 
-for name in linux sip sysadmin telephony webrtc; do
-  render_png "assets/images/academy/${name}.svg" "assets/images/academy/${name}.png" 1024 512
-done
+  sed \
+    -e 's/#fab387/#11111b/g' \
+    -e 's/#1e1e2e/#cdd6f4/g' \
+    "$src" > "$dst"
+}
 
+render_png assets/images/academy/kamailio.svg assets/png/academy/kamailio.png 1024 512
+render_png assets/images/logo_default.svg assets/images/logo.png 88 88
 render_png assets/images/name_og.svg assets/images/name_og.png 960 480
 render_png assets/images/logo_default.svg assets/images/logo600square_default.png 563 563
 render_png assets/images/logo_default.svg assets/images/android-chrome-192x192.png 192 192
@@ -82,3 +85,4 @@ render_png assets/images/logo_default.svg assets/images/favicon-16x16.png 16 16
 render_png assets/images/logo_default.svg assets/images/favicon-32x32.png 32 32
 render_png assets/images/logo_default.svg assets/images/mstile-150x150.png 270 270
 render_ico assets/images/logo_default.svg assets/images/favicon.ico
+render_safari_mask assets/images/logo_default.svg assets/images/safari-pinned-tab.svg
