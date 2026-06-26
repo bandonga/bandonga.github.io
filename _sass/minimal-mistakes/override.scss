@@ -14,6 +14,18 @@
 
 blockquote {
   @include notice($light-gray);
+  color: $text-color;
+  background-color: $light-gray;
+  border-inline-start-color: $primary-color;
+
+  a,
+  a:visited {
+    color: $primary-color;
+  }
+
+  a:hover {
+    color: $text-color;
+  }
 }
 
 .page__content {
@@ -63,7 +75,7 @@ figure.highlight {
 .taxonomy__index {
   a {
     &:hover {
-      color: $background-color;
+      color: $background-color !important;
       background-color: $primary-color;
 
       &::before,
@@ -74,7 +86,7 @@ figure.highlight {
   }
 
   input:checked + label {
-    color: $background-color;
+    color: $background-color !important;
     background-color: $primary-color;
 
     &::before,
@@ -99,6 +111,22 @@ figure.highlight {
 
 pre.highlight .clipboard-copy-button {
   color: $primary-color;
+}
+
+.btn--primary,
+.btn--primary:visited,
+.pagination--pager,
+.pagination--pager:visited {
+  color: $background-color !important;
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.btn--primary:hover,
+.pagination--pager:hover {
+  color: $background-color !important;
+  background-color: $text-color;
+  border-color: $text-color;
 }
 
 .greedy-nav {
